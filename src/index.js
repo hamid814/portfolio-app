@@ -5,7 +5,7 @@ import './index.css';
 const App = () => {
   return (
     <>
-      my Application
+      my App
     </>
   )
 }
