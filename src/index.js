@@ -21,18 +21,10 @@ const App = () => {
   )
 }
 
-const RoutContainer = () => {
-  return (
-    <>
-      <App />
-    </>
-  )
-}
-
 const StateContainer = () => {
   return (
     <State>
-      <RoutContainer />
+      <App />
     </State>
   )
 }
