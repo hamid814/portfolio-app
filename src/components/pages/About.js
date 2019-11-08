@@ -10,7 +10,7 @@ const About = () => {
     <div>
       from About { data }
       <br/>
-      link to <Link to='/'>Home</Link>
+      link to <Link to={process.env.PUBLIC_URL + '/'}>Home</Link>
     </div>
   )
 }
