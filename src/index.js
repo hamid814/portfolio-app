@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Navbar from './components/layout/Navbar.js';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Menu from './components/layout/Menu.js';
 import Home from './components/pages/Home.js';
 import About from './components/pages/About.js';
 
@@ -13,10 +15,17 @@ import './haden.css';
 const App = () => {
   return (
     <>
-      my App
-      <Navbar />
-      <Home />
-      <About />
+      <Router>
+        <>
+          <Menu />
+          {/* <div className="container"> */}
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route exact path='/about' component={About} />
+          </Switch>
+          {/* </div> */}
+        </>
+      </Router>
     </>
   )
 }

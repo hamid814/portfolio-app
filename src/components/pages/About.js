@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 import Context from '../../context/Context.js';
 
@@ -8,6 +9,8 @@ const About = () => {
   return (
     <div>
       from About { data }
+      <br/>
+      link to <Link to='/'>Home</Link>
     </div>
   )
 }
