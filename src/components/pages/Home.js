@@ -19,7 +19,7 @@ const Home = () => {
     <div>
       from Home
       <button onClick={onClick}>click</button>
-      <input type="text" value={text} onChange={onChange}/>
+      <input type='text' value={text} onChange={onChange}/>
     </div>
   )
 }
