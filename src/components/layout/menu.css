@@ -1,0 +1,22 @@
+#menu-blur {
+  position: absolute;
+  width: 250px;
+  height: 400px;
+  right: 6vw;
+  top: 15vh;
+  background: #ccc;
+  border-top-left-radius: 5vh;
+  border-bottom-left-radius: 5vh;
+  filter: blur(5px);
+  border: 1px solid red;
+}
+
+#menu {
+  position: absolute;
+  width: 250px;
+  height: 400px;
+  right: 6vw;
+  top: 15vh;
+  padding: 10vh 4vw;
+  /* border: 1px solid red; */
+}

@@ -1,21 +1,18 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
 
 import Context from '../../context/Context.js';
 
 const Home = () => {
-  const { setData } = useContext(Context)
+  const { myName } = useContext(Context)
 
-  const onClick = () => {
-    setData(2)
-  }
-  
   return (
-    <div>
-      from Home
-      <button onClick={onClick}>click</button>
-      <br/>
-      link to <Link to={process.env.PUBLIC_URL + '/about'}>About</Link>
+    <div className='page-container'>
+      <div className='page' id='home'>
+        Hi!
+        <div>
+          I'm { myName }
+        </div>
+      </div>
     </div>
   )
 }

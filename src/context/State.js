@@ -4,23 +4,23 @@ import Reducer from './Reducer';
 
 const State = props => {
   const initialState = {
-    data: 1
+    myName: 'Hamid'
   };
 
   const [state, dispatch] = useReducer(Reducer, initialState);
 
   // Get data
-  const setData = (date) => {
+  const setData = (data) => {
     dispatch({
       type: 'set-data',
-      payload: date
+      payload: data
     });
   }
 
   return (
     <Context.Provider
       value={{
-        data: state.data,
+        myName: state.myName,
         setData
       }}
     >
