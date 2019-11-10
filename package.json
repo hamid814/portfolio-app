@@ -16,7 +16,7 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d build",
     "git": "git add . && git commit -m \"dev\"",
-    "gitpush": "git add . && git commit -m \"dev\" && git push -u origin master"
+    "gitpush": "git add . && git commit -m \"dev\" && git push -u origin master",
   },
   "eslintConfig": {
     "extends": "react-app"
