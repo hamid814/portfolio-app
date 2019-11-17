@@ -18,11 +18,11 @@ const Menu = () => {
         <br/>
         <br/>
         {/* <Link to={process.env.PUBLIC_URL + '/about'}>About</Link> */}
-        <a href="#about">A</a>
+        <a href="#about">about</a>
         <br/>
         <br/>
         {/* <Link to={process.env.PUBLIC_URL + '/works'}>Works</Link> */}
-        <a href="#works">W</a>
+        <a href="#works">works</a>
         <br/>
         <br/>
         {/* <Link to={process.env.PUBLIC_URL + '/contact'}>Contact</Link> */}

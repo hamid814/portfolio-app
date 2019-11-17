@@ -10,24 +10,15 @@ const About = () => {
     console.log(window.innerHeight)
     const top = page.current.getBoundingClientRect().top;
     const height = window.innerHeight;
-    if(top / height > 0.5) {
+    if(top / height < 0.5 && top > 0) {
       page.current.style.color = 'blue'
       // console.log(height / top)
     }
-    // page.current.style = {
-      // color: 'blue'
-    // }
-    // console.log(page.current.style.color)
     // eslint-disable-next-line
   }, [])
 
-  // console.log(page.current)
-  const thisStyle = {
-    color: 'red'
-  }
-
   return (
-    <div ref={page} style={thisStyle} className='page-container' id='about'>
+    <div ref={page} className='page-container' id='about'>
       <div className='page'>
         AB
       </div>
