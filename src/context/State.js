@@ -22,6 +22,7 @@ const State = props => {
     <Context.Provider
       value={{
         myName: state.myName,
+        activePage: state.activePage,
         setActivePage
       }}
     >

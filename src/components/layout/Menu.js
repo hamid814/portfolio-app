@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 // import { Link } from 'react-router-dom';
+
+import Context from '../../context/Context';
 
 import './menu.css';
 
 const Menu = () => {
+  const { setActivePage } = useContext(Context);
+
+  const onClick = () => {
+    setActivePage('about')
+  }
+
   return (
     <div id='menu-container'>
       <div id='menu-hole'>
@@ -18,7 +26,7 @@ const Menu = () => {
         <br/>
         <br/>
         {/* <Link to={process.env.PUBLIC_URL + '/about'}>About</Link> */}
-        <a href='#about'>about</a>
+        <a href='#about' onClick={onClick}>about</a>
         <br/>
         <br/>
         {/* <Link to={process.env.PUBLIC_URL + '/works'}>Works</Link> */}
