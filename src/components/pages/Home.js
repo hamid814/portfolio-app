@@ -6,7 +6,7 @@ const Home = () => {
   const { myName } = useContext(Context)
 
   return (
-    <div className='page-container'>
+    <div className='page-container' id='home'>
       <div className='page' id='home'>
         Hi!
         <div>

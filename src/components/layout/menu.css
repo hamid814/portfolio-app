@@ -1,5 +1,5 @@
 #menu-container {
-  position: absolute;
+  position: fixed;
   /* width: 250px; */
   /* height: 400px; */
   /* top: 0; */
