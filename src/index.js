@@ -5,10 +5,10 @@ import ReactDOM from 'react-dom';
 
 import Menu from './components/layout/Menu.js';
 import BackFrame from './components/pages/BackFrame.js';
-import Home from './components/pages/Home.js';
-import About from './components/pages/About.js';
-import Contact from './components/pages/Contact.js';
-import Works from './components/pages/Works.js';
+// import Home from './components/pages/Home.js';
+// import About from './components/pages/About.js';
+// import Contact from './components/pages/Contact.js';
+import Pages from './components/pages/Pages.js';
 
 import State from './context/State.js';
 
@@ -37,10 +37,7 @@ const App = () => {
     <>
       <Menu />
       <BackFrame />
-      <Home />
-      <About />
-      <Works />
-      <Contact />
+      <Pages />
     </>
   )
 }
