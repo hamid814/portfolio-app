@@ -6,7 +6,7 @@ import './menu.css';
 const Menu = () => {
   return (
     <div id='menu-container'>
-      <div id="menu-hole">
+      <div id='menu-hole'>
 
       </div>
       <div id='menu-blur'>
@@ -14,19 +14,19 @@ const Menu = () => {
       </div>
       <div id='menu'>
         {/* <Link to={process.env.PUBLIC_URL + '/'}>Home</Link> */}
-        <a href="#home">Home</a>
+        <a href='#home'>Home</a>
         <br/>
         <br/>
         {/* <Link to={process.env.PUBLIC_URL + '/about'}>About</Link> */}
-        <a href="#about">about</a>
+        <a href='#about'>about</a>
         <br/>
         <br/>
         {/* <Link to={process.env.PUBLIC_URL + '/works'}>Works</Link> */}
-        <a href="#works">works</a>
+        <a href='#works'>works</a>
         <br/>
         <br/>
         {/* <Link to={process.env.PUBLIC_URL + '/contact'}>Contact</Link> */}
-        <a href="#contact">contact</a>
+        <a href='#contact'>contact</a>
       </div>
     </div>
   )

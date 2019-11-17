@@ -5,6 +5,7 @@ import Reducer from './Reducer';
 const State = props => {
   const initialState = {
     myName: 'waiting to do amaizing job',
+    activePage: 'home', // values: home, about, works, contact
   };
 
   const [state, dispatch] = useReducer(Reducer, initialState);
