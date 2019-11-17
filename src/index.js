@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Menu from './components/layout/Menu.js';
+import BackFrame from './components/pages/BackFrame.js';
 import Home from './components/pages/Home.js';
 import About from './components/pages/About.js';
 import Contact from './components/pages/Contact.js';
@@ -35,6 +36,7 @@ const App = () => {
     // </>
     <>
       <Menu />
+      <BackFrame />
       <Home />
       <About />
       <Works />
