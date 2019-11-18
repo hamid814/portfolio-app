@@ -28,7 +28,7 @@ const App = () => {
     console.log((window.scrollY + window.innerHeight));
     console.log(document.body.getBoundingClientRect().height);
 
-    console.log(window.scrollY / (document.body.getBoundingClientRect().height - window.innerHeight))
+    const scrollPercent = Math.floor(window.scrollY / (document.body.getBoundingClientRect().height - window.innerHeight) * 100)
 
     if((window.scrollY + window.innerHeight) === document.body.getBoundingClientRect().height) {
       setActivePage('works')
