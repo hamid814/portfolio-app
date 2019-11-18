@@ -61,11 +61,11 @@ const App = () => {
     // }
 
     console.clear();
+    let myT;
     clearTimeout(myT);
-    const myT = setTimeout(() => {
+    myT = setTimeout(() => {
       console.log(1000)
     }, 1000);
-
   }
 
   window.addEventListener('click', onScroll)
