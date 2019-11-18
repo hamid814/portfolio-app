@@ -59,23 +59,16 @@ const App = () => {
     //   }
     //   setScNum(window.scrollY)
     // }
-
-    console.clear();
-    let myT;
-    clearTimeout(myT);
-    myT = setTimeout(() => {
-      console.log(1000)
-    }, 1000);
   }
 
-  window.addEventListener('click', onScroll)
+  window.addEventListener('scroll', onScroll)
   
   return (
     // <>
     //   <Router>
     //     <>
     //       <Menu />
-    //       {/* <div className="container"> */}
+    //       {/* <div className='container'> */}
     //       <Switch>
     //         <Route exact path={process.env.PUBLIC_URL + '/'} component={Home}/>
     //         <Route exact path={process.env.PUBLIC_URL + '/about'} component={About} />
