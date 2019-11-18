@@ -4,7 +4,7 @@ import Reducer from './Reducer';
 
 const State = props => {
   const initialState = {
-    myName: 'waiting to do amaizing job',
+    myName: 'H',
     activePage: 'home', // values: home, about, works, contact
   };
 

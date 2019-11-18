@@ -15,22 +15,29 @@ const Pages = () => {
       <div id='back-frame'>
       
       </div>
-      {
-        activePage === 'home' &&
-          <Home />
-      }
-      {
-        activePage === 'about' &&
-          <About />
-      }
-      {
-        activePage === 'works' &&
-          <Works />
-      }
-      {
-        activePage === 'contact' &&
-          <Contact />
-      }
+      <div className='upper-page'>
+      
+      </div>
+      <div className='current-page'>
+        {
+          activePage === 'home' &&
+            <Home />
+        }
+        {
+          activePage === 'about' &&
+            <About />
+        }
+        {
+          activePage === 'works' &&
+            <Works />
+        }
+        {
+          activePage === 'contact' &&
+            <Contact />
+        }
+      </div>
+      <div className='lower-page'>
+      </div>
     </>
   )
 }

@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
 
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Menu from './components/layout/Menu.js';
-import BackFrame from './components/pages/BackFrame.js';
+import BackScroll from './components/pages/BackScroll.js';
 // import Home from './components/pages/Home.js';
 // import About from './components/pages/About.js';
 // import Contact from './components/pages/Contact.js';
 import Pages from './components/pages/Pages.js';
 
 import State from './context/State.js';
+import Context from './context/Context.js';
 
 import './styles/index.css';
 import './styles/haden.css';
@@ -18,6 +19,24 @@ import './styles/zIndex.css';
 import './components/pages/pages.css';
 
 const App = () => {
+  const {setActivePage} = useContext(Context)
+
+  const onScroll = () => {
+    console.clear();
+    console.log(window.scrollY);
+    console.log(window.innerHeight);
+    console.log((window.scrollY + window.innerHeight));
+    console.log(document.body.getBoundingClientRect().height);
+
+    if((window.scrollY + window.innerHeight) === document.body.getBoundingClientRect().height) {
+      setActivePage('works')
+    } else if(true) {
+
+    }
+  }
+
+  window.addEventListener('scroll', onScroll)
+  
   return (
     // <>
     //   <Router>
@@ -34,11 +53,11 @@ const App = () => {
     //     </>
     //   </Router>
     // </>
-    <>
+    <div onScroll={onScroll}>
       <Menu />
-      <BackFrame />
       <Pages />
-    </>
+      <BackScroll />
+    </div>
   )
 }
 
@@ -49,5 +68,6 @@ const StateContainer = () => {
     </State>
   )
 }
+
 
 ReactDOM.render(<StateContainer />, document.getElementById('root'));
