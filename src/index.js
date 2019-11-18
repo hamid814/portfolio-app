@@ -28,6 +28,8 @@ const App = () => {
     console.log((window.scrollY + window.innerHeight));
     console.log(document.body.getBoundingClientRect().height);
 
+    console.log(window.scrollY / (document.body.getBoundingClientRect().height - window.innerHeight))
+
     if((window.scrollY + window.innerHeight) === document.body.getBoundingClientRect().height) {
       setActivePage('works')
     } else if(true) {
