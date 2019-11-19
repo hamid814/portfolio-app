@@ -5,6 +5,11 @@ export default (state, action) => {
         ...state,
         activePage: action.payload
       }
+    case 'set-pages-status':
+      return {
+        ...state,
+        pagesStatus: action.payload
+      }
     default:
       return state;
   }

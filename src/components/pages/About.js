@@ -5,6 +5,9 @@ import React from 'react';
 const About = () => {
   return (
     <div className='page-container' id='about'>
+      <div className='layer'>
+      
+      </div>
       <div className='page'>
         AB
       </div>

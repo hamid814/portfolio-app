@@ -8,17 +8,14 @@ import Works from './Works';
 import Contact from './Contact';
 
 const Pages = () => {
-  const { activePage } = useContext(Context);
+  const { activePage, pagesStatus } = useContext(Context);
 
   return (
-    <>
-      <div id='back-frame'>
+    <div className={`pages ${pagesStatus}`}>
+      {/* <div id='back-frame'> */}
       
-      </div>
-      <div className='upper-page'>
-      
-      </div>
-      <div className='current-page'>
+      {/* </div> */}
+      {/* <div className='current-page'>
         {
           activePage === 'home' &&
             <Home />
@@ -35,10 +32,8 @@ const Pages = () => {
           activePage === 'contact' &&
             <Contact />
         }
-      </div>
-      <div className='lower-page'>
-      </div>
-    </>
+      </div> */}
+    </div>
   )
 }
 

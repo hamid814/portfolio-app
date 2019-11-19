@@ -3,6 +3,9 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className='page-container' id='contact'>
+      <div className='layer'>
+      
+      </div>
       <div className='page'>
         Contact
       </div>

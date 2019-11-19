@@ -6,17 +6,15 @@ import Context from '../../context/Context';
 import './menu.css';
 
 const Menu = () => {
-  const { setActivePage } = useContext(Context);
+  const { setActivePage, setPagesStatus } = useContext(Context);
 
   const onClick = () => {
-    setActivePage('about')
+    setActivePage('about');
+    setPagesStatus();
   }
 
   return (
     <div id='menu-container'>
-      <div id='menu-hole'>
-
-      </div>
       <div id='menu-blur'>
 
       </div>
