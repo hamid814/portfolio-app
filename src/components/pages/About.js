@@ -6,8 +6,10 @@ const About = () => {
   const { setActivePage, setPagesStatus, aPageIsActive } = useContext(Context)
 
   const onClick = () => {
-    setActivePage('about')
-    setPagesStatus('zoom-in')
+    if(!aPageIsActive) {
+      setActivePage('about')
+      setPagesStatus('zoom-in')
+    }
   }
 
   return (
@@ -16,7 +18,20 @@ const About = () => {
         ABOUT
       </div>
       <div className='page'>
-        AB
+        <div className='header'>
+          ABOUT ME
+        </div>
+        <div className='content'>
+          <div className='item'>
+            item
+          </div>
+          <div className='item'>
+            item
+          </div>
+          <div className='item'>
+            item
+          </div>
+        </div>
       </div>
     </div>
   )

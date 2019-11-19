@@ -20,6 +20,12 @@ const Menu = () => {
       <div id='shadow'>
       
       </div>
+      <div id='menu-desc'>
+        go back
+      </div>
+      <div id='menu-cover-for-hover'>
+        {/* this part is to give menu a declared area to prevent animation messing up */}
+      </div>
     </div>
   )
 }

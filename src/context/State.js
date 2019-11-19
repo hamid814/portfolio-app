@@ -5,10 +5,10 @@ import Reducer from './Reducer';
 const State = props => {
   const initialState = {
     myName: 'H',
-    activePage: 'home', // values: home, about, works, contact
-    pagesStatus: 'zoom-out',
-    pagesPos: 'center', // t-l | t-r | b-l | b-r | center
-    aPageIsActive: false, // sets too true After 1s for anims
+    activePage: 'about', // values: home, about, works, contact
+    pagesStatus: 'zoom-in',
+    pagesPos: 'top-right', // t-l | t-r | b-l | b-r
+    aPageIsActive: true, // sets too true After 1s for anims
   };
 
   const [state, dispatch] = useReducer(Reducer, initialState);

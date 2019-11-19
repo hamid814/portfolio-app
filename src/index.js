@@ -16,7 +16,6 @@ import './styles/index.css';
 import './styles/haden.css';
 import './styles/zIndex.css';
 import './styles/keyframes.css';
-import './components/pages/pages.css';
 
 const App = () => {
   return (

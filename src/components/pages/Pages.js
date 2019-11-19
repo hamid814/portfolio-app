@@ -1,6 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 
 import Context from '../../context/Context.js';
+
+import './pages.css';
 
 import Home from './Home';
 import About from './About';
@@ -8,10 +10,10 @@ import Works from './Works';
 import Contact from './Contact';
 
 const Pages = () => {
-  const { activePage, pagesStatus, pos } = useContext(Context);
+  const { pagesStatus, pagesPos } = useContext(Context);
 
   return (
-    <div className={`pages ${pagesStatus} ${pagesStatus === 'zoom-in' && pos}`}>
+    <div className={`pages ${pagesStatus} ${pagesPos}`}>
       <Home />
       <About />
       <Works />

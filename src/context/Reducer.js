@@ -24,6 +24,11 @@ export default (state, action) => {
         ...state,
         aPageIsActive: action.payload
       }
+    case 'set-pages-pos':
+      return {
+        ...state,
+        pagesPos: action.payload
+      }
     default:
       return state;
   }

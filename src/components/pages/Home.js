@@ -5,8 +5,8 @@ import Context from '../../context/Context.js';
 const Home = () => {
   const { myName, aPageIsActive, setActivePage, setPagesStatus } = useContext(Context)
 
-  const [doBug, setDoBug] = useState(false)
   const [name, setName] = useState('HOME')
+  // eslint-disable-next-line
   const [bugName, setBugName] = useState([
     {
       name: 'HOME',
@@ -88,8 +88,10 @@ const Home = () => {
   }, [])
 
   const onClick = () => {
-    setActivePage('home')
-    setPagesStatus('zoom-in')
+    if(!aPageIsActive) {
+      setActivePage('home')
+      setPagesStatus('zoom-in')
+    }
   }
 
   const onMouseEnter = () => {

@@ -6,8 +6,10 @@ const Works = () => {
   const { setActivePage, setPagesStatus, aPageIsActive } = useContext(Context)
 
   const onClick = () => {
-    setActivePage('works')
-    setPagesStatus('zoom-in')
+    if(!aPageIsActive) {
+      setActivePage('works')
+      setPagesStatus('zoom-in')
+    }
   }
 
   return (
