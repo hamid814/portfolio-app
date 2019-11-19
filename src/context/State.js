@@ -6,7 +6,7 @@ const State = props => {
   const initialState = {
     myName: 'H',
     activePage: 'home', // values: home, about, works, contact
-    pagesStatus: 'zoom-in',
+    pagesStatus: 'zoom-out',
   };
 
   const [state, dispatch] = useReducer(Reducer, initialState);

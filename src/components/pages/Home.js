@@ -3,12 +3,17 @@ import React, { useContext } from 'react';
 import Context from '../../context/Context.js';
 
 const Home = () => {
-  const { myName } = useContext(Context)
+  const { myName, setActivePage, setPagesStatus } = useContext(Context)
+
+  const onClick = () => {
+    setActivePage('home')
+    setPagesStatus('zoom-in')
+  }
 
   return (
     <div className='page-container' id='home'>
-      <div className='layer'>
-      
+      <div className='layer' onClick={onClick}>
+        HOME
       </div>
       <div className='page'>
         Hi!

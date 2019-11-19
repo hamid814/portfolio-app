@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-// import Context from '../../context/Context.js';
+import Context from '../../context/Context.js';
 
 const About = () => {
+  const { setActivePage, setPagesStatus } = useContext(Context)
+
+  const onClick = () => {
+    setActivePage('about')
+    setPagesStatus('zoom-in')
+  }
+
   return (
     <div className='page-container' id='about'>
-      <div className='layer'>
-      
+      <div className='layer' onClick={onClick}>
+        ABOUT
       </div>
       <div className='page'>
         AB
