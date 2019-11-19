@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import Context from '../../context/Context.js';
 
 const Works = () => {
-  const { setActivePage, setPagesStatus } = useContext(Context)
+  const { setActivePage, setPagesStatus, aPageIsActive } = useContext(Context)
 
   const onClick = () => {
     setActivePage('works')
@@ -12,7 +12,7 @@ const Works = () => {
 
   return (
     <div className='page-container' id='works'>
-      <div className='layer' onClick={onClick}>
+      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
         WORKS
       </div>
       <div className='page'>
