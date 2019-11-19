@@ -5,7 +5,7 @@ import Context from '../../context/Context';
 import './menu.css';
 
 const Menu = () => {
-  const { pagesStatus, setActivePage, setPagesStatus } = useContext(Context);
+  const { aPageIsActive, setActivePage, setPagesStatus } = useContext(Context);
 
   const onClick = (e) => {
     setActivePage('from-menu');
@@ -13,9 +13,12 @@ const Menu = () => {
   }
 
   return (
-    <div id='menu-container' className={`${pagesStatus === 'zoom-out' && 'd-n'}`} onClick={onClick}>
+    <div id='menu-container' className={`${!aPageIsActive && 'd-n'}`} onClick={onClick}>
       <div id='menu'>
         
+      </div>
+      <div id='shadow'>
+      
       </div>
     </div>
   )

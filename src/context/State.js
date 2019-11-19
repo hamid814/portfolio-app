@@ -25,7 +25,6 @@ const State = props => {
           type: 'set-a-page-is-active',
           payload: true
         });
-        console.log('here')
       }, 1000);
     } 
   }
