@@ -8,17 +8,7 @@ import Works from './Works';
 import Contact from './Contact';
 
 const Pages = () => {
-  const { activePage, pagesStatus } = useContext(Context);
-
-  const [pos, setPos] = useState('top-left')
-
-  useEffect(() => {
-    activePage === 'home' && setPos('top-left')
-    activePage === 'about' && setPos('top-right')
-    activePage === 'works' && setPos('bottom-right')
-    activePage === 'contact' && setPos('bottom-left')
-    // eslint-disable-next-line
-  }, [activePage])
+  const { activePage, pagesStatus, pos } = useContext(Context);
 
   return (
     <div className={`pages ${pagesStatus} ${pagesStatus === 'zoom-in' && pos}`}>

@@ -7,6 +7,7 @@ const State = props => {
     myName: 'H',
     activePage: 'home', // values: home, about, works, contact
     pagesStatus: 'zoom-out',
+    pagesPos: 'center', // t-l | t-r | b-l | b-r | center
     aPageIsActive: false, // sets too true After 1s for anims
   };
 
@@ -18,6 +19,28 @@ const State = props => {
       type: 'set-active-page',
       payload: page
     });
+
+    if(page === 'home') {
+      dispatch({
+        type: 'set-active-page',
+        payload: page
+      });
+    } else if(page === 'about') {
+      dispatch({
+        type: 'set-active-page',
+        payload: page
+      });
+    } else if(page === 'works') {
+      dispatch({
+        type: 'set-active-page',
+        payload: page
+      });
+    } else if(page === 'contact') {
+      dispatch({
+        type: 'set-active-page',
+        payload: page
+      });
+    }
 
     if(page !== 'from-menu') {
       setTimeout(() => {
@@ -46,6 +69,7 @@ const State = props => {
         activePage: state.activePage,
         pagesStatus: state.pagesStatus,
         aPageIsActive: state.aPageIsActive,
+        pagesPos: state.pagesPos,
         setActivePage,
         setPagesStatus,
       }}

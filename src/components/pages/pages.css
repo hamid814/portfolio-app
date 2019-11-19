@@ -127,6 +127,7 @@
 
 #works .layer {
   background: magenta;
+  text-align: left;
   /* padding-top: 30vh; */
   /* text-align: right; */
 }
