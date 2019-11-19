@@ -8,7 +8,7 @@ const Menu = () => {
   const { pagesStatus, setActivePage, setPagesStatus } = useContext(Context);
 
   const onClick = (e) => {
-    // setActivePage('');
+    setActivePage('from-menu');
     setPagesStatus('zoom-out')
   }
 

@@ -19,12 +19,15 @@ const State = props => {
       payload: page
     });
 
-    setTimeout(() => {
-      dispatch({
-        type: 'set-a-page-is-active',
-        payload: true
-      });
-    }, 1000);
+    if(page !== 'from-menu') {
+      setTimeout(() => {
+        dispatch({
+          type: 'set-a-page-is-active',
+          payload: true
+        });
+        console.log('here')
+      }, 1000);
+    } 
   }
 
   const setPagesStatus = (status) => {

@@ -18,6 +18,7 @@ export default (state, action) => {
           pagesStatus: action.payload,
         }
       }
+      break
     case 'set-a-page-is-active':
       return {
         ...state,
