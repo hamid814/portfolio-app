@@ -6,9 +6,22 @@ export default (state, action) => {
         activePage: action.payload
       }
     case 'set-pages-status':
+      if(action.payload === 'zoom-out') {
+        return {
+          ...state,
+          pagesStatus: action.payload,
+          aPageIsActive: false
+        }
+      } else if(action.payload === 'zoom-in') {
+        return {
+          ...state,
+          pagesStatus: action.payload,
+        }
+      }
+    case 'set-a-page-is-active':
       return {
         ...state,
-        pagesStatus: action.payload
+        aPageIsActive: action.payload
       }
     default:
       return state;

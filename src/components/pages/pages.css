@@ -36,15 +36,14 @@
   right: 0;
 }
 
-.zoom-out .layer {
+.layer.is {
   opacity: 1;
 }
 
-.zoom-in .layer {
+.layer.not {
   opacity: 0;
   z-index: -9999;
   animation: fadeOut 0.3s ease-out;
-  animation-delay: 1s;
 }
 
 /* back frame */

@@ -18,6 +18,13 @@ const State = props => {
       type: 'set-active-page',
       payload: page
     });
+
+    setTimeout(() => {
+      dispatch({
+        type: 'set-a-page-is-active',
+        payload: true
+      });
+    }, 1000);
   }
 
   const setPagesStatus = (status) => {
@@ -36,6 +43,7 @@ const State = props => {
         myName: state.myName,
         activePage: state.activePage,
         pagesStatus: state.pagesStatus,
+        aPageIsActive: state.aPageIsActive,
         setActivePage,
         setPagesStatus,
       }}

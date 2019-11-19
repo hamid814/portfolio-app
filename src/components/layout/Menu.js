@@ -8,13 +8,13 @@ const Menu = () => {
   const { pagesStatus, setActivePage, setPagesStatus } = useContext(Context);
 
   const onClick = (e) => {
-    setActivePage('');
+    // setActivePage('');
     setPagesStatus('zoom-out')
   }
 
   return (
-    <div id='menu-container' className={`${pagesStatus === 'zoom-out' && 'd-n'}`}>
-      <div id='menu' onClick={onClick}>
+    <div id='menu-container' className={`${pagesStatus === 'zoom-out' && 'd-n'}`} onClick={onClick}>
+      <div id='menu'>
         
       </div>
     </div>
