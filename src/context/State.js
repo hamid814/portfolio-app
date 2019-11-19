@@ -22,23 +22,23 @@ const State = props => {
 
     if(page === 'home') {
       dispatch({
-        type: 'set-active-page',
-        payload: page
+        type: 'set-pages-pos',
+        payload: 'top-left'
       });
     } else if(page === 'about') {
       dispatch({
-        type: 'set-active-page',
-        payload: page
+        type: 'set-pages-pos',
+        payload: 'top-right'
       });
     } else if(page === 'works') {
       dispatch({
-        type: 'set-active-page',
-        payload: page
+        type: 'set-pages-pos',
+        payload: 'bottom-right'
       });
     } else if(page === 'contact') {
       dispatch({
-        type: 'set-active-page',
-        payload: page
+        type: 'set-pages-pos',
+        payload: 'bottom-left'
       });
     }
 
