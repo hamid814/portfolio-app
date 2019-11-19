@@ -7,6 +7,7 @@ const State = props => {
     myName: 'H',
     activePage: 'home', // values: home, about, works, contact
     pagesStatus: 'zoom-out',
+    aPageIsActive: false, // sets too true After 1s for anims
   };
 
   const [state, dispatch] = useReducer(Reducer, initialState);
