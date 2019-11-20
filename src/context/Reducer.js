@@ -29,6 +29,12 @@ export default (state, action) => {
         ...state,
         pagesPos: action.payload
       }
+    case 'set-modal':
+      return {
+        ...state,
+        modalStatus: action.payload.status,
+        modalData: action.payload.data
+      }
     default:
       return state;
   }

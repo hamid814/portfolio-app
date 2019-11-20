@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 
 import Context from '../../context/Context.js';
 
+import './styles/contact.css';
+
 const Contact = () => {
   const { setActivePage, setPagesStatus, aPageIsActive } = useContext(Context) 
 

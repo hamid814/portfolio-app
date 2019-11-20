@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 
 import Context from '../../context/Context.js';
 
+import './styles/home.css';
+
 const Home = () => {
   const { myName, aPageIsActive, setActivePage, setPagesStatus } = useContext(Context)
 

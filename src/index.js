@@ -24,6 +24,7 @@ const App = () => {
     setTimeout(() => {
         setApageIsActive(false);
     }, 500);
+    // eslint-disable-next-line
   }, [])
 
   return (

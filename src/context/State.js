@@ -9,6 +9,9 @@ const State = props => {
     pagesStatus: 'zoom-out',
     pagesPos: 'top-left', // t-l | t-r | b-l | b-r
     aPageIsActive: true, // sets too true After 1s for anims
+    // MODAL STUFF
+    modalStatus: 'off',
+    modalData: null
   };
 
   const [state, dispatch] = useReducer(Reducer, initialState);
@@ -69,6 +72,16 @@ const State = props => {
     })
   }
 
+  const setModal = (status, data) => {
+    dispatch({
+      type: 'set-modal',
+      payload: {
+        status,
+        data
+      } 
+    })
+  }
+
   return (
     <Context.Provider
       value={{
@@ -77,9 +90,12 @@ const State = props => {
         pagesStatus: state.pagesStatus,
         aPageIsActive: state.aPageIsActive,
         pagesPos: state.pagesPos,
+        modalStatus: state.modalStatus,
+        modalData: state.modalData,
         setActivePage,
         setPagesStatus,
         setApageIsActive,
+        setModal,
       }}
     >
       {props.children}
