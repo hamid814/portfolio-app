@@ -5,10 +5,14 @@ import './modal.css';
 import Context from '../../context/Context';
 
 const Modal = () => {
-  const { modalStatus } = useContext(Context)
+  const { modalStatus, setModal } = useContext(Context)
+
+  const onClose = () => {
+    setModal('off', null)
+  }
 
   return (
-    <div id='modal' className={`${modalStatus === 'on' ? '' : 'd-n'}`}>
+    <div id='modal' className={`${modalStatus === 'off' && 'd-n'}`} onClick={onClose}>
       <div id="modal-container">
         
       </div>
