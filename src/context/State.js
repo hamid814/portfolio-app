@@ -8,7 +8,7 @@ const State = props => {
     activePage: 'home', // values: home, about, works, contact
     pagesStatus: 'zoom-out',
     pagesPos: 'top-left', // t-l | t-r | b-l | b-r
-    aPageIsActive: false, // sets too true After 1s for anims
+    aPageIsActive: true, // sets too true After 1s for anims
   };
 
   const [state, dispatch] = useReducer(Reducer, initialState);
@@ -62,6 +62,13 @@ const State = props => {
     });
   }
 
+  const setApageIsActive = (status) => {
+    dispatch({
+      type: 'set-a-page-is-active',
+      payload: status
+    })
+  }
+
   return (
     <Context.Provider
       value={{
@@ -72,6 +79,7 @@ const State = props => {
         pagesPos: state.pagesPos,
         setActivePage,
         setPagesStatus,
+        setApageIsActive,
       }}
     >
       {props.children}
