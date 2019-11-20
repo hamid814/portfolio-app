@@ -2,9 +2,21 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
-  /* background: #555; */
-  /* opacity: 0.8; */
   background-color: rgba(0,0,0,.4);
+}
+
+.modal-off {
+  display: none;
+  animation: fjfvzfjbvk 1s ease-in;
+}
+
+@keyframes fjfvzfjbvk {
+  0% {
+    /* margin-top: initial; */
+  }
+  100% {
+    /* margin-top: 50px; */
+  }
 }
 
 #modal-container {
@@ -13,4 +25,21 @@
   margin: 5vh 5vw;
   background-color: #f4f4f4;
   border-radius: 10px;
+  position: relative;
+  transform-origin: 96.5% 26px;
+  /* transform: translateY(600px); */
+}
+
+.modal-hanging {
+  transform: rotateZ(-7deg);
+}
+
+#modal-close {
+  position: absolute;
+  top: 6px;
+  left: 96.5%;
+  font-size: 200%;
+  color: #999;
+  /* border: 1px solid red; */
+  cursor: pointer;
 }

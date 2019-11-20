@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext } from 'react'
 
 import './modal.css';
 
@@ -7,13 +7,33 @@ import Context from '../../context/Context';
 const Modal = () => {
   const { modalStatus, setModal } = useContext(Context)
 
-  const onClose = () => {
-    setModal('off', null)
+  const [hanging, setHanging] = useState(false)
+
+  const onClose = (e) => {
+    if(e.target.classList.contains('func-close-modal')) {
+      setModal('off', null)
+    }
+  }
+
+  const oNCloseX = () => {
+      setModal('off', null)
+      console.log('here')
+  }
+
+  const onHangeStart = () => {
+    setHanging(true)
+  }
+
+  const onHangEnd = () => {
+    setHanging(false)
   }
 
   return (
-    <div id='modal' className={`${modalStatus === 'off' && 'd-n'}`} onClick={onClose}>
-      <div id="modal-container">
+    <div id='modal' className={`func-close-modal modal-${modalStatus}`} onClick={onClose}>
+      <div id='modal-container' className={`${hanging && 'modal-hanging'}`}>
+        <div id='modal-close' onClick={oNCloseX} onMouseEnter={onHangeStart} onMouseLeave={onHangEnd}>
+          &times;
+        </div>
         
       </div>
     </div>
