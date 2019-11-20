@@ -2,8 +2,9 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background: #555;
-  opacity: 0.8;
+  /* background: #555; */
+  /* opacity: 0.8; */
+  background-color: rgba(0,0,0,.4);
 }
 
 #modal-container {
@@ -11,4 +12,5 @@
   height: 90vh;
   margin: 5vh 5vw;
   background-color: #f4f4f4;
+  border-radius: 10px;
 }
