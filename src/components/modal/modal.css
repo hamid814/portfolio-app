@@ -1,0 +1,14 @@
+#modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #555;
+  opacity: 0.8;
+}
+
+#modal-container {
+  width: 90vw;
+  height: 90vh;
+  margin: 5vh 5vw;
+  background-color: #f4f4f4;
+}

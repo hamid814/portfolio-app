@@ -7,10 +7,8 @@ import Context from './context/Context';
 
 import Menu from './components/layout/Menu.js';
 import BackScroll from './components/pages/BackScroll.js';
-// import Home from './components/pages/Home.js';
-// import About from './components/pages/About.js';
-// import Contact from './components/pages/Contact.js';
 import Pages from './components/pages/Pages.js';
+import Modal from './components/modal/Modal';
 
 import State from './context/State.js';
 
@@ -45,6 +43,7 @@ const App = () => {
     //   </Router>
     // </>
     <>
+      <Modal />
       <Menu />
       <Pages />
       <BackScroll />
