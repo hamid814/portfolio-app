@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import Context from '../../context/Context.js';
 
-import './pages.css';
+import './styles/pages.css';
 
 import Home from './Home';
 import About from './About';
