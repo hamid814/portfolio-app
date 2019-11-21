@@ -5,7 +5,7 @@ import Context from './context/Context';
 
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Menu from './components/layout/Menu.js';
+import BackButton from './components/layout/BackButton.js';
 import BackScroll from './components/pages/BackScroll.js';
 import Pages from './components/pages/Pages.js';
 import Modal from './components/modal/Modal';
@@ -45,7 +45,7 @@ const App = () => {
     // </>
     <>
       <Modal />
-      <Menu />
+      <BackButton />
       <Pages />
       <BackScroll />
     </>

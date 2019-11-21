@@ -2,9 +2,9 @@ import React, { useContext } from 'react'
 
 import Context from '../../context/Context';
 
-import './menu.css';
+import './backButton.css';
 
-const Menu = () => {
+const BackButton = () => {
   const { aPageIsActive, setActivePage, setPagesStatus } = useContext(Context);
 
   const onClick = (e) => {
@@ -30,4 +30,4 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default BackButton
