@@ -13,3 +13,7 @@ body {
 .page-container {
   z-index: 5;
 }
+
+.zoom-out .page-container:hover {
+  z-index: 99;
+}

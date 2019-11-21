@@ -31,11 +31,13 @@ const Contact = () => {
         Contact
         <br/>
         <div className='go-to-works-container' onClick={goToWorks}>
-          <div className="text">
-              works
-          </div>
-          <div className="bar">
+          <div className='go-to-works'>
+            <div className='desc'>
+                works
+            </div>
+            <div className='bar'>
 
+            </div>
           </div>
         </div>
       </div>

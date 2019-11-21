@@ -1,3 +1,7 @@
+#contact .page-container {
+  position: relative;
+}
+
 #contact .go-to-works-container {
   position: absolute;
   top: 65%;
@@ -5,10 +9,14 @@
   cursor: pointer;
 }
 
-#contact .go-to-works .text {
+#contact .go-to-works {
+  position: relative;
+}
+
+#contact .go-to-works .desc {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20%;
+  left: 10%;
   transform: rotateZ(-90deg);  
   font-size: 300%;
   transition: 0.3s;

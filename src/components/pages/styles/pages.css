@@ -71,6 +71,11 @@
   height: 50%;
 }
 
+.zoom-out .page-container:hover {
+  width: 57.5%;
+  height: 57.5%;
+}
+
 #home.page-container {
   top: 0;
   left: 0;
