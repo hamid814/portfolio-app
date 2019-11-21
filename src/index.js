@@ -22,7 +22,7 @@ const App = () => {
 
   useEffect(() => {
     setTimeout(() => {
-        setApageIsActive(false);
+        // setApageIsActive(false);
     }, 500);
     // eslint-disable-next-line
   }, [])

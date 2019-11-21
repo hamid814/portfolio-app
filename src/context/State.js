@@ -6,8 +6,8 @@ const State = props => {
   const initialState = {
     myName: 'H',
     activePage: 'home', // values: home, about, works, contact
-    pagesStatus: 'zoom-out',
-    pagesPos: 'top-left', // t-l | t-r | b-l | b-r
+    pagesStatus: 'zoom-in', // values: zoom-in | zoom-out
+    pagesPos: 'bottom-left', // t-l | t-r | b-l | b-r
     aPageIsActive: true, // sets too true After 1s for anims
     // MODAL STUFF
     modalStatus: 'off',
