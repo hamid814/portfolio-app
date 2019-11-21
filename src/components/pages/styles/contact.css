@@ -1,22 +1,17 @@
-#contact .go-to-works {
+#contact .go-to-works-container {
   position: absolute;
-  top: 70%;
+  top: 65%;
   right: 5%;
   cursor: pointer;
 }
 
-#contact .go-to-works .shape {
-  width: 50px;
-  height: 50px;
-  background: magenta;
-}
-
-#contact .go-to-works .desc {
+#contact .go-to-works .text {
   position: absolute;
-  top: -100%;
-  left: -100%;
+  top: 0;
+  left: 0;
   transform: rotateZ(-90deg);  
   font-size: 300%;
+  transition: 0.3s;
 }
 
 #contact .go-to-works .bar {
@@ -24,6 +19,10 @@
   top: 0;
   bottom: 0;
   right: 0;
-  width: 7%;
+  width: 0;
   background: magenta;
+}
+
+#contact .go-to-works:hover .bar {
+  width: 7%;
 }

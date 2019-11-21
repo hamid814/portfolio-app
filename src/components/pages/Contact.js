@@ -30,12 +30,9 @@ const Contact = () => {
       <div className='page'>
         Contact
         <br/>
-        <div className='go-to-works' onClick={goToWorks}>
-          <div className="shape">
-          
-          </div>
-          <div className="desc">
-            works
+        <div className='go-to-works-container' onClick={goToWorks}>
+          <div className="text">
+              works
           </div>
           <div className="bar">
 
