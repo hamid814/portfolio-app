@@ -31,7 +31,15 @@ const Contact = () => {
         Contact
         <br/>
         <div className='go-to-works' onClick={goToWorks}>
+          <div className="shape">
+          
+          </div>
+          <div className="desc">
+            works
+          </div>
+          <div className="bar">
 
+          </div>
         </div>
       </div>
     </div>
