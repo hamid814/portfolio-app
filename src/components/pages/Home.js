@@ -92,6 +92,7 @@ const Home = () => {
   const onClick = () => {
     if(!aPageIsActive) {
       setActivePage('home')
+      // setPagesStatus('zoom-in')
       setTransiting(true);
     }
   }

@@ -88,6 +88,13 @@ const State = props => {
     console.log(page)
   }
 
+  const setPagesTransiting = (status) => {
+    dispatch({
+      type: 'set-tarnsi',
+      payload: status
+    })
+  }
+
   return (
     <Context.Provider
       value={{
@@ -98,11 +105,12 @@ const State = props => {
         pagesPos: state.pagesPos,
         modalStatus: state.modalStatus,
         modalData: state.modalData,
-        pageTransiting: state.pageTransiting,
+        pagesTransiting: state.pagesTransiting,
         setActivePage,
         setPagesStatus,
         setApageIsActive,
         goToPage,
+        setPagesTransiting,
         setModal,
       }}
     >
