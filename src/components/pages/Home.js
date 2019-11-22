@@ -4,7 +4,7 @@ import Context from '../../context/Context.js';
 
 import './styles/home.css';
 
-const Home = ({ mosPos }) => {
+const Home = ({ mosX }) => {
   const { myName, aPageIsActive, setActivePage, setPagesStatus } = useContext(Context)
 
   const [name, setName] = useState('HOME')
@@ -97,8 +97,7 @@ const Home = ({ mosPos }) => {
   }
 
   const mouseMoveStyle = {
-    borderColor: `rgba(0, 0, 0, ${mosPos.y})`,
-    borderRadius: mosPos.x
+    borderRadius: mosX
   }
 
   return (

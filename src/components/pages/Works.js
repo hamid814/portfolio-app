@@ -4,7 +4,7 @@ import Context from '../../context/Context.js';
 
 import './styles/works.css';
 
-const Works = ({ mosPos }) => {
+const Works = ({ mosX }) => {
   const { setActivePage, setPagesStatus, aPageIsActive } = useContext(Context)
 
   const onClick = () => {
@@ -15,8 +15,7 @@ const Works = ({ mosPos }) => {
   }
 
   const mouseMoveStyle = {
-    borderColor: `rgba(0, 0, 0, ${mosPos.y})`,
-    borderRadius: mosPos.x
+    borderRadius: mosX
   }
 
   return (
