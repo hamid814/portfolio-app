@@ -65,3 +65,6 @@ ReactDOM.render(<StateContainer />, document.getElementById('root'));
 
 // NOTES
 // get div drop anim form net( :( ) for modal droping out
+
+// kollan be inglish
+// kollan: define gravity in code, css or js

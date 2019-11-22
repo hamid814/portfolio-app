@@ -25,7 +25,9 @@ const Contact = () => {
   return (
     <div className='page-container' id='contact'>
       <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
-        CONTACT
+        <h1>
+          CONTACT
+        </h1>
       </div>
       <div className='page'>
         Contact
