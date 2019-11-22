@@ -9,6 +9,7 @@ const State = props => {
     pagesStatus: 'zoom-in', // values: zoom-in | zoom-out
     pagesPos: 'bottom-left', // t-l | t-r | b-l | b-r
     aPageIsActive: true, // sets too true After 1s for anims
+    pageDest: 'none', // dest-home | dest-about | dest-work | dest-contact
     // MODAL STUFF
     modalStatus: 'off',
     modalData: null
@@ -82,6 +83,10 @@ const State = props => {
     })
   }
 
+  const goToPage = (page) => {
+    console.log(page)
+  }
+
   return (
     <Context.Provider
       value={{
@@ -95,6 +100,7 @@ const State = props => {
         setActivePage,
         setPagesStatus,
         setApageIsActive,
+        goToPage,
         setModal,
       }}
     >

@@ -13,7 +13,7 @@ const Pages = () => {
   const { pagesStatus, pagesPos } = useContext(Context);
 
   return (
-    <div className={`pages ${pagesStatus} ${pagesPos}`}>
+    <div className={`pages ${pagesStatus} ${pagesPos} dest-works`}>
       <Home />
       <About />
       <Works />

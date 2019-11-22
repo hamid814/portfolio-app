@@ -129,3 +129,21 @@
 #contact .layer {
   background: gold;
 }
+
+/* test for now */
+.dest-works {
+  /* bottom: 0 !important; */
+  /* right: 0 !important; */
+  animation: goToWorksAnim 1s ease-in-out;
+}
+
+@keyframes goToWorksAnim {
+  0% {
+    bottom: initial;
+    right: initial;
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+  }
+}

@@ -5,7 +5,7 @@ import Context from '../../context/Context.js';
 import './styles/contact.css';
 
 const Contact = () => {
-  const { setActivePage, setPagesStatus, aPageIsActive } = useContext(Context) 
+  const { setActivePage, setPagesStatus, aPageIsActive, goToPage } = useContext(Context) 
 
   const onClick = () => {
     if(!aPageIsActive) {
@@ -15,11 +15,12 @@ const Contact = () => {
   }
 
   const goToWorks = () => {
-    setPagesStatus('zoom-out')
-    setTimeout(() => {
-      setPagesStatus('zoom-in')
-      setActivePage('works')
-    }, 1000);
+    // setPagesStatus('zoom-out')
+    // setTimeout(() => {
+      // setPagesStatus('zoom-in')
+      // setActivePage('works')
+    // }, 1000);
+    goToPage('works')
   }
 
   return (
