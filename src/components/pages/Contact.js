@@ -30,6 +30,9 @@ const Contact = () => {
           CONTACT
         </h1>
       </div>
+      <div className="back-layer">
+        
+      </div>
       <div className='page'>
         Contact
         <br/>

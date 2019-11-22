@@ -25,6 +25,9 @@ const About = () => {
           ABOUT
         </h1>
       </div>
+      <div className="back-layer">
+        
+      </div>
       <div className='page'>
         <div className='header' onClick={headerClick}>
           ABOUT ME

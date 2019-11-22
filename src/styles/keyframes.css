@@ -10,18 +10,12 @@
 
 @keyframes pageContainerHoverAnim {
   0% {
-    width: 50%;
-    height: 50%;
-    /* z-index: initial; */
+    
   }
   60% {
-    width: 52%;
-    height: 52%;
-    /* z-index: 99; */
+
   }
   100% {
-    width: 50%;
-    height: 50%;
-    /* z-index: initial; */
+
   }
 }
