@@ -1,7 +1,5 @@
-import React, { useEffect, useContext } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-
-import Context from './context/Context';
 
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -18,15 +16,6 @@ import './styles/zIndex.css';
 import './styles/keyframes.css';
 
 const App = () => {
-  const { setApageIsActive } = useContext(Context)
-
-  useEffect(() => {
-    setTimeout(() => {
-        // setApageIsActive(false);
-    }, 500);
-    // eslint-disable-next-line
-  }, [])
-
   return (
     // <>
     //   <Router>
