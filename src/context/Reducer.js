@@ -35,6 +35,11 @@ export default (state, action) => {
         modalStatus: action.payload.status,
         modalData: action.payload.data
       }
+    case 'set-pages-transiting':
+      return {
+        ...state,
+        pagesTransiting: action.payload
+      }
     default:
       return state;
   }

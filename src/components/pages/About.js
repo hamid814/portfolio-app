@@ -5,12 +5,13 @@ import Context from '../../context/Context.js';
 import './styles/about.css';
 
 const About = () => {
-  const { setActivePage, setPagesStatus, aPageIsActive, setModal } = useContext(Context)
+  const { setActivePage, setPagesStatus, aPageIsActive, setModal, setPagesTransiting } = useContext(Context)
 
   const onClick = () => {
     if(!aPageIsActive) {
       setActivePage('about')
       setPagesStatus('zoom-in')
+      setPagesTransiting(true)
     }
   }
 
