@@ -11,7 +11,7 @@ const Contact = () => {
     if(!aPageIsActive) {
       setActivePage('contact')
       setPagesStatus('zoom-in')
-      setPagesTransiting(true)
+      setPagesTransiting(true, 'go')
     }
   }
 

@@ -93,7 +93,7 @@ const Home = () => {
     if(!aPageIsActive) {
       setActivePage('home')
       setPagesStatus('zoom-in')
-      setPagesTransiting(true)
+      setPagesTransiting(true, 'go')
     }
   }
 

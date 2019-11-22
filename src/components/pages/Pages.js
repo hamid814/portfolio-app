@@ -14,7 +14,7 @@ const Pages = () => {
 
   return (
     <div
-      className={`pages ${pagesStatus} ${pagesPos} ${pagesTransiting && 'transiting'}`}>
+      className={`pages ${pagesStatus} ${pagesPos} ${pagesTransiting.status && `transiting ${pagesTransiting.direction}`}`}>
         <Home />
         <About />
         <Works />

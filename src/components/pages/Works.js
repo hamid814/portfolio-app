@@ -11,7 +11,7 @@ const Works = () => {
     if(!aPageIsActive) {
       setActivePage('works')
       setPagesStatus('zoom-in')
-      setPagesTransiting(true)
+      setPagesTransiting(true, 'go')
     }
   }
 

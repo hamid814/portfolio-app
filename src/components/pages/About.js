@@ -11,7 +11,7 @@ const About = () => {
     if(!aPageIsActive) {
       setActivePage('about')
       setPagesStatus('zoom-in')
-      setPagesTransiting(true)
+      setPagesTransiting(true, 'go')
     }
   }
 

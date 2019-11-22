@@ -10,7 +10,7 @@ const State = props => {
     pagesPos: 'bottom-left', // t-l | t-r | b-l | b-r
     aPageIsActive: false, // sets too true After 1s for anims
     pageDest: 'none', // dest-home | dest-about | dest-work | dest-contact
-    pagesTransiting: false,
+    pagesTransiting: { status: false, direction: 'come' },
     // MODAL STUFF
     modalStatus: 'off',
     modalData: null
@@ -88,18 +88,24 @@ const State = props => {
     console.log(page)
   }
 
-  const setPagesTransiting = (status) => {
+  const setPagesTransiting = (status, direction) => {
     dispatch({
       type: 'set-pages-transiting',
-      payload: status
+      payload: {
+        status,
+        direction
+      }
     })
 
     setTimeout(() => {
       dispatch({
         type: 'set-pages-transiting',
-        payload: false
+        payload: {
+        status: false,
+        direction
+      }
       })
-    }, 1000);
+    }, 1300);
   }
 
   return (

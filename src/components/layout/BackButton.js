@@ -5,11 +5,12 @@ import Context from '../../context/Context';
 import './backButton.css';
 
 const BackButton = () => {
-  const { aPageIsActive, setActivePage, setPagesStatus } = useContext(Context);
+  const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting } = useContext(Context);
 
   const onClick = (e) => {
-    setActivePage('from-menu');
+    setActivePage('from-menu')
     setPagesStatus('zoom-out')
+    setPagesTransiting(true, 'come')
   }
 
   return (
