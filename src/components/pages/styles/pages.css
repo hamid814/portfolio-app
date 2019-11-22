@@ -184,5 +184,8 @@
 #contact .layer, #works .layer,#home h1, #about h1,  #home .back-layer, #about .back-layer {
   transform: skew(-57.6deg);
   transform: skew(-45deg);
-  transform: skew(0);
+}
+
+.transiting .layer, .transiting .back-layer, .transiting h1 {
+  transform: skew(0) !important;
 }
