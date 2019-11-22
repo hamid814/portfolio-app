@@ -68,3 +68,6 @@ ReactDOM.render(<StateContainer />, document.getElementById('root'));
 
 // kollan be inglish
 // kollan: define gravity in code, css or js
+// select last brothers of an element for layers hover brightness
+// cross-fade() --> for bckground ==> search it
+// how to have color based on background

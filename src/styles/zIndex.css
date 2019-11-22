@@ -17,3 +17,7 @@ body {
 .zoom-out .page-container:hover {
   z-index: 99;
 }
+
+.layer.not {
+  z-index: -9999;
+}

@@ -1,3 +1,7 @@
+#contact {
+  transform: ;
+}
+
 #contact .page-container {
   position: relative;
 }
@@ -17,7 +21,8 @@
   position: absolute;
   top: 20%;
   left: 10%;
-  transform: rotateZ(-90deg);  
+  margin-left: -50px;
+  transform: rotateZ(-90deg);
   font-size: 300%;
   transition: 0.3s;
 }

@@ -43,19 +43,19 @@ const Home = () => {
       time: 1050
     },
     {
-      name: 'H',
+      name: '#OME',
       time: 1150
     },
     {
-      name: 'O',
+      name: '##ME',
       time: 1250
     },
     {
-      name: 'M',
+      name: '###E',
       time: 1350
     },
     {
-      name: 'E',
+      name: '####',
       time: 1450
     },
     {
@@ -84,7 +84,7 @@ const Home = () => {
     bugName.forEach(bug => {
       setTimeout(() => {
         setName(bug.name)
-      }, bug.time*1.6);
+      }, bug.time*1.8);
     })
     // eslint-disable-next-line
   }, [])
@@ -96,16 +96,8 @@ const Home = () => {
     }
   }
 
-  const onMouseEnter = () => {
-    
-  }
-
-  const onMouseOut = () => {
-    
-  }
-
   return (
-    <div className='page-container' id='home' onMouseEnter={onMouseEnter} onMouseOut={onMouseOut}>
+    <div className='page-container' id='home'>
       <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
         <h1>
           {name}
