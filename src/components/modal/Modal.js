@@ -16,8 +16,7 @@ const Modal = () => {
   }
 
   const oNCloseX = () => {
-      setModal('off', null)
-      console.log('here')
+    setModal('off', null)
   }
 
   const onHangeStart = () => {

@@ -71,6 +71,10 @@
   filter: brightness(115%);
 }
 
+.zoom-out .back-layer:hover {
+  filter: brightness(85%);
+}
+
 #home.page-container {
   top: 0;
   left: 0;
@@ -103,19 +107,8 @@
   width: 100%;
   height: 100%;
   cursor: crosshair;
-  padding-top: 18vh;
-  /* animation: myAnim 0.7s ease-in-out infinite alternate-reverse; */
   text-align: center;
   font-size: 500%;
-}
-
-@keyframes myAnim {
-  0% {
-    padding-top: 0vh;
-  }
-  100% {
-    padding-top: 27vh;
-  }
 }
 
 .back-layer {
@@ -126,18 +119,16 @@
 }
 
 .layer h1 {
-  display: inline-block;
   font-size: 14vh;
   font-weight: 100;
   font-family: 'Courier New', Courier, monospace;
 }
 
 #home .layer {
-  /* width: 80%; */
   background: tan;
 }
 
-#home .layer h1 {
+#home h1 {
   color: teal;
 }
 
@@ -146,12 +137,11 @@
 }
 
 #about .layer {
-  /* width: 120%; */
   right: 0;
   background: teal;
 }
 
-#about .layer h1 {
+#about h1 {
   color: thistle;
 }
 
@@ -160,12 +150,11 @@
 }
 
 #works .layer {
-  /* width: 90%; */
   right: 0;
   background: thistle;
 }
 
-#works .layer h1 {
+#works h1 {
   color: tomato;
 }
 
@@ -174,11 +163,10 @@
 }
 
 #contact .layer {
-  /* width: 110%; */
   background: tomato;
 }
 
-#contact .layer h1 {
+#contact h1 {
   color: tan;
 }
 
@@ -187,11 +175,9 @@
 }
 
 #home .layer, #about .layer, #contact h1, #works h1, #contact .back-layer, #works .back-layer {
-  transform: skew(45deg); /* i cant decide witch one I want */
-  transform: skew(57.5deg);
+  transform: skew(45deg);
 }
 
 #contact .layer, #works .layer,#home h1, #about h1,  #home .back-layer, #about .back-layer {
-  transform: skew(-45deg); /* i cant decide witch one I want */
-  transform: skew(-57.5deg);
+  transform: skew(-45deg);
 }
