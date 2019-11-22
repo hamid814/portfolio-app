@@ -99,7 +99,7 @@ const Home = () => {
 
   return (
     <div className='page-container' id='home'>
-      <div className="side-layer">
+      <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
 
       </div>
       <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
