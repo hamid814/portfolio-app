@@ -12,7 +12,11 @@ import Contact from './Contact';
 const Pages = () => {
   const { pagesStatus, pagesPos } = useContext(Context);
 
-  const [hoveredPage, setHoveredPage] = useState(null)
+  const [hoveredPage, setHoveredPage] = useState(null);
+  const [mosPos, setMosPos] = useState({
+    X: 0,
+    Y: 0
+  })
 
   const onMouseEnter = () => {
     setHoveredPage('pages')
@@ -22,23 +26,30 @@ const Pages = () => {
     setHoveredPage(null)
   }
 
+  const onMouseMove = (e) => {
+    const x = e.clientX / window.innerWidth
+    const y = e.clientY / window.innerHeight
+
+    setMosPos({
+      X: x,
+      Y: y
+    })
+  }
+
   return (
     <div
       onMouseLeave={onMouseLeave}
       onMouseEnter={onMouseEnter}
+      onMouseMove={onMouseMove}
       className={`pages ${pagesStatus} ${pagesPos} ${hoveredPage === 'pages' && 'is-hover'}`}>
         <Home
-          setHover={setHoveredPage}
-          hovered={hoveredPage} />
+          mosPos={mosPos} />
         <About
-          setHover={setHoveredPage}
-          hovered={hoveredPage} />
+          mosPos={mosPos} />
         <Works
-          setHover={setHoveredPage}
-          hovered={hoveredPage} />
+          mosPos={mosPos} />
         <Contact
-          setHover={setHoveredPage}
-          hovered={hoveredPage} />
+          mosPos={mosPos} />
     </div>
   )
 }
