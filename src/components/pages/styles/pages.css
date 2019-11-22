@@ -251,3 +251,8 @@
 .transiting.come #contact .side-layer {
   animation: layersComeAnim2 1.31s ease-in-out;
 }
+
+.transiting .page {
+  opacity: 0;
+  transition: 0.1s;
+}
