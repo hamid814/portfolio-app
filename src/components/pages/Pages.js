@@ -12,36 +12,26 @@ import Contact from './Contact';
 const Pages = () => {
   const { pagesStatus, pagesPos } = useContext(Context);
 
-  const [hoveredPage, setHoveredPage] = useState(null);
   const [mosPos, setMosPos] = useState({
-    X: 0,
-    Y: 0
+    x: 0,
+    y: 0
   })
 
-  const onMouseEnter = () => {
-    setHoveredPage('pages')
-  }
-
-  const onMouseLeave = () => {
-    setHoveredPage(null)
-  }
-
   const onMouseMove = (e) => {
-    const x = e.clientX / window.innerWidth
-    const y = e.clientY / window.innerHeight
+    const x = Math.floor(e.clientX / window.innerWidth * 70)
+    // const y = e.clientY / window.innerHeight * 0.3
+    const y = 0
 
     setMosPos({
-      X: x,
-      Y: y
+      x,
+      y
     })
   }
 
   return (
     <div
-      onMouseLeave={onMouseLeave}
-      onMouseEnter={onMouseEnter}
       onMouseMove={onMouseMove}
-      className={`pages ${pagesStatus} ${pagesPos} ${hoveredPage === 'pages' && 'is-hover'}`}>
+      className={`pages ${pagesStatus} ${pagesPos}`}>
         <Home
           mosPos={mosPos} />
         <About

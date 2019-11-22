@@ -79,7 +79,6 @@
 }
 
 .zoom-out .layer:hover {
-  animation: pageContainerHoverAnim 0.6s ease-in-out;
   filter: brightness(115%);
 }
 
@@ -115,9 +114,24 @@
   width: 100%;
   height: 100%;
   cursor: crosshair;
-  padding-top: 17vh;
+  padding-top: 12vh;
+  padding-top: 27vh;
+  animation: myAnim 0.7s ease-in-out infinite alternate-reverse;
   text-align: center;
   font-size: 500%;
+}
+
+@keyframes myAnim {
+  0% {
+    padding-top: 0vh;
+    font-size: 100%;
+    cursor: crosshair;
+  }
+  100% {
+    padding-top: 27vh;
+    font-size: 500%;
+    cursor: pointer;
+  }
 }
 
 .back-layer {
@@ -125,6 +139,12 @@
   width: 100%;
   height: 100%;
   cursor: crosshair;
+}
+
+.layer, .back-layer {
+  border-style: solid;
+  border-width: 5vh;
+  border-radius: 70px;
 }
 
 .layer h1 {

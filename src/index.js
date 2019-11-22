@@ -60,3 +60,4 @@ ReactDOM.render(<StateContainer />, document.getElementById('root'));
 // select last brothers of an element for layers hover brightness
 // cross-fade() --> for bckground ==> search it
 // how to have color based on background
+// round the mosPos in pages.js
