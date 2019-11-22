@@ -258,28 +258,6 @@
   animation: layersComeAnim2 1.31s ease-in-out;
 }
 
-.transiting.go #contact .layer,
-.transiting.go #works .layer,
-.transiting.go #home h1,
-.transiting.go #about h1,
-.transiting.go #home .back-layer,
-.transiting.go #about .back-layer,
-.transiting.go #home .side-layer,
-.transiting.go #about .side-layer {
-  /* animation: layersGoAnim1 1.31s ease-in-out; */
-}
-
-.transiting.go #home .layer,
-.transiting.go #about .layer,
-.transiting.go #contact h1,
-.transiting.go #works h1,
-.transiting.go #contact .back-layer,
-.transiting.go #works .back-layer,
-.transiting.go #works .side-layer,
-.transiting.go #contact .side-layer {
-  /* animation: layersGoAnim2 1.31s ease-in-out; */
-}
-
 .transiting .page {
   opacity: 0;
   transition: 0.1s;
