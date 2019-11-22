@@ -10,6 +10,7 @@ const State = props => {
     pagesPos: 'bottom-left', // t-l | t-r | b-l | b-r
     aPageIsActive: false, // sets too true After 1s for anims
     pageDest: 'none', // dest-home | dest-about | dest-work | dest-contact
+    pageTransiting: true,
     // MODAL STUFF
     modalStatus: 'off',
     modalData: null
@@ -97,6 +98,7 @@ const State = props => {
         pagesPos: state.pagesPos,
         modalStatus: state.modalStatus,
         modalData: state.modalData,
+        pageTransiting: state.pageTransiting,
         setActivePage,
         setPagesStatus,
         setApageIsActive,

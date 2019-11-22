@@ -34,7 +34,6 @@
   right: 0;
 }
 
-
 .layer.is {
   opacity: 1;
 }
@@ -64,7 +63,7 @@
   height: 50%;
 }
 
-.zoom-out .page-container {
+.transiting .page-container, .zoom-out .page-container {
   opacity: 0.92;
 }
 
