@@ -102,9 +102,6 @@ const Home = () => {
 
       </div>
       <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
-
-      </div>
-      <div className='name-cover'>
         <h1>
           {name}
         </h1>

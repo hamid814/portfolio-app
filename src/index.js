@@ -61,3 +61,4 @@ ReactDOM.render(<StateContainer />, document.getElementById('root'));
 // cross-fade() --> for bckground ==> search it
 // how to have color based on background
 // round the mosPos in pages.js
+// bring layer heading to middle
