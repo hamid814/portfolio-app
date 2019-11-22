@@ -67,11 +67,7 @@
   opacity: 0.92;
 }
 
-.zoom-out .layer:hover {
-  filter: brightness(115%);
-}
-
-.zoom-out .back-layer:hover {
+.zoom-out .layer:hover, .zoom-out .back-layer:hover, .zoom-out .side-layer:hover {
   filter: brightness(115%);
 }
 
@@ -119,6 +115,12 @@
   cursor: crosshair;
 }
 
+.side-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .layer h1 {
   font-size: 14vh;
   font-weight: 100;
@@ -137,6 +139,11 @@
   background: teal;
 }
 
+#home .side-layer {
+  background: tomato;
+  left: -100%;
+}
+
 #about .layer {
   right: 0;
   background: teal;
@@ -148,6 +155,11 @@
 
 #about .back-layer {
   background: thistle;
+}
+
+#about .side-layer {
+  background: tan;
+  left: 100%;
 }
 
 #works .layer {
@@ -163,6 +175,11 @@
   background: tomato;
 }
 
+#works .side-layer {
+  background: teal;
+  left: 100%;
+}
+
 #contact .layer {
   background: tomato;
 }
@@ -175,17 +192,62 @@
   background: tan;
 }
 
-#home .layer, #about .layer, #contact h1, #works h1, #contact .back-layer, #works .back-layer {
+#contact .side-layer {
+  background: thistle;
+  left: -100%;
+}
+
+#home .layer,
+#about .layer,
+#contact h1,
+#works h1,
+#contact .back-layer,
+#works .back-layer,
+#works .side-layer,
+#contact .side-layer {
   transform: skew(57.6deg);
   transform: skew(45deg);
 }
 
-#contact .layer, #works .layer,#home h1, #about h1,  #home .back-layer, #about .back-layer {
+#contact .layer,
+#works .layer,#home h1,
+#about h1,
+#home .back-layer,
+#about .back-layer,
+#home .side-layer,
+#about .side-layer {
   transform: skew(-57.6deg);
   transform: skew(-45deg);
 }
 
-.transiting .layer, .transiting .back-layer, .transiting h1 {
+
+.transiting .layer,
+.transiting .back-layer,
+.transiting .side-layer,
+.transiting h1 {
   transform: skew(0) !important;
   transition: 1s;
+  border-radius: 0;
+}
+
+.transiting.come #contact .layer,
+.transiting.come #works .layer,
+.transiting.come #home h1,
+.transiting.come #about h1,
+.transiting.come #home .back-layer,
+.transiting.come #about .back-layer,
+.transiting.come #home .side-layer,
+.transiting.come #about .side-layer {
+  animation: layersComeAnim1 1.31s ease-in-out;
+}
+
+.transiting.come #home .layer,
+.transiting.come #about .layer,
+.transiting.come #contact h1,
+.transiting.come #works h1,
+.transiting.come #contact .back-layer,
+.transiting.come #works .back-layer,
+.transiting.come #works .side-layer,
+.transiting.come #contact .side-layer {
+  animation: layersComeAnim2 1.31s ease-in-out;
 }

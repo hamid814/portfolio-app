@@ -26,6 +26,10 @@ body {
   z-index: 9;
 }
 
+.side-layer {
+  z-index: 11;
+}
+
 .back-layer.not {
   z-index: -9999;
 }

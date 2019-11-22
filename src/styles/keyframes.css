@@ -6,3 +6,21 @@
     opacity: 0;
   }
 }
+
+@keyframes layersComeAnim1 {
+  0% {
+    transform: skew(0deg);
+  }
+  100% {
+    transform: skew(-45deg);
+  }
+}
+
+@keyframes layersComeAnim2 {
+  0% {
+    transform: skew(0);
+  }
+  100% {
+    transform: skew(45deg);
+  }
+}

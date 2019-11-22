@@ -99,8 +99,11 @@ const Home = () => {
 
   return (
     <div className='page-container' id='home'>
-      <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
+      <div className="side-layer">
 
+      </div>
+      <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
+      
       </div>
       <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
         <h1>

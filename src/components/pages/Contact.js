@@ -26,6 +26,9 @@ const Contact = () => {
 
   return (
     <div className='page-container' id='contact'>
+      <div className="side-layer">
+
+      </div>
       <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
         
       </div>
@@ -40,7 +43,7 @@ const Contact = () => {
         <div className='go-to-works-container' onClick={goToWorks}>
           <div className='go-to-works'>
             <div className='desc'>
-                {/* works */}
+                works
             </div>
             <div className='bar'>
 
