@@ -71,9 +71,16 @@
   height: 50%;
 }
 
-.zoom-out .page-container:hover {
-  width: 51%;
-  height: 51%;
+.zoom-out .page-container:hover .layer {
+  /* animation: pgeContainerHoverAnim 0.6s ease-in-out; */
+  filter: brightness(120%);
+  /* background: lightblue !important; */
+}
+
+.zoom-out .page-container:hover~.page-container {
+  /* filter: blur(7px); */
+  /* transition: 0.7s; */
+  filter: brightness(80%);
 }
 
 #home.page-container {
