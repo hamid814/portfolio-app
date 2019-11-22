@@ -4,7 +4,7 @@ import Context from '../../context/Context.js';
 
 import './styles/contact.css';
 
-const Contact = ({ mosX }) => {
+const Contact = () => {
   const { setActivePage, setPagesStatus, aPageIsActive, goToPage } = useContext(Context) 
 
   const onClick = () => {
@@ -23,16 +23,12 @@ const Contact = ({ mosX }) => {
     goToPage('works')
   }
 
-  const mouseMoveStyle = {
-    borderRadius: mosX
-  }
-
   return (
     <div className='page-container' id='contact'>
-      <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`} style={mouseMoveStyle}>
+      <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
         
       </div>
-      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick} style={mouseMoveStyle}>
+      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
         <h1>
           CONTACT
         </h1>

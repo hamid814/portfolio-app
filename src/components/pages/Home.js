@@ -4,7 +4,7 @@ import Context from '../../context/Context.js';
 
 import './styles/home.css';
 
-const Home = ({ mosX }) => {
+const Home = () => {
   const { myName, aPageIsActive, setActivePage, setPagesStatus } = useContext(Context)
 
   const [name, setName] = useState('HOME')
@@ -96,16 +96,12 @@ const Home = ({ mosX }) => {
     }
   }
 
-  const mouseMoveStyle = {
-    borderRadius: mosX
-  }
-
   return (
     <div className='page-container' id='home'>
-      <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`} style={mouseMoveStyle}>
+      <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
 
       </div>
-      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick} style={mouseMoveStyle}>
+      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
         <h1>
           {name}
         </h1>

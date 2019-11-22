@@ -4,7 +4,7 @@ import Context from '../../context/Context.js';
 
 import './styles/about.css';
 
-const About = ({ mosX }) => {
+const About = () => {
   const { setActivePage, setPagesStatus, aPageIsActive, setModal } = useContext(Context)
 
   const onClick = () => {
@@ -18,16 +18,12 @@ const About = ({ mosX }) => {
     setModal('on', {name: 'header', id: 1})
   }
 
-  const mouseMoveStyle = {
-    borderRadius: mosX
-  }
-
   return (
     <div className='page-container' id='about'>
-      <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`} style={mouseMoveStyle}>
+      <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
         
       </div>
-      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick} style={mouseMoveStyle}>
+      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
         <h1>
           ABOUT
         </h1>
