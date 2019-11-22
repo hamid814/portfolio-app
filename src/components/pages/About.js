@@ -21,7 +21,9 @@ const About = () => {
   return (
     <div className='page-container' id='about'>
       <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
-        ABOUT
+        <h1>
+          ABOUT
+        </h1>
       </div>
       <div className='page'>
         <div className='header' onClick={headerClick}>

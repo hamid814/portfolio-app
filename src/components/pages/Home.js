@@ -107,7 +107,9 @@ const Home = () => {
   return (
     <div className='page-container' id='home' onMouseEnter={onMouseEnter} onMouseOut={onMouseOut}>
       <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
-        {name}
+        <h1>
+          {name}
+        </h1>
       </div>
       <div className='page'>
         Hi!

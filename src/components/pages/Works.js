@@ -17,7 +17,9 @@ const Works = () => {
   return (
     <div className='page-container' id='works'>
       <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
-        WORKS
+        <h1>  
+          WORKS
+        </h1>
       </div>
       <div className='page'>
         Works
