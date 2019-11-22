@@ -24,3 +24,21 @@
     transform: skew(45deg);
   }
 }
+
+@keyframes layersGoAnim1 {
+  0% {
+    transform: skew(-45deg);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+
+@keyframes layersGoAnim2 {
+  0% {
+    transform: skew(45deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}

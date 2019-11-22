@@ -18,10 +18,6 @@ body {
   z-index: 10;
 }
 
-.layer.not {
-  z-index: -9999;
-}
-
 .back-layer {
   z-index: 9;
 }
@@ -30,6 +26,14 @@ body {
   z-index: 11;
 }
 
+.layer.not {
+  z-index: -9999;
+}
+
 .back-layer.not {
+  z-index: -9999;
+}
+
+.side-layer.not {
   z-index: -9999;
 }
