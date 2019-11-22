@@ -10,11 +10,11 @@ import Works from './Works';
 import Contact from './Contact';
 
 const Pages = () => {
-  const { pagesStatus, pagesPos } = useContext(Context);
+  const { pagesStatus, pagesPos, aPageIsActive } = useContext(Context);
 
   return (
     <div
-      className={`pages ${pagesStatus} ${pagesPos}`}>
+      className={`pages ${pagesStatus} ${pagesPos} ${aPageIsActive && ''}`}>
         <Home />
         <About />
         <Works />
