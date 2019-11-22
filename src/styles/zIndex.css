@@ -14,10 +14,18 @@ body {
   z-index: 5;
 }
 
-.zoom-out .page-container:hover {
-  z-index: 99;
+.layer {
+  z-index: 10;
 }
 
 .layer.not {
+  z-index: -9999;
+}
+
+.back-layer {
+  z-index: 9;
+}
+
+.back-layer.not {
   z-index: -9999;
 }

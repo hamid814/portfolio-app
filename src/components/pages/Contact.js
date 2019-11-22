@@ -25,13 +25,13 @@ const Contact = () => {
 
   return (
     <div className='page-container' id='contact'>
+      <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
+        
+      </div>
       <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
         <h1>
           CONTACT
         </h1>
-      </div>
-      <div className="back-layer">
-        
       </div>
       <div className='page'>
         Contact
@@ -39,7 +39,7 @@ const Contact = () => {
         <div className='go-to-works-container' onClick={goToWorks}>
           <div className='go-to-works'>
             <div className='desc'>
-                works
+                {/* works */}
             </div>
             <div className='bar'>
 
