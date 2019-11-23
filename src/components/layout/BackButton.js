@@ -5,7 +5,7 @@ import Context from '../../context/Context';
 import './backButton.css';
 
 const BackButton = () => {
-  const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting } = useContext(Context);
+  const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting, pagesTraversing } = useContext(Context);
 
   const onClick = (e) => {
     setActivePage('from-menu')
@@ -14,7 +14,7 @@ const BackButton = () => {
   }
 
   return (
-    <div id='menu-container' className={`${!aPageIsActive && 'd-n'}`} onClick={onClick}>
+    <div id='menu-container' className={`${!aPageIsActive && 'd-n'} ${pagesTraversing.status && 'd-n'}`} onClick={onClick}>
       <div id='menu'>
         
       </div>

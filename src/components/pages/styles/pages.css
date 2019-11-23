@@ -262,6 +262,20 @@
   transition: 0.1s;
 }
 
+.traversing .layer {
+  opacity: 1;
+}
+
+.traversing .page {
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.zoom-in .layer, .zoom-in .layer h1 {
+  transform: skew(0deg) !important;
+  transition: 0 !important;
+}
+
 @media (max-width: 900px) {
   body {
     overflow-y: scroll !important;
