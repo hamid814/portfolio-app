@@ -17,9 +17,9 @@ const Works = () => {
 
   return (
     <div className='page-container' id='works'>
-      <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
+      {/* <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}> */}
 
-      </div>
+      {/* </div> */}
       <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
         
       </div>

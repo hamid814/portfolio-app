@@ -262,10 +262,22 @@
 }
 
 @media (max-width: 900px) {
+  .body {
+    overflow: scroll;
+  }
+  
   .pages.zoom-out {
     width: 100vw;
     height: 400vh;
     left: 0;
+    top: 0;
+  }
+  
+  .pages.zoom-in {
+    width: 100vw;
+    height: 400vh;
+    left: 0;
+    top: 0;
   }
 
   .pages.top-right {
@@ -300,7 +312,7 @@
   }
 
   #works.page-container {
-    margin-top: 200vh;
+    margin-bottom: 100vh;
   }
 
   #contact.page-container {
