@@ -10,7 +10,8 @@ const State = props => {
     pagesPos: 'bottom-left', // t-l | t-r | b-l | b-r
     aPageIsActive: false, // sets too true After 1s for anims
     pageDest: 'none', // dest-home | dest-about | dest-work | dest-contact
-    pagesTransiting: { status: false, direction: 'come' },
+    pagesTransiting: { status: false, direction: 'come' },// true when pages is zoomin in or out
+    pagesTraversing: false, // true when going from one page to another
     // MODAL STUFF
     modalStatus: 'off',
     modalData: null
@@ -84,7 +85,7 @@ const State = props => {
     })
   }
 
-  const goToPage = (page) => {
+  const traversPages = (page) => {
     console.log(page)
   }
 
@@ -119,10 +120,11 @@ const State = props => {
         modalStatus: state.modalStatus,
         modalData: state.modalData,
         pagesTransiting: state.pagesTransiting,
+        pagesTraversing: state.pagesTraversing,
         setActivePage,
         setPagesStatus,
         setApageIsActive,
-        goToPage,
+        traversPages,
         setPagesTransiting,
         setModal,
       }}

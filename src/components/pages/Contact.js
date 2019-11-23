@@ -5,7 +5,7 @@ import Context from '../../context/Context.js';
 import './styles/contact.css';
 
 const Contact = () => {
-  const { setActivePage, setPagesStatus, aPageIsActive, goToPage, setPagesTransiting } = useContext(Context) 
+  const { setActivePage, setPagesStatus, aPageIsActive, traversPages, setPagesTransiting } = useContext(Context)
 
   const onClick = () => {
     if(!aPageIsActive) {
@@ -15,20 +15,20 @@ const Contact = () => {
     }
   }
 
-  const goToWorks = () => {
+  const traversToWorks = () => {
     // setPagesStatus('zoom-out')
     // setTimeout(() => {
       // setPagesStatus('zoom-in')
       // setActivePage('works')
     // }, 1000);
-    goToPage('works')
+    traversPages('works')
   }
 
   return (
     <div className='page-container' id='contact'>
-      {/* <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}> */}
+      <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
 
-      {/* </div> */}
+      </div>
       <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
         
       </div>
@@ -40,7 +40,7 @@ const Contact = () => {
       <div className='page'>
         Contact
         <br/>
-        <div className='go-to-works-container' onClick={goToWorks}>
+        <div className='go-to-works-container' onClick={traversToWorks}>
           <div className='go-to-works'>
             <div className='desc'>
                 works

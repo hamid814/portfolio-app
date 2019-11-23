@@ -111,7 +111,7 @@
   cursor: crosshair;
   text-align: center;
   font-size: 500%;
-  padding-top: 18%;
+  padding-top: 22%;
 }
 
 .back-layer {
@@ -262,8 +262,9 @@
 }
 
 @media (max-width: 900px) {
-  .body {
-    overflow: scroll;
+  body {
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
   }
   
   .pages.zoom-out {
@@ -283,17 +284,20 @@
   .pages.top-right {
     top: 0;
   }
-
+  
   .pages.top-right {
-    top: -100vh;
+    /* top: -100vh; */
+    top: 0;
   }
-
+  
   .pages.bottom-right {
-    top: -200vh;
+    /* top: -200vh; */
+    top: 0;
   }
-
+  
   .pages.bottom-left {
-    top: -300vh;
+    /* top: -300vh; */
+    top: 0;
   }
 
   .page-container {
