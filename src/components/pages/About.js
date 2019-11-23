@@ -10,6 +10,7 @@ const About = () => {
           aPageIsActive,
           setModal,
           setPagesTransiting,
+          traversPages,
           pagesTransiting } = useContext(Context)
 
   const onClick = () => {
@@ -22,6 +23,10 @@ const About = () => {
 
   const headerClick = () => {
     setModal('on', {name: 'header', id: 1})
+  }
+
+  const goToWorks = () => {
+    traversPages('works')
   }
 
   return (
@@ -48,7 +53,7 @@ const About = () => {
           <div className='item'>
             item
           </div>
-          <div className='item'>
+          <div className='item' onClick={goToWorks}>
             item
           </div>
         </div>

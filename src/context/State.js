@@ -90,20 +90,20 @@ const State = props => {
 
     const placeOfPage = {
       home: {
-        place: 'dest-top-left'
+        place: 'top-left'
       },
       about: {
-        place: 'dest-top-right'
+        place: 'top-right'
       },
       works: {
-        place: 'dest-bottom-right'
+        place: 'bottom-right'
       },
       contact: {
-        place: 'dest-bottom-left'
+        place: 'bottom-left'
       }
     }
 
-    const destination = placeOfPage[page].place
+    const destination = 'dest-' + placeOfPage[page].place
 
     if(!state.pagesTraversing.status) {
       dispatch({

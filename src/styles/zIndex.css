@@ -33,7 +33,3 @@
 .side-layer.not {
   z-index: -9999;
 }
-
-.traversing .layer {
-  z-index: 10 !important;
-}

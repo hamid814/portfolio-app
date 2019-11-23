@@ -272,8 +272,8 @@
 }
 
 .zoom-in .layer, .zoom-in .layer h1 {
-  /* transform: skew(0deg) !important; */
-  transition: 0s !important;
+  transform: skew(0deg) !important;
+  /* transition: 0s !important; */
 }
 
 .pages.dest-bottom-right {
@@ -285,7 +285,8 @@
 
   }
   100% {
-    left: -100vw;
+    bottom: 0;
+    right: 0;
   }
 }
 
