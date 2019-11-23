@@ -105,13 +105,15 @@ const State = props => {
 
     const destination = placeOfPage[page].place
 
-    dispatch({
-      type,
-      payload: {
-        status: true,
-        destination
-      }
-    })
+    if(!state.pagesTraversing.status) {
+      dispatch({
+        type,
+        payload: {
+          status: true,
+          destination
+        }
+      })
+    }
 
     setTimeout(() => {
       dispatch({
