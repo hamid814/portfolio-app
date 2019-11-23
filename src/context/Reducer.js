@@ -40,6 +40,12 @@ export default (state, action) => {
         ...state,
         pagesTransiting: action.payload
       }
+    case 'set-pages-traversing':
+      console.log(action.payload)
+      return {
+        ...state,
+        pagesTraversing: action.payload
+      }
     default:
       return state;
   }
