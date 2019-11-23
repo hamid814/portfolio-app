@@ -1,0 +1,8 @@
+.go-to-contact-container {
+  position: absolute;
+  left: -4%;
+  top: 40%;
+  cursor: pointer;
+  font-size: 200%;
+  transform: rotateZ(90deg);
+}

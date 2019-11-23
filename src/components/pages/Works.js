@@ -9,6 +9,7 @@ const Works = () => {
           setPagesStatus,
           aPageIsActive,
           setPagesTransiting,
+          traversPages,
           pagesTransiting } = useContext(Context)
 
   const onClick = () => {
@@ -17,6 +18,10 @@ const Works = () => {
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
     }
+  }
+
+  const goToContact = () => {
+    traversPages('contact')
   }
 
   return (
@@ -34,6 +39,9 @@ const Works = () => {
       </div>
       <div className='page'>
         Works
+        <div className='go-to-contact-container' onClick={goToContact}>
+          Contact Me
+        </div>
       </div>
     </div>
   )
