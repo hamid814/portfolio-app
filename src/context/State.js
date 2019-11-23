@@ -103,15 +103,13 @@ const State = props => {
       }
     }
 
-    const direction = placeOfPage[page].place
+    const destination = placeOfPage[page].place
 
-    console.log(direction)
-        
     dispatch({
       type,
       payload: {
         status: true,
-        direction
+        destination
       }
     })
 
@@ -119,9 +117,9 @@ const State = props => {
       dispatch({
         type,
         payload: {
-        status: false,
-        direction
-      }
+          status: false,
+          destination: 'none'
+        }
       })
     }, 1300);
   }
