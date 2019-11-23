@@ -90,16 +90,16 @@ const State = props => {
 
     const placeOfPage = {
       home: {
-        place: 'top-left'
+        place: 'dest-top-left'
       },
       about: {
-        place: 'top-right'
+        place: 'dest-top-right'
       },
       works: {
-        place: 'bottom-right'
+        place: 'dest-bottom-right'
       },
       contact: {
-        place: 'bottom-left'
+        place: 'dest-bottom-left'
       }
     }
 
