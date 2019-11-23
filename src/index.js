@@ -54,7 +54,7 @@ ReactDOM.render(<StateContainer />, document.getElementById('root'));
 
 // NOTES
 // get div drop anim form net( :( ) for modal droping out
-// redefine sccroll event
+// redefine scroll event
 // "kollan" in english
 // "kollan": define gravity in code, css or js
 // select last brothers of an element for layers hover brightness
