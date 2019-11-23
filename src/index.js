@@ -62,3 +62,4 @@ ReactDOM.render(<StateContainer />, document.getElementById('root'));
 // how to have color based on background
 // round the mosPos in pages.js
 // bring layer heading to middle | my best => layer.paddingTop = (page.heihgt - text-height) / 2
+// ::before ::after
