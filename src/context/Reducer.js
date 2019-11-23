@@ -41,7 +41,6 @@ export default (state, action) => {
         pagesTransiting: action.payload
       }
     case 'set-pages-traversing':
-      console.log(action.payload)
       return {
         ...state,
         pagesTraversing: action.payload
