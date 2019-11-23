@@ -21,7 +21,7 @@ const Contact = () => {
       // setPagesStatus('zoom-in')
       // setActivePage('works')
     // }, 1000);
-    traversPages('works')
+    traversPages('about')
   }
 
   return (
