@@ -11,6 +11,7 @@ const Contact = () => {
           traversPages,
           setPagesTransiting,
           pagesTransiting } = useContext(Context)
+
   const onClick = () => {
     if(!aPageIsActive && !pagesTransiting.status) {
       setActivePage('contact')
