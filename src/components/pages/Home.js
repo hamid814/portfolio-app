@@ -5,7 +5,12 @@ import Context from '../../context/Context.js';
 import './styles/home.css';
 
 const Home = () => {
-  const { myName, aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting } = useContext(Context)
+  const { myName,
+          aPageIsActive,
+          setActivePage,
+          setPagesStatus,
+          setPagesTransiting,
+          pagesTransiting } = useContext(Context)
 
   const [name, setName] = useState('HOME')
   // eslint-disable-next-line
@@ -90,7 +95,7 @@ const Home = () => {
   }, [])
 
   const onClick = () => {
-    if(!aPageIsActive) {
+    if(!aPageIsActive && !pagesTransiting.status) {
       setActivePage('home')
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
