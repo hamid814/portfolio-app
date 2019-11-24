@@ -113,8 +113,11 @@ const State = props => {
           destination
         }
       })
-      setActivePage(page)
     }
+
+    setTimeout(() => {
+      // setActivePage(page)
+    }, 500);
 
     setTimeout(() => {
       dispatch({
