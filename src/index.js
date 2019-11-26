@@ -52,21 +52,6 @@ const App = () => {
   }
 
   return (
-    // <>
-    //   <Router>
-    //     <>
-    //       <Menu />
-    //       {/* <div className='container'> */}
-    //       <Switch>
-    //         <Route exact path={process.env.PUBLIC_URL + '/'} component={Home}/>
-    //         <Route exact path={process.env.PUBLIC_URL + '/about'} component={About} />
-            // <Route exact path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
-    //         <Route exact path={process.env.PUBLIC_URL + '/Works'} component={Works} />
-    //       </Switch>
-    //       {/* </div> */}
-    //     </>
-    //   </Router>
-    // </>
     <div tabIndex='1' onKeyUp={onKeyUp}>
       <Modal />
       <BackButton />
