@@ -27,7 +27,6 @@ const Contact = () => {
   const goToHome = () => {
     traversPages('home')
   }
-  
 
   return (
     <div className='page-container' id='contact'>
