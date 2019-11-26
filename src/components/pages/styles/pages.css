@@ -282,7 +282,7 @@
 }
 
 .pages.dest-top-right {
-  animation: destTopLeftAnim 1s ease-in-out;
+  animation: destTopRightAnim 1s ease-in-out;
 }
 
 .pages.dest-bottom-right {

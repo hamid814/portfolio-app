@@ -20,13 +20,12 @@ const Contact = () => {
     }
   }
 
-  const traversToWorks = () => {
-    // setPagesStatus('zoom-out')
-    // setTimeout(() => {
-      // setPagesStatus('zoom-in')
-      // setActivePage('works')
-    // }, 1000);
+  const goToWorks = () => {
     traversPages('works')
+  }
+
+  const goToHome = () => {
+    traversPages('home')
   }
 
   return (
@@ -45,7 +44,7 @@ const Contact = () => {
       <div className='page'>
         Contact
         <br/>
-        <div className='go-to-works-container' onClick={traversToWorks}>
+        <div className='go-to-works-container' onClick={goToWorks}>
           <div className='go-to-works'>
             <div className='desc'>
                 works

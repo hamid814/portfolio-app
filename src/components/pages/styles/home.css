@@ -1,0 +1,16 @@
+#home .go-to-contact-container {
+  position: absolute;
+  left: 45%;
+  bottom: 5%;
+  cursor: pointer;
+  font-size: 200%;
+}
+
+#home .go-to-about-container {
+  position: absolute;
+  right: -3%;
+  top: 48%;
+  cursor: pointer;
+  font-size: 200%;
+  transform: rotateZ(-90deg)
+}

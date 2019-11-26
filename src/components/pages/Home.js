@@ -10,6 +10,7 @@ const Home = () => {
           setActivePage,
           setPagesStatus,
           setPagesTransiting,
+          traversPages,
           pagesTransiting } = useContext(Context)
 
   const [name, setName] = useState('HOME')
@@ -102,6 +103,14 @@ const Home = () => {
     }
   }
 
+  const goToAbout = () => {
+    traversPages('about')
+  }
+
+  const goToContact = () => {
+    traversPages('contact')
+  }
+
   return (
     <div className='page-container' id='home'>
       <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
@@ -119,6 +128,12 @@ const Home = () => {
         Hi!
         <div>
           I'm { myName }
+        </div>
+        <div className="go-to-contact-container" onClick={goToContact}>
+          contact Me
+        </div>
+        <div className="go-to-about-container" onClick={goToAbout}>
+          about Me
         </div>
       </div>
     </div>
