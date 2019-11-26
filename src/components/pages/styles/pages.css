@@ -275,7 +275,6 @@
 
 .zoom-in .layer, .zoom-in .layer h1 {
   transform: skew(0deg) !important;
-  /* transition: 0s !important; */
 }
 
 .pages.dest-top-left {
