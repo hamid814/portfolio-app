@@ -291,8 +291,6 @@
 
 .pages.dest-bottom-left {
   animation: destBottomLeftAnim 1s ease-in-out;
-  opacity: 0;
-  border: 1px solid red;
 }
 
 @media (max-width: 900px) {
