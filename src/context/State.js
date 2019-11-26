@@ -5,7 +5,7 @@ import Reducer from './Reducer';
 const State = props => {
   const initialState = {
     myName: 'H',
-    activePage: 'home', // values: home, about, works, contact
+    activePage: 'home', // values: home, about, works, contact, none
     pagesStatus: 'zoom-out', // values: zoom-in | zoom-out
     pagesPos: 'bottom-left', // t-l | t-r | b-l | b-r
     aPageIsActive: false, // sets too true After 1s for anims

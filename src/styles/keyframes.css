@@ -46,3 +46,31 @@
     transform: skew(0);
   }
 }
+
+@keyframes destTopLeftAnim {
+  to {
+    top: -100vh;
+    left: -100vw;
+  }
+}
+
+@keyframes destTopRightAnim {
+  to {
+    top: -100vh;
+    left: -100vw;
+  }
+}
+
+@keyframes destBottomLeftAnim {
+  to {
+    top: -100vh;
+    left: 0;
+  }
+}
+
+@keyframes destBottomRightAnim {
+  to {
+    top: -100vh;
+    left: -100vw;
+  }
+}
