@@ -32,11 +32,23 @@ const App = () => {
       setPagesTransiting(true, 'go')
     }
 
-    console.log(e.keyCode)
+    if(e.keyCode === 65 && !aPageIsActive) {
+      setActivePage('about')
+      setPagesStatus('zoom-in')
+      setPagesTransiting(true, 'go')
+    }
 
-    // a = 65
-    // w = 67
-    // c = 67
+    if(e.keyCode === 87 && !aPageIsActive) {
+      setActivePage('works')
+      setPagesStatus('zoom-in')
+      setPagesTransiting(true, 'go')
+    }
+
+    if(e.keyCode === 67 && aPageIsActive) {
+      setActivePage('contact')
+      setPagesStatus('zoom-in')
+      setPagesTransiting(true, 'go')
+    }
   }
 
   return (
@@ -85,3 +97,5 @@ ReactDOM.render(<StateContainer />, document.getElementById('root'));
 // round the mosPos in pages.js
 // bring layer heading to middle | my best => layer.paddingTop = (page.heihgt - text-height) / 2
 // ::before ::after
+// prevent titles from hilighting
+// arrows to travers betwenen pages
