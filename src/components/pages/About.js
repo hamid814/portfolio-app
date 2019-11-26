@@ -29,6 +29,10 @@ const About = () => {
     traversPages('works')
   }
 
+  const goToHome = () => {
+    traversPages('home')
+  }
+
   return (
     <div className='page-container' id='about'>
       <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
@@ -53,9 +57,15 @@ const About = () => {
           <div className='item'>
             item
           </div>
-          <div className='item' onClick={goToWorks}>
+          <div className='item'>
             item
           </div>
+        </div>
+        <div className="go-to-home-container" onClick={goToHome}>
+          Home
+        </div>
+        <div className="go-to-works-container" onClick={goToWorks}>
+          works
         </div>
       </div>
     </div>

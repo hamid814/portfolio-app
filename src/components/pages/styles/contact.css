@@ -31,3 +31,11 @@
 #contact .go-to-works:hover .bar {
   width: 7%;
 }
+
+#contact .go-to-home-container {
+  position: absolute;
+  left: 45%;
+  top: 2%;
+  cursor: pointer;
+  font-size: 200%;
+}

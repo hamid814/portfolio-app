@@ -49,14 +49,14 @@
 
 @keyframes destTopLeftAnim {
   to {
-    top: -100vh;
-    left: -100vw;
+    top: 0;
+    left: 0;
   }
 }
 
 @keyframes destTopRightAnim {
   to {
-    top: 0;
+    top: -100vh;
     left: -100vw;
   }
 }

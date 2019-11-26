@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
 
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -9,6 +9,7 @@ import Pages from './components/pages/Pages.js';
 import Modal from './components/modal/Modal';
 
 import State from './context/State.js';
+import Context from './context/Context.js';
 
 import './styles/index.css';
 import './styles/haden.css';
@@ -16,6 +17,28 @@ import './styles/zIndex.css';
 import './styles/keyframes.css';
 
 const App = () => {
+  const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting } = useContext(Context)
+
+  const onKeyUp = (e) => {
+    if(e.keyCode === 27 && aPageIsActive) {
+      setActivePage('from-menu')
+      setPagesStatus('zoom-out')
+      setPagesTransiting(true, 'come')
+    }
+
+    if(e.keyCode === 72 && !aPageIsActive) {
+      setActivePage('home')
+      setPagesStatus('zoom-in')
+      setPagesTransiting(true, 'go')
+    }
+
+    console.log(e.keyCode)
+
+    // a = 65
+    // w = 67
+    // c = 67
+  }
+
   return (
     // <>
     //   <Router>
@@ -32,12 +55,12 @@ const App = () => {
     //     </>
     //   </Router>
     // </>
-    <>
+    <div tabIndex='1' onKeyUp={onKeyUp}>
       <Modal />
       <BackButton />
       <Pages />
       <BackScroll />
-    </>
+    </div>
   )
 }
 
@@ -48,7 +71,6 @@ const StateContainer = () => {
     </State>
   )
 }
-
 
 ReactDOM.render(<StateContainer />, document.getElementById('root'));
 
