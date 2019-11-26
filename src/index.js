@@ -44,7 +44,7 @@ const App = () => {
       setPagesTransiting(true, 'go')
     }
 
-    if(e.keyCode === 67 && aPageIsActive) {
+    if(e.keyCode === 67 && !aPageIsActive) {
       setActivePage('contact')
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
