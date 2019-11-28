@@ -1,8 +1,16 @@
 #works .go-to-contact-container {
   position: absolute;
-  left: -4%;
-  top: 40%;
+  left: -3%;
+  top: 46%;
   cursor: pointer;
   font-size: 200%;
   transform: rotateZ(90deg);
+}
+
+#works .go-to-about-container {
+  position: absolute;
+  top: 3%;
+  left: 47%;
+  cursor: pointer;
+  font-size: 200%;
 }
