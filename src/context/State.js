@@ -103,7 +103,7 @@ const State = props => {
       }
     }
 
-    const destination = 'dest-' + placeOfPage[page].place
+    const destination = 'sdest-' + placeOfPage[page].place
 
     if(!state.pagesTraversing.status) {
       dispatch({
@@ -113,8 +113,11 @@ const State = props => {
           destination
         }
       })
-      setActivePage(page)
     }
+
+    setTimeout(() => {
+      setActivePage(page)
+    }, 1);
 
     setTimeout(() => {
       dispatch({
