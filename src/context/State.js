@@ -117,7 +117,7 @@ const State = props => {
 
     setTimeout(() => {
       setActivePage(page)
-    }, 300);
+    }, 700);
 
     setTimeout(() => {
       dispatch({
@@ -127,7 +127,7 @@ const State = props => {
           destination: 'none'
         }
       })
-    }, 1500);
+    }, 1800);
   }
 
   const setPagesTransiting = (status, direction) => {
