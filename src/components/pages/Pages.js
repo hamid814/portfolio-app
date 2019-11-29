@@ -19,7 +19,7 @@ const Pages = () => {
                   ${pagesStatus}
                   ${pagesPos}
                   ${pagesTransiting.status && `transiting ${pagesTransiting.direction}`}
-                  ${pagesTraversing.status && `traversing ${pagesTraversing.destination}`}`}>
+                  ${pagesTraversing.status && 'traversing'}`}>
         <Home />
         <About />
         <Works />

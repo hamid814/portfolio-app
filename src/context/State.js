@@ -11,7 +11,7 @@ const State = props => {
     aPageIsActive: false, // sets too true After 1s for anims
     pageDest: 'none', // dest-home | dest-about | dest-work | dest-contact
     pagesTransiting: { status: false, direction: 'come' },// true when pages is zoomin in or out
-    pagesTraversing: { status: false, destination: 'none' }, // true when going from one page to another
+    pagesTraversing: { status: false }, // true when going from one page to another
     // MODAL STUFF
     modalStatus: 'first-off',
     modalData: null
@@ -88,29 +88,11 @@ const State = props => {
   const traversPages = (page) => {
     const type = 'set-pages-traversing'
 
-    const placeOfPage = {
-      home: {
-        place: 'top-left'
-      },
-      about: {
-        place: 'top-right'
-      },
-      works: {
-        place: 'bottom-right'
-      },
-      contact: {
-        place: 'bottom-left'
-      }
-    }
-
-    const destination = 'sdest-' + placeOfPage[page].place
-
     if(!state.pagesTraversing.status) {
       dispatch({
         type,
         payload: {
           status: true,
-          destination
         }
       })
     }
@@ -124,7 +106,6 @@ const State = props => {
         type,
         payload: {
           status: false,
-          destination: 'none'
         }
       })
     }, 1600);

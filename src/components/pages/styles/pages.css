@@ -292,22 +292,6 @@
   transform: skew(0deg) !important;
 }
 
-.pages.dest-top-left {
-  animation: destTopLeftAnim 1s ease-in-out;
-}
-
-.pages.dest-top-right {
-  animation: destTopRightAnim 1s ease-in-out;
-}
-
-.pages.dest-bottom-right {
-  animation: destBottomRightAnim 1s ease-in-out;
-}
-
-.pages.dest-bottom-left {
-  animation: destBottomLeftAnim 1s ease-in-out;
-}
-
 @media (max-width: 900px) {
   body {
     overflow-y: scroll !important;
