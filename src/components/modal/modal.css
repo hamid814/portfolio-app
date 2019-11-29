@@ -24,39 +24,47 @@
 }
 
 .modal-come #modal-container {
-  /* animation: dhbvjsdhbfj 1s ease-in; */
+  animation: modalComeAnim 1s ease-out;
 }
 
-@keyframes dhbvjsdhbfj {
+@keyframes modalComeAnim {
   from {
-    transform: rotateZ(-7deg);
-    margin-top: 5vh;
+    transform: rotateZ(41deg);
+    /* margin-top: 15vh; */
+    opacity: 0;
+  }
+  to {
+    transform: rotateZ(0);
+    /* margin-top: 5vh; */
+    opacity: 1;
+  }
+}
+
+@keyframes ModalGoAnim {
+  from {
+    transform: rotateZ(0);
+    /* margin-top: 5vh; */
     opacity: 1;
   }
   to {
     transform: rotateZ(-41deg);
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
     opacity: 0;
   }
 }
 
 .modal-go #modal-container {
   opacity: 0;
-  animation: dhbvjsdhbfj 700ms ease-out;
+  animation: ModalGoAnim 700ms ease-in;
 }
 
 .modal-go {
-  animation: szxcvbjnjb 0.31s ease-out;
+  animation: fadeOut 0.31s ease-out;
   animation-delay: 0.7s;
 }
 
-@keyframes szxcvbjnjb {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+.modal-come {
+  animation: fadeOut 0.31s ease-in reverse;
 }
 
 #modal-container {
@@ -66,12 +74,7 @@
   background-color: #f4f4f4;
   border-radius: 10px;
   position: relative;
-  transform-origin: 96.5% 26px;
-  /* transform: translateY(600px); */
-}
-
-.modal-hanging {
-  transform: rotateZ(-7deg);
+  transform-origin: 50% 300%;
 }
 
 #modal-close {
@@ -79,7 +82,9 @@
   top: 6px;
   left: 96.5%;
   font-size: 200%;
-  color: #999;
-  /* border: 1px solid red; */
+  color: tomato;
   cursor: pointer;
+  width: 25px;
+  height: 25px;
+  padding: 0 !important;
 }

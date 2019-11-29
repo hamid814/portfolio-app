@@ -7,7 +7,6 @@ import Context from '../../context/Context';
 const Modal = () => {
   const { modalStatus, setModal } = useContext(Context)
 
-  const [hanging, setHanging] = useState(false)
   const [status, setStatus] = useState('off')
 
   useEffect(() => {
@@ -30,26 +29,18 @@ const Modal = () => {
 
   const onClose = (e) => {
     if(e.target.classList.contains('func-close-modal')) {
-      setModal('off', null)
+      status === 'on' && setModal('off', null)
     }
   }
 
   const oNCloseX = () => {
-    setModal('off', null)
-  }
-
-  const onHangeStart = () => {
-    setHanging(true)
-  }
-
-  const onHangEnd = () => {
-    setHanging(false)
+    status === 'on' && setModal('off', null)
   }
 
   return (
     <div id='modal' className={`func-close-modal modal-${status}`} onClick={onClose}>
-      <div id='modal-container' className={`${hanging && 'modal-hanging'}`}>
-        <div id='modal-close' onClick={oNCloseX} onMouseEnter={onHangeStart} onMouseLeave={onHangEnd}>
+      <div id='modal-container'>
+        <div id='modal-close' onClick={oNCloseX}>
           &times;
         </div>
         
