@@ -15,13 +15,12 @@ const Modal = () => {
       setStatus('come')
       setTimeout(() => {
         setStatus('on')
-      }, 1);
+      }, 1000);
     } else if(modalStatus === 'off') {
       setStatus('go')
       setTimeout(() => {
         setStatus('off')
-      }, 1);
-      
+      }, 1000);
     }
 
     // eslint-disable-next-line
