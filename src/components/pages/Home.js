@@ -86,7 +86,6 @@ const Home = () => {
       time: 2400
     },
   ])
-  const [centerStyle, setCenterStyle] = useState(null)
 
   useEffect(() => {
     // bugName.forEach(bug => {
@@ -95,7 +94,6 @@ const Home = () => {
     //   }, bug.time*1.8);
     // })
 
-    
     // eslint-disable-next-line
   }, [])
 
@@ -123,7 +121,7 @@ const Home = () => {
       <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
       
       </div>
-      <div className={`layer ${aPageIsActive ? 'not' : 'is'} ${pagesStatus === 'zoom-in' ? 'zoom-in-vertical' : 'zoom-out-vertical'}`} onClick={onClick} style={centerStyle}>
+      <div className={`layer ${aPageIsActive ? 'not' : 'is'} ${pagesStatus === 'zoom-in' ? 'zoom-in-vertical' : 'zoom-out-vertical'}`} onClick={onClick}>
         <h1>
           {name}
         </h1>
