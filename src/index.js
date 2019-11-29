@@ -17,7 +17,7 @@ import './styles/zIndex.css';
 import './styles/keyframes.css';
 
 const App = () => {
-  const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting } = useContext(Context)
+  const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting, pagesTransiting } = useContext(Context)
 
   const onKeyUp = (e) => {
     if(e.keyCode === 27 && aPageIsActive) {
@@ -26,25 +26,25 @@ const App = () => {
       setPagesTransiting(true, 'come')
     }
 
-    if(e.keyCode === 72 && !aPageIsActive) {
+    if(e.keyCode === 72 && !aPageIsActive && !pagesTransiting.status) {
       setActivePage('home')
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
     }
 
-    if(e.keyCode === 65 && !aPageIsActive) {
+    if(e.keyCode === 65 && !aPageIsActive && !pagesTransiting.status) {
       setActivePage('about')
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
     }
 
-    if(e.keyCode === 87 && !aPageIsActive) {
+    if(e.keyCode === 87 && !aPageIsActive && !pagesTransiting.status) {
       setActivePage('works')
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
     }
 
-    if(e.keyCode === 67 && !aPageIsActive) {
+    if(e.keyCode === 67 && !aPageIsActive && !pagesTransiting.status) {
       setActivePage('contact')
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')

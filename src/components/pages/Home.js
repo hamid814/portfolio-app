@@ -6,6 +6,7 @@ import './styles/home.css';
 
 const Home = () => {
   const { myName,
+          pagesStatus,
           aPageIsActive,
           setActivePage,
           setPagesStatus,
@@ -88,12 +89,13 @@ const Home = () => {
   const [centerStyle, setCenterStyle] = useState(null)
 
   useEffect(() => {
-    bugName.forEach(bug => {
-      setTimeout(() => {
-        setName(bug.name)
-      }, bug.time*1.8);
-    })
+    // bugName.forEach(bug => {
+    //   setTimeout(() => {
+    //     setName(bug.name)
+    //   }, bug.time*1.8);
+    // })
 
+    
     // eslint-disable-next-line
   }, [])
 
@@ -121,7 +123,7 @@ const Home = () => {
       <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
       
       </div>
-      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick} style={centerStyle}>
+      <div className={`layer ${aPageIsActive ? 'not' : 'is'} ${pagesStatus === 'zoom-in' ? 'zoom-in-vertical' : 'zoom-out-vertical'}`} onClick={onClick} style={centerStyle}>
         <h1>
           {name}
         </h1>

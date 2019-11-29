@@ -6,6 +6,7 @@ import './styles/works.css';
 
 const Works = () => {
   const { setActivePage,
+          pagesStatus,
           setPagesStatus,
           aPageIsActive,
           setPagesTransiting,
@@ -36,7 +37,7 @@ const Works = () => {
       <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
         
       </div>
-      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
+      <div className={`layer ${aPageIsActive ? 'not' : 'is'} ${pagesStatus === 'zoom-in' ? 'zoom-in-vertical' : 'zoom-out-vertical'}`} onClick={onClick}>
         <h1>  
           WORKS
         </h1>

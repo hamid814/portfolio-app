@@ -19,6 +19,46 @@
   }
 }
 
+.modal-on {
+  display: block;
+}
+
+.modal-come #modal-container {
+  /* animation: dhbvjsdhbfj 1s ease-in; */
+}
+
+@keyframes dhbvjsdhbfj {
+  from {
+    transform: rotateZ(-7deg);
+    margin-top: 5vh;
+    opacity: 1;
+  }
+  to {
+    transform: rotateZ(-31deg);
+    margin-top: 15vh;
+    opacity: 0;
+  }
+}
+
+.modal-go #modal-container {
+  opacity: 0;
+  animation: dhbvjsdhbfj 700ms ease-out;
+}
+
+.modal-go {
+  animation: szxcvbjnjb 0.31s ease-out;
+  animation-delay: 0.7s;
+}
+
+@keyframes szxcvbjnjb {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 #modal-container {
   width: 90vw;
   height: 90vh;

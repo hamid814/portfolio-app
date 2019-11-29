@@ -21,6 +21,8 @@ const Modal = () => {
       setTimeout(() => {
         setStatus('off')
       }, 1000);
+    } else if(modalStatus === 'first-off') {
+      setStatus('off')
     }
 
     // eslint-disable-next-line

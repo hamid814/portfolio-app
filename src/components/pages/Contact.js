@@ -6,6 +6,7 @@ import './styles/contact.css';
 
 const Contact = () => {
   const { setActivePage,
+          pagesStatus,
           setPagesStatus,
           aPageIsActive,
           traversPages,
@@ -36,7 +37,7 @@ const Contact = () => {
       <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
         
       </div>
-      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
+      <div className={`layer ${aPageIsActive ? 'not' : 'is'} ${pagesStatus === 'zoom-in' ? 'zoom-in-vertical' : 'zoom-out-vertical'}`} onClick={onClick}>
         <h1>
           CONTACT
         </h1>

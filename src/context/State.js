@@ -13,7 +13,7 @@ const State = props => {
     pagesTransiting: { status: false, direction: 'come' },// true when pages is zoomin in or out
     pagesTraversing: { status: false, destination: 'none' }, // true when going from one page to another
     // MODAL STUFF
-    modalStatus: 'off',
+    modalStatus: 'first-off',
     modalData: null
   };
 
