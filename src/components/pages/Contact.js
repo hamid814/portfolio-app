@@ -49,7 +49,10 @@ const Contact = () => {
         <br/>
         github ( repos )
         <br/>
-        
+        insta
+        <br/>
+        tweet
+        <br/>
         <div className='go-to-works-container' onClick={goToWorks}>
           <div className='go-to-works'>
             <div className='desc'>
