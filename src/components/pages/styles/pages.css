@@ -51,6 +51,7 @@
 
 .back-layer.not {
   opacity: 0;
+  transform: skewX(0) !important;
   animation: fadeOut 0.2s ease-out;
 }
 

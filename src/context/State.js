@@ -108,7 +108,7 @@ const State = props => {
           status: false,
         }
       })
-    }, 1600);
+    }, 1750);
   }
 
   const setPagesTransiting = (status, direction) => {
