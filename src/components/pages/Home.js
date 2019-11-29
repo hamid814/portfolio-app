@@ -85,6 +85,7 @@ const Home = () => {
       time: 2400
     },
   ])
+  const [centerStyle, setCenterStyle] = useState(null)
 
   useEffect(() => {
     bugName.forEach(bug => {
@@ -92,6 +93,7 @@ const Home = () => {
         setName(bug.name)
       }, bug.time*1.8);
     })
+
     // eslint-disable-next-line
   }, [])
 
@@ -119,7 +121,7 @@ const Home = () => {
       <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
       
       </div>
-      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick}>
+      <div className={`layer ${aPageIsActive ? 'not' : 'is'}`} onClick={onClick} style={centerStyle}>
         <h1>
           {name}
         </h1>

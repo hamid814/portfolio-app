@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 
 import './modal.css';
 
@@ -8,6 +8,24 @@ const Modal = () => {
   const { modalStatus, setModal } = useContext(Context)
 
   const [hanging, setHanging] = useState(false)
+  const [status, setStatus] = useState('off')
+
+  useEffect(() => {
+    if(modalStatus === 'on') {
+      setStatus('come')
+      setTimeout(() => {
+        setStatus('on')
+      }, 1);
+    } else if(modalStatus === 'off') {
+      setStatus('go')
+      setTimeout(() => {
+        setStatus('off')
+      }, 1);
+      
+    }
+
+    // eslint-disable-next-line
+  }, [modalStatus])
 
   const onClose = (e) => {
     if(e.target.classList.contains('func-close-modal')) {
@@ -28,7 +46,7 @@ const Modal = () => {
   }
 
   return (
-    <div id='modal' className={`func-close-modal modal-${modalStatus}`} onClick={onClose}>
+    <div id='modal' className={`func-close-modal modal-${status}`} onClick={onClose}>
       <div id='modal-container' className={`${hanging && 'modal-hanging'}`}>
         <div id='modal-close' onClick={oNCloseX} onMouseEnter={onHangeStart} onMouseLeave={onHangEnd}>
           &times;
