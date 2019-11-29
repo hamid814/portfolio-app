@@ -45,6 +45,11 @@ const Contact = () => {
       <div className='page'>
         Contact
         <br/>
+        email
+        <br/>
+        github ( repos )
+        <br/>
+        
         <div className='go-to-works-container' onClick={goToWorks}>
           <div className='go-to-works'>
             <div className='desc'>
