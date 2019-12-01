@@ -7,6 +7,7 @@ import './styles/about.css';
 const About = () => {
   const { setActivePage,
           pagesStatus,
+          activePage,
           setPagesStatus,
           aPageIsActive,
           setModal,
@@ -35,7 +36,7 @@ const About = () => {
   }
 
   return (
-    <div className='page-container' id='about'>
+    <div className={`page-container ${activePage === 'home' && aPageIsActive && 'active'}`} id='about'>
       <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
 
       </div>

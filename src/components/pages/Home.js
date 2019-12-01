@@ -7,6 +7,7 @@ import './styles/home.css';
 const Home = () => {
   const { myName,
           pagesStatus,
+          activePage,
           aPageIsActive,
           setActivePage,
           setPagesStatus,
@@ -88,11 +89,11 @@ const Home = () => {
   ])
 
   useEffect(() => {
-    // bugName.forEach(bug => {
-    //   setTimeout(() => {
-    //     setName(bug.name)
-    //   }, bug.time*1.8);
-    // })
+    bugName.forEach(bug => {
+      setTimeout(() => {
+        setName(bug.name)
+      }, bug.time*1.8);
+    })
 
     // eslint-disable-next-line
   }, [])
@@ -114,7 +115,7 @@ const Home = () => {
   }
 
   return (
-    <div className='page-container' id='home'>
+    <div className={`page-container ${activePage === 'home' && aPageIsActive && 'active'}`} id='home'>
       <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
 
       </div>

@@ -6,6 +6,7 @@ import './styles/works.css';
 
 const Works = () => {
   const { setActivePage,
+          activePage,
           pagesStatus,
           setPagesStatus,
           aPageIsActive,
@@ -30,7 +31,7 @@ const Works = () => {
   }
 
   return (
-    <div className='page-container' id='works'>
+    <div className={`page-container ${activePage === 'home' && aPageIsActive && 'active'}`} id='works'>
       <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
 
       </div>

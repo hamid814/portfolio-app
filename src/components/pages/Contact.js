@@ -7,6 +7,7 @@ import './styles/contact.css';
 const Contact = () => {
   const { setActivePage,
           pagesStatus,
+          activePage,
           setPagesStatus,
           aPageIsActive,
           traversPages,
@@ -30,7 +31,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='page-container' id='contact'>
+    <div className={`page-container ${activePage === 'home' && aPageIsActive && 'active'}`} id='contact'>
       <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
 
       </div>
