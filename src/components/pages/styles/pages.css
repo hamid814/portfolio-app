@@ -4,6 +4,14 @@
   transition: 1s;
 }
 
+.pages.traversing {
+  transition-timing-function: cubic-bezier(0.2,0,0.7,-0.5);
+}
+
+.pages.come {
+  transition-timing-function: cubic-bezier(.2,0,0.7,-0.5);
+}
+
 .pages.zoom-out {
   width: 100vw;
   height: 100vh;
