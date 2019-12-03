@@ -64,7 +64,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="go-to-home-container" onClick={goToHome}>
+        <div className='go-to-home-container' onClick={goToHome}>
           Home
         </div>
       </div>
