@@ -5,7 +5,7 @@
 }
 
 .pages.traversing {
-  transition-timing-function: cubic-bezier(0.2,0,0.7,-0.5);
+  transition-timing-function: cubic-bezier(1,1,1,1);
 }
 
 .pages.zoom-out {
