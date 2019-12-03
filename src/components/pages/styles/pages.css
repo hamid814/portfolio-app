@@ -1,3 +1,12 @@
+:root {
+  --color-one: #333;
+  --color-two: #ccc;
+  --color-three: #ccc;
+  --color-four: #333;
+  --page-title-font-size: 28vh;
+  --page-layer-padding: 36vh;
+}
+
 /* pages container */
 .pages {
   position: absolute;
@@ -117,7 +126,6 @@
   height: 100%;
   cursor: crosshair;
   text-align: center;
-  font-size: 500%;
   padding-top: 22%;
 }
 
@@ -136,19 +144,19 @@
 }
 
 .zoom-out-vertical {
-  padding-top: 18vh;
+  padding-top: calc(var(--page-layer-padding) / 2);
 }
 
 .zoom-out-vertical h1 {
-  font-size: 14vh;
+  font-size: calc(var(--page-title-font-size) / 2);
 }
 
 .zoom-in-vertical {
-  padding-top: 36vh;
+  padding-top: calc(var(--page-layer-padding));
 }
 
 .zoom-in-vertical h1 {
-  font-size: 28vh;
+  font-size: calc(var(--page-title-font-size));
 }
 
 .layer h1 {
@@ -157,72 +165,72 @@
 }
 
 #home .layer {
-  background: tan;
+  background: var(--color-one);
 }
 
 #home h1 {
-  color: teal;
+  color: var(--color-two);
 }
 
 #home .back-layer {
-  background: teal;
+  background: var(--color-two);
 }
 
 #home .side-layer {
-  background: tomato;
+  background: var(--color-three);
   left: -100%;
 }
 
 #about .layer {
   right: 0;
-  background: teal;
+  background: var(--color-two);
 }
 
 #about h1 {
-  color: thistle;
+  color: var(--color-four);
 }
 
 #about .back-layer {
-  background: thistle;
+  background: var(--color-four);
 }
 
 #about .side-layer {
-  background: tan;
+  background: var(--color-one);
   left: 100%;
 }
 
 #works .layer {
   right: 0;
-  background: thistle;
+  background: var(--color-four);
 }
 
 #works h1 {
-  color: tomato;
+  color: var(--color-three);
 }
 
 #works .back-layer {
-  background: tomato;
+  background: var(--color-three);
 }
 
 #works .side-layer {
-  background: teal;
+  background: var(--color-two);
   left: 100%;
 }
 
 #contact .layer {
-  background: tomato;
+  background: var(--color-three);
 }
 
 #contact h1 {
-  color: tan;
+  color: var(--color-one);
 }
 
 #contact .back-layer {
-  background: tan;
+  background: var(--color-one);
 }
 
 #contact .side-layer {
-  background: thistle;
+  background: var(--color-four);
   left: -100%;
 }
 
