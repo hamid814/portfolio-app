@@ -277,19 +277,19 @@
 }
 
 .layer:hover .desc {
-  animation: dvbsdv 0.4s cubic-bezier(1,1,1,1);
+  animation: descAnim 0.4s cubic-bezier(1,1,1,1);
   opacity: 1;
 }
 
 .page-container:hover .desc .text {
-  animation: dshbjdbhvjsbhv 0.4s cubic-bezier(1,1,1,1);
+  animation: descTextAnim 0.4s cubic-bezier(1,1,1,1);
 }
 
 .page-container .desc .text {
   transform: skew(-45deg);
 }
 
-@keyframes dvbsdv {
+@keyframes descAnim {
   0% {
     transform: skew(0);
     opacity: 0;
@@ -300,7 +300,7 @@
   }
 }
 
-@keyframes dshbjdbhvjsbhv {
+@keyframes descTextAnim {
   0% {
     transform: skew(0);
   }
