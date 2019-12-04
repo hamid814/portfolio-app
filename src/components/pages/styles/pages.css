@@ -169,6 +169,40 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+.page-container .desc {
+  font-size: initial;
+  padding: 0 10px;
+  position: absolute;
+  width: 10vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  left: 20vw;
+  top: -2vh;
+  opacity: 0;
+}
+
+#contact .layer:hover .desc,
+#works .layer:hover .desc {
+  animation: descAnim2 0.4s cubic-bezier(1,1,1,1);
+  opacity: 1;
+}
+
+#contact .layer:hover .desc .text,
+#works .layer:hover .desc .text {
+  animation: descTextAnim2 0.4s cubic-bezier(1,1,1,1);
+}
+
+#about .layer:hover .desc,
+#home .layer:hover .desc {
+  animation: descAnim1 0.4s cubic-bezier(1,1,1,1);
+  opacity: 1;
+}
+
+#about .layer:hover .desc .text,
+#home .layer:hover .desc .text {
+  animation: descTextAnim1 0.4s cubic-bezier(1,1,1,1);
+}
+
 #home .layer {
   background: var(--color-one);
 }
@@ -287,40 +321,6 @@
 #contact .layer,
 #contact .desc {
   transform: skew(-45deg);
-}
-
-.page-container .desc {
-  font-size: initial;
-  padding: 0 10px;
-  position: absolute;
-  width: 10vw;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
-  left: 20vw;
-  top: -2vh;
-  opacity: 0;
-}
-
-#contact .layer:hover .desc,
-#works .layer:hover .desc {
-  animation: descAnim2 0.4s cubic-bezier(1,1,1,1);
-  opacity: 1;
-}
-
-#contact .layer:hover .desc .text,
-#works .layer:hover .desc .text {
-  animation: descTextAnim2 0.4s cubic-bezier(1,1,1,1);
-}
-
-#about .layer:hover .desc,
-#home .layer:hover .desc {
-  animation: descAnim1 0.4s cubic-bezier(1,1,1,1);
-  opacity: 1;
-}
-
-#about .layer:hover .desc .text,
-#home .layer:hover .desc .text {
-  animation: descTextAnim1 0.4s cubic-bezier(1,1,1,1);
 }
 
 .transiting .layer,
