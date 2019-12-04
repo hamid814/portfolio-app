@@ -1,12 +1,12 @@
 :root {
-  --color-one: #223222; /* tan */
-  --color-two: #9999b9; /* teal */
-  --color-three: #b99999; /* tomato */
-  --color-four: #223222; /* thistle */
-  --color-one: tan;
+  --color-one: #222222; /* tan */
+  --color-two: #999999; /* teal */
+  --color-three: #999999; /* tomato */
+  --color-four: #222222; /* thistle */
+  /* --color-one: tan;
   --color-two: teal;
   --color-three: tomato;
-  --color-four: thistle;
+  --color-four: thistle; */
   --page-title-font-size: 30vh;
   --page-title-font-weight: 100;
   --page-layer-opacity: 0.9;
