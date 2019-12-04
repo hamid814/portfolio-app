@@ -289,26 +289,6 @@
   transform: skew(-45deg);
 }
 
-@keyframes descAnim {
-  0% {
-    transform: skew(0);
-    opacity: 0;
-  }
-  100% {
-    transform: skew(45deg);
-    opacity: 1;
-  }
-}
-
-@keyframes descTextAnim {
-  0% {
-    transform: skew(0);
-  }
-  100% {
-    transform: skew(-45deg);
-  }
-}
-
 .transiting .layer,
 .transiting .back-layer,
 .transiting .side-layer,
