@@ -47,9 +47,7 @@
   }
 }
 
-
-
-@keyframes descAnim {
+@keyframes descAnim1 {
   0% {
     transform: skew(0);
     opacity: 0;
@@ -60,7 +58,27 @@
   }
 }
 
-@keyframes descTextAnim {
+@keyframes descTextAnim1 {
+  0% {
+    transform: skew(0);
+  }
+  100% {
+    transform: skew(-45deg);
+  }
+}
+
+@keyframes descAnim2 {
+  0% {
+    transform: skew(0);
+    opacity: 0;
+  }
+  100% {
+    transform: skew(45deg);
+    opacity: 1;
+  }
+}
+
+@keyframes descTextAnim2 {
   0% {
     transform: skew(0);
   }
