@@ -1,17 +1,14 @@
 :root {
   --color-one: #222; /* tan */
-  --color-two: #777; /* teal */
-  --color-three: #777; /* tomato */
+  --color-two: #999; /* teal */
+  --color-three: #999; /* tomato */
   --color-four: #222; /* thistle */
   /* --color-one: tan;
   --color-two: teal;
   --color-three: tomato;
   --color-four: thistle; */
-  /* --color-one: #ccc;
-  --color-two: #333;
-  --color-three: #333;
-  --color-four: #ccc; */
   --page-title-font-size: 30vh;
+  --page-title-font-weight: 100;
   --page-layer-opacity: 0.9;
 }
 
@@ -168,7 +165,7 @@
 }
 
 .layer h1 {
-  font-weight: 100;
+  font-weight: var(--page-title-font-weight);
   font-family: 'Courier New', Courier, monospace;
 }
 
