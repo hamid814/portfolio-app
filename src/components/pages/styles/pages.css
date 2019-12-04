@@ -270,17 +270,17 @@
   padding-bottom: 0.5vh;
   left: 20vw;
   top: -2vh;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 #home .desc {
   background-color: var(--color-three);
   color: var(--color-one);
-  transform: skew(-45deg);
+  transform: skew(45deg);
 }
 
 #home .desc .text {
-  transform: skew(45deg);
+  transform: skew(-45deg);
 }
 
 #about .desc {
@@ -306,21 +306,32 @@
 #contact .desc {
   background-color: var(--color-four);
   color: var(--color-three);
-  transform: skew(45deg);
-}
-
-#contact .desc .text {
   transform: skew(-45deg);
 }
 
-#home .layer:hover .desc,
+#contact .desc .text {
+  transform: skew(45deg);
+}
+
+#contact .layer:hover .desc,
 #works .layer:hover .desc {
   animation: descAnim2 0.4s cubic-bezier(1,1,1,1);
   opacity: 1;
 }
 
-#home.layer:hover .desc .text,
-#works.layer:hover .desc .text {
+#contact .layer:hover .desc .text,
+#works .layer:hover .desc .text {
+  animation: descTextAnim2 0.4s cubic-bezier(1,1,1,1);
+}
+
+#about .layer:hover .desc,
+#home .layer:hover .desc {
+  animation: descAnim1 0.4s cubic-bezier(1,1,1,1);
+  opacity: 1;
+}
+
+#about .layer:hover .desc .text,
+#home .layer:hover .desc .text {
   animation: descTextAnim1 0.4s cubic-bezier(1,1,1,1);
 }
 
