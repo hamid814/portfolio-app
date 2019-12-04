@@ -263,17 +263,54 @@
 
 .page-container .desc {
   font-size: initial;
-  transform: skew(45deg);
-  background-color: var(--color-three);
-  color: var(--color-one);
   padding: 0 10px;
   position: absolute;
   width: 10vw;
   padding-top: 0.5vh;
   padding-bottom: 0.5vh;
   left: 20vw;
-  top: calc(-2vh);
+  top: -2vh;
   opacity: 0;
+}
+
+#home .desc {
+  background-color: var(--color-three);
+  color: var(--color-one);
+  transform: skew(-45deg);
+}
+
+#home .desc .text {
+  transform: skew(45deg);
+}
+
+#about .desc {
+  background-color: var(--color-three);
+  color: var(--color-one);
+  transform: skew(-45deg);
+}
+
+#about .desc .text {
+  transform: skew(45deg);
+}
+
+#works .desc {
+  background-color: var(--color-three);
+  color: var(--color-one);
+  transform: skew(-45deg);
+}
+
+#works .desc .text {
+  transform: skew(45deg);
+}
+
+#contact .desc {
+  background-color: var(--color-three);
+  color: var(--color-one);
+  transform: skew(-45deg);
+}
+
+#contact .desc .text {
+  transform: skew(45deg);
 }
 
 .layer:hover .desc {
@@ -286,7 +323,6 @@
 }
 
 .page-container .desc .text {
-  transform: skew(-45deg);
 }
 
 .transiting .layer,
