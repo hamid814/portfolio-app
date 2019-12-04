@@ -46,6 +46,11 @@ const About = () => {
       <div className={`layer ${aPageIsActive ? 'not' : 'is'} ${pagesStatus === 'zoom-in' ? 'zoom-in-vertical' : 'zoom-out-vertical'}`} onClick={onClick}>
         <h1>
           ABOUT
+          <span className='desc'>
+            <div className='text'>
+              click
+            </div>
+          </span>
         </h1>
       </div>
       <div className='page'>

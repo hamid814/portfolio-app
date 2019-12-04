@@ -1,12 +1,12 @@
 :root {
-  --color-one: #222; /* tan */
-  --color-two: #999; /* teal */
-  --color-three: #999; /* tomato */
-  --color-four: #222; /* thistle */
-  --color-one: tan;
+  --color-one: #223222; /* tan */
+  --color-two: #9999b9; /* teal */
+  --color-three: #b99999; /* tomato */
+  --color-four: #223222; /* thistle */
+  /* --color-one: tan;
   --color-two: teal;
   --color-three: tomato;
-  --color-four: thistle;
+  --color-four: thistle; */
   --page-title-font-size: 30vh;
   --page-title-font-weight: 100;
   --page-layer-opacity: 0.9;
@@ -261,8 +261,52 @@
   transform: skew(-45deg);
 }
 
-#home .desc {
+.page-container .desc {
+  font-size: initial;
   transform: skew(45deg);
+  background-color: var(--color-three);
+  color: var(--color-one);
+  padding: 0 10px;
+  position: absolute;
+  width: 10vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  left: 20vw;
+  top: calc(-2vh);
+  opacity: 0;
+}
+
+.layer:hover .desc {
+  animation: dvbsdv 0.4s cubic-bezier(1,1,1,1);
+  opacity: 1;
+}
+
+.page-container:hover .desc .text {
+  animation: dshbjdbhvjsbhv 0.4s cubic-bezier(1,1,1,1);
+}
+
+.page-container .desc .text {
+  transform: skew(-45deg);
+}
+
+@keyframes dvbsdv {
+  0% {
+    transform: skew(0);
+    opacity: 0;
+  }
+  100% {
+    transform: skew(45deg);
+    opacity: 1;
+  }
+}
+
+@keyframes dshbjdbhvjsbhv {
+  0% {
+    transform: skew(0);
+  }
+  100% {
+    transform: skew(-45deg);
+  }
 }
 
 .transiting .layer,
