@@ -1,10 +1,18 @@
 :root {
-  --color-one: #333;
-  --color-two: #ccc;
-  --color-three: #ccc;
-  --color-four: #333;
-  --page-title-font-size: 28vh;
-  --page-layer-padding: 36vh;
+  --color-one: #222; /* tan */
+  --color-two: #777; /* teal */
+  --color-three: #777; /* tomato */
+  --color-four: #222; /* thistle */
+  /* --color-one: tan;
+  --color-two: teal;
+  --color-three: tomato;
+  --color-four: thistle; */
+  /* --color-one: #ccc;
+  --color-two: #333;
+  --color-three: #333;
+  --color-four: #ccc; */
+  --page-title-font-size: 30vh;
+  --page-layer-opacity: 0.9;
 }
 
 /* pages container */
@@ -86,7 +94,7 @@
 }
 
 .transiting .page-container, .zoom-out .page-container {
-  opacity: 0.92;
+  opacity: var(--page-layer-opacity);
 }
 
 .zoom-out .layer:hover, .zoom-out .back-layer:hover, .zoom-out .side-layer:hover {
@@ -144,7 +152,7 @@
 }
 
 .zoom-out-vertical {
-  padding-top: calc(var(--page-layer-padding) / 2);
+  padding-top: calc((100vh - var(--page-title-font-size)) / 4);
 }
 
 .zoom-out-vertical h1 {
@@ -152,7 +160,7 @@
 }
 
 .zoom-in-vertical {
-  padding-top: calc(var(--page-layer-padding));
+  padding-top: calc((100vh - var(--page-title-font-size)) / 2);
 }
 
 .zoom-in-vertical h1 {
