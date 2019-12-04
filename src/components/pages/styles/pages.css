@@ -181,6 +181,12 @@
   opacity: 0;
 }
 
+.zoom-in .desc,
+.traversing .desc,
+.transiting .desc {
+  opacity: 0 !important;
+}
+
 #contact .layer:hover .desc,
 #works .layer:hover .desc {
   animation: descAnim2 0.4s cubic-bezier(1,1,1,1);
