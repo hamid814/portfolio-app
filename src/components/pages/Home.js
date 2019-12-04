@@ -126,6 +126,9 @@ const Home = () => {
         <h1>
           {name}
         </h1>
+        <span className="desc">
+          click
+        </span>
       </div>
       <div className='page'>
         Hi!

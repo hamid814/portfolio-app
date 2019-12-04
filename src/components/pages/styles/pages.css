@@ -3,10 +3,10 @@
   --color-two: #999; /* teal */
   --color-three: #999; /* tomato */
   --color-four: #222; /* thistle */
-  /* --color-one: tan;
+  --color-one: tan;
   --color-two: teal;
   --color-three: tomato;
-  --color-four: thistle; */
+  --color-four: thistle;
   --page-title-font-size: 30vh;
   --page-title-font-weight: 100;
   --page-layer-opacity: 0.9;
@@ -241,25 +241,29 @@
 
 #home .layer,
 #about .layer,
-#contact h1,
 #works h1,
-#contact .back-layer,
 #works .back-layer,
 #works .side-layer,
+#contact h1,
+#contact .back-layer,
 #contact .side-layer {
   transform: skew(45deg);
 }
 
-#contact .layer,
-#works .layer,#home h1,
-#about h1,
+#home h1,
 #home .back-layer,
-#about .back-layer,
 #home .side-layer,
-#about .side-layer {
+#about h1,
+#about .back-layer,
+#about .side-layer,
+#works .layer,
+#contact .layer {
   transform: skew(-45deg);
 }
 
+#home .desc {
+  transform: skew(45deg);
+}
 
 .transiting .layer,
 .transiting .back-layer,
