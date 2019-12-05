@@ -5,9 +5,11 @@ import './AskColor.css';
 const AskColor = () => {
   console.warn('ask for color or choose randomlly or select one myself')
 
-  const [degree, setDegree] = useState(120)
+  const [open, setOpen] = useState(false)
 
   const circle = useRef(null)
+
+  let testD = 0;
 
   useEffect(() => {
     rotate()
@@ -16,29 +18,48 @@ const AskColor = () => {
   }, [])
 
   const rotate = () => {
-    if(degree === 360) {
-      setDegree(1)
-    } else if(degree < 360) {
-      const z = degree + 1
-      setDegree(z)
-      console.log(degree)
+    if(testD === 360) {
+      testD = 1
+    } else if(testD < 360) {
+      testD++
     }
 
-    circle.current.style.transform = `rotateZ(${degree}deg)`
+    circle.current.style.transform = `rotateZ(${testD}deg)`
 
     setTimeout(() => {
       rotate()
-    }, 800);
+    }, 20);
   }
 
-  // document.body.style.setProperty('--color-one', '#222')
-  // document.body.style.setProperty('--color-two', '#555')
-  // document.body.style.setProperty('--color-three', '#888')
-  // document.body.style.setProperty('--color-four', '#bbb')
+  const onClick = () => {
+    setOpen(true)
+    // document.body.style.setProperty('--color-one', '#222c')
+    // document.body.style.setProperty('--color-two', '#555c')
+    // document.body.style.setProperty('--color-three', '#888c')
+    // document.body.style.setProperty('--color-four', '#bbbc')
+  }
+
 
   return (
-    <div id='select-color' ref={circle}>
-
+    <div
+      id='select-color'
+      ref={circle}
+      onClick={onClick}>
+      <div className='color-one'>
+        <div className='pack-one'>
+        
+        </div>      
+      </div>
+      <div className='color-two'>
+        <div className='pack-two'>
+        
+        </div>
+      </div>
+      <div className='color-three'>
+        <div className='pack-three'>
+          
+        </div>
+      </div>
     </div>
   )
 }

@@ -1,23 +1,24 @@
 :root {
-  --color-one: #262626; /* tan */
-  --color-two: #8C8529; /* teal */
-  --color-three: #F98D4C; /* tomato */
-  --color-four: #6E361A; /* thistle */
-  --color-one-title: #F98D4C;
+  --color-one: rgba(38, 38, 38, 0.835);
+  --color-two: rgba(140, 133, 41, 0.767);
+  --color-three: rgba(86, 97, 124, 0.767);
+  --color-four: rgba(110, 54, 26, 0.842);
+  --color-one-title: #56617c;
   --color-two-title: #8C8529;
   --color-three-title: #6E361A;
   --color-four-title: #262626;
-  /* --color-one: #222;
-  --color-two: #555;
-  --color-three: #888;
-  --color-four: #bbb; */
-  /* --color-one: tan;
-  --color-two: teal;
-  --color-three: tomato;
-  --color-four: thistle; */
-  --page-title-font-size: 30vh;
+  /* --color-one: rgba(210, 180, 140, 0.829);
+  --color-two: rgba(0, 128, 128, 0.87);
+  --color-three: rgba(255, 99, 71, 0.863);
+  --color-four: rgba(216, 191, 216, 0.829); */
+  --page-title-font-size: 37vh;
+  --page-title-font-size: 20vw;
   --page-title-font-weight: 100;
-  --page-layer-opacity: 0.9;
+  --page-layer-opacity: 1;
+}
+
+.zoom-out .page {
+  opacity: 0;
 }
 
 /* pages container */

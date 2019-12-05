@@ -18,10 +18,10 @@ import './styles/zIndex.css';
 import './styles/keyframes.css';
 
 const App = () => {
-  const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting, pagesTransiting } = useContext(Context)
+  const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting, pagesTransiting, pagesTraversing } = useContext(Context)
 
   const onKeyUp = (e) => {
-    if(e.keyCode === 27 && aPageIsActive) {
+    if(e.keyCode === 27 && aPageIsActive && !pagesTraversing) {
       setActivePage('from-menu')
       setPagesStatus('zoom-out')
       setPagesTransiting(true, 'come')
