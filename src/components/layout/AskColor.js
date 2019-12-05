@@ -12,27 +12,31 @@ const AskColor = () => {
   let testD = 0;
 
   useEffect(() => {
-    rotate()
+    const rotate = () => {
+      if(testD === 360 && true) {
+        testD = 1
+      } else if(testD < 360) {
+        testD++
+      }
+      if(!open) {
+        circle.current.style.transform = `rotateZ(${testD}deg)`
+      }
+      console.log(open)
 
+      setTimeout(() => {
+        rotate()
+      }, 20);
+    }
+
+    rotate()
     // eslint-disable-next-line
   }, [])
 
-  const rotate = () => {
-    if(testD === 360) {
-      testD = 1
-    } else if(testD < 360) {
-      testD++
-    }
-
-    circle.current.style.transform = `rotateZ(${testD}deg)`
-
-    setTimeout(() => {
-      rotate()
-    }, 20);
-  }
 
   const onClick = () => {
-    setOpen(true)
+    setOpen(!open)
+
+    console.log(open)
     // document.body.style.setProperty('--color-one', '#222c')
     // document.body.style.setProperty('--color-two', '#555c')
     // document.body.style.setProperty('--color-three', '#888c')

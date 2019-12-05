@@ -4,7 +4,7 @@
   height: 50px;
   top: 25px;
   right: 25px;
-  background-image: linear-gradient(to bottom, rgba(140, 133, 41, 0.9), red);
+  background-image: linear-gradient(to bottom, black, red);
   border-radius: 50%;
   cursor: pointer;
 }
