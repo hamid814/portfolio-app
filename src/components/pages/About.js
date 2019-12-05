@@ -35,6 +35,10 @@ const About = () => {
     traversPages('home')
   }
 
+  const goToContact = () => {
+    traversPages('contact')
+  }
+
   return (
     <div className={`page-container ${activePage === 'home' && aPageIsActive && 'active'}`} id='about'>
       <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>

@@ -1,8 +1,16 @@
 :root {
-  --color-one: #222222; /* tan */
-  --color-two: #999999; /* teal */
-  --color-three: #999999; /* tomato */
-  --color-four: #222222; /* thistle */
+  --color-one: #262626; /* tan */
+  --color-two: #8C8529; /* teal */
+  --color-three: #F98D4C; /* tomato */
+  --color-four: #6E361A; /* thistle */
+  --color-one-title: #F98D4C;
+  --color-two-title: #8C8529;
+  --color-three-title: #6E361A;
+  --color-four-title: #262626;
+  /* --color-one: #222;
+  --color-two: #555;
+  --color-three: #888;
+  --color-four: #bbb; */
   /* --color-one: tan;
   --color-two: teal;
   --color-three: tomato;
@@ -214,7 +222,7 @@
 }
 
 #home h1 {
-  color: var(--color-two);
+  color: var(--color-one-title);
 }
 
 #home .back-layer {
@@ -237,7 +245,7 @@
 }
 
 #about h1 {
-  color: var(--color-four);
+  color: var(--color-three-title);
 }
 
 #about .back-layer {
@@ -250,7 +258,7 @@
 }
 
 #about .desc {
-  background-color: var(--color-one);
+  background-color: var(--color-four);
   color: var(--color-two);
 }
 
@@ -260,7 +268,7 @@
 }
 
 #works h1 {
-  color: var(--color-three);
+  color: var(--color-two-title);
 }
 
 #works .back-layer {
@@ -282,7 +290,7 @@
 }
 
 #contact h1 {
-  color: var(--color-one);
+  color: var(--color-four-title);
 }
 
 #contact .back-layer {
@@ -295,7 +303,7 @@
 }
 
 #contact .desc {
-  background-color: var(--color-four);
+  background-color: var(--color-one);
   color: var(--color-three);
 }
 
@@ -309,8 +317,8 @@
 #works .desc .text,
 #contact h1,
 #contact .back-layer,
-#contact .side-layer,
-#contact .desc .text {
+#contact .desc .text,
+#contact .side-layer {
   transform: skew(45deg);
 }
 
@@ -324,8 +332,8 @@
 #about .desc .text,
 #works .layer,
 #works .desc,
-#contact .layer,
-#contact .desc {
+#contact .desc,
+#contact .layer {
   transform: skew(-45deg);
 }
 

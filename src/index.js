@@ -7,6 +7,7 @@ import BackButton from './components/layout/BackButton.js';
 import BackScroll from './components/pages/BackScroll.js';
 import Pages from './components/pages/Pages.js';
 import Modal from './components/modal/Modal';
+import AskColor from './components/layout/AskColor';
 
 import State from './context/State.js';
 import Context from './context/Context.js';
@@ -54,6 +55,7 @@ const App = () => {
   return (
     <div tabIndex='1' onKeyUp={onKeyUp}>
       <Modal />
+      <AskColor />
       <BackButton />
       <Pages />
       <BackScroll />

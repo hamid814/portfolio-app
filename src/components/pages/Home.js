@@ -125,8 +125,8 @@ const Home = () => {
       <div className={`layer ${aPageIsActive ? 'not' : 'is'} ${pagesStatus === 'zoom-in' ? 'zoom-in-vertical' : 'zoom-out-vertical'}`} onClick={onClick}>
         <h1>
           {name}
-          <span className="desc">
-            <div className="text">
+          <span className='desc'>
+            <div className='text'>
               click
             </div>
           </span>
@@ -137,10 +137,10 @@ const Home = () => {
         <div>
           I'm { myName }
         </div>
-        <div className="go-to-contact-container" onClick={goToContact}>
+        <div className='go-to-contact-container' onClick={goToContact}>
           contact Me
         </div>
-        <div className="go-to-about-container" onClick={goToAbout}>
+        <div className='go-to-about-container' onClick={goToAbout}>
           about Me
         </div>
       </div>
