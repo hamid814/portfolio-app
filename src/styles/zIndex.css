@@ -33,3 +33,7 @@
 .side-layer.not {
   z-index: -9999;
 }
+
+#select-color {
+  z-index: 20;
+}
