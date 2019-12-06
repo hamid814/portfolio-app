@@ -1,4 +1,5 @@
 :root {
+  /* pack 1 */
   --color-one: rgb(38, 38, 38);
   --color-one-o: rgba(38, 38, 38, 0.9);
   --color-one-title: #56617c;
@@ -11,10 +12,42 @@
   --color-four: rgba(110, 54, 26);
   --color-four-o: rgba(110, 54, 26, 0.9);
   --color-four-title: #262626;
-  /* --color-one-o: rgba(210, 180, 140, 0.829);
-  --color-two-o: rgba(0, 128, 128, 0.87);
-  --color-three-o: rgba(255, 99, 71, 0.863);
-  --color-four-o: rgba(216, 191, 216, 0.829); */
+  /* pack 2 */
+  /* --color-one: rgb(210, 180, 140);
+  --color-one-o: rgba(210, 180, 140, 0.9);
+  --color-one-title: rgb(255, 99, 71);
+  --color-two: rgb(0, 128, 128);
+  --color-two-o: rgba(0, 128, 128, 0.9);
+  --color-two-title: rgb(0, 128, 128);
+  --color-three: rgb(255, 99, 71);
+  --color-three-o: rgba(255, 99, 71, 0.9);
+  --color-three-title: rgb(216, 191, 216);
+  --color-four: rgb(216, 191, 216);
+  --color-four-o: rgba(216, 191, 216, 0.9);
+  --color-four-title: rgb(210, 180, 140); */
+  /* pack 3 */
+  /* --color-one: rgb(30, 30, 30);
+  --color-one-o: rgba(30, 30, 30, 0.9);
+  --color-one-title: #56617c;
+  --color-two: rgb(150, 150, 150);
+  --color-two-o: rgba(150, 150, 150, 0.9);
+  --color-two-title: #8C8529;
+  --color-three: rgb(210, 210, 210);
+  --color-three-o: rgba(210, 210, 210, 0.9);
+  --color-three-title: #6E361A;
+  --color-four: rgb(90, 90, 90);
+  --color-four-o: rgba(90, 90, 90, 0.9);
+  --color-four-title: #262626; 
+  --layers-border-width: 0px; */
+  /* --color-one-title: #56617c;
+  --color-two-title: #8C8529;
+  --color-three-title: #6E361A;
+  --color-four-title: #262626; */
+  --layers-border-width: 0px;
+  --skew-degree: 45deg;
+  --skew-degree-n: -45deg;
+  
+  /* utils */
   --page-title-font-size: 37vh;
   --page-title-font-size: 20vw;
   --page-title-font-weight: 100;
@@ -23,6 +56,11 @@
 
 .zoom-out .page {
   opacity: 0;
+}
+
+.layer,
+.back-layer {
+  border: var(--layers-border-width) solid #888;
 }
 
 /* pages container */
@@ -132,7 +170,7 @@
 }
 
 .page {
-  border: 2px solid red;
+  border: 1px solid #aaa;
   border-radius: 200px;
   width: 100%;
   height: 100%;
@@ -162,7 +200,7 @@
 }
 
 .zoom-out-vertical {
-  padding-top: calc((100vh - var(--page-title-font-size)) / 4);
+  padding-top: calc((100vh - var(--layers-border-width) * 4 - var(--page-title-font-size)) / 4);
 }
 
 .zoom-out-vertical h1 {
@@ -180,6 +218,12 @@
 .layer h1 {
   font-weight: var(--page-title-font-weight);
   font-family: 'Courier New', Courier, monospace;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .page-container .desc {
@@ -324,7 +368,7 @@
 #contact .back-layer,
 #contact .desc .text,
 #contact .side-layer {
-  transform: skew(45deg);
+  transform: skew(var(--skew-degree));
 }
 
 #home h1,
@@ -339,7 +383,7 @@
 #works .desc,
 #contact .desc,
 #contact .layer {
-  transform: skew(-45deg);
+  transform: skew(var(--skew-degree-n));
 }
 
 .transiting .layer,
