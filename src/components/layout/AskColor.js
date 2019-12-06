@@ -21,7 +21,6 @@ const AskColor = () => {
       if(!open) {
         circle.current.style.transform = `rotateZ(${testD}deg)`
       }
-      console.log(open)
 
       setTimeout(() => {
         rotate()
@@ -47,11 +46,12 @@ const AskColor = () => {
   return (
     <div
       id='select-color'
+      className={`${open ? 'open' : 'close'}`}
       ref={circle}
       onClick={onClick}>
       <div className='color-one'>
         <div className='pack-one'>
-        
+          
         </div>      
       </div>
       <div className='color-two'>

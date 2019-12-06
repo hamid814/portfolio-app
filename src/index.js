@@ -21,7 +21,7 @@ const App = () => {
   const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting, pagesTransiting, pagesTraversing } = useContext(Context)
 
   const onKeyUp = (e) => {
-    if(e.keyCode === 27 && aPageIsActive && !pagesTraversing) {
+    if(e.keyCode === 27 && aPageIsActive && !pagesTraversing.status) {
       setActivePage('from-menu')
       setPagesStatus('zoom-out')
       setPagesTransiting(true, 'come')

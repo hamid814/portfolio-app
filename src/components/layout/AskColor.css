@@ -4,7 +4,46 @@
   height: 50px;
   top: 25px;
   right: 25px;
-  background-image: linear-gradient(to bottom, black, red);
+  background: transparent;
   border-radius: 50%;
   cursor: pointer;
+  overflow: hidden;
+  opacity: 1 !important;
+}
+
+#select-color.close .color-one,
+#select-color.close .color-two,
+#select-color.close .color-three {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+#select-color.close .color-one {
+  background: var(--color-two);
+  color: red;
+  right: 50%;
+  top: 0;
+  transform: skew(-30deg);
+  transform-origin: bottom right;
+  width: 35px;
+}
+
+#select-color.close .color-two {
+  background: var(--color-three);
+  left: 50%;
+  top: 50%;
+  width: 45px;
+  height: 25px;
+  transform-origin: top left;
+  transform: rotateZ(-60deg) translateX(-15px);
+}
+
+#select-color.close .color-three {
+  background: var(--color-one);
+  left: 0;
+  top: 50%;
+  width: 35px;
+  transform: skew(30deg) translateX(-3px);
+  /* transform-origin: ; */
 }
