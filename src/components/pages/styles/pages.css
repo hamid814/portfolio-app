@@ -1,8 +1,12 @@
 :root {
-  --color-one: rgba(38, 38, 38, 0.835);
-  --color-two: rgba(140, 133, 41, 0.767);
-  --color-three: rgba(86, 97, 124, 0.767);
-  --color-four: rgba(110, 54, 26, 0.842);
+  --color-one-o: rgba(38, 38, 38, 0.835);
+  --color-one: rgba(38, 38, 38);
+  --color-two-o: rgba(140, 133, 41, 0.767);
+  --color-two: rgba(140, 133, 41);
+  --color-three-o: rgba(86, 97, 124, 0.767);
+  --color-three: rgba(86, 97, 124);
+  --color-four-o: rgba(110, 54, 26, 0.842);
+  --color-four: rgba(110, 54, 26);
   --color-one-title: #56617c;
   --color-two-title: #8C8529;
   --color-three-title: #6E361A;
@@ -219,7 +223,7 @@
 }
 
 #home .layer {
-  background: var(--color-one);
+  background: var(--color-one-o);
 }
 
 #home h1 {
@@ -227,11 +231,11 @@
 }
 
 #home .back-layer {
-  background: var(--color-two);
+  background: var(--color-two-o);
 }
 
 #home .side-layer {
-  background: var(--color-three);
+  background: var(--color-three-o);
   left: -100%;
 }
 
@@ -242,7 +246,7 @@
 
 #about .layer {
   right: 0;
-  background: var(--color-two);
+  background: var(--color-two-o);
 }
 
 #about h1 {
@@ -250,11 +254,11 @@
 }
 
 #about .back-layer {
-  background: var(--color-four);
+  background: var(--color-four-o);
 }
 
 #about .side-layer {
-  background: var(--color-one);
+  background: var(--color-one-o);
   left: 100%;
 }
 
@@ -265,7 +269,7 @@
 
 #works .layer {
   right: 0;
-  background: var(--color-four);
+  background: var(--color-four-o);
 }
 
 #works h1 {
@@ -273,11 +277,11 @@
 }
 
 #works .back-layer {
-  background: var(--color-three);
+  background: var(--color-three-o);
 }
 
 #works .side-layer {
-  background: var(--color-two);
+  background: var(--color-two-o);
   left: 100%;
 }
 
@@ -287,7 +291,7 @@
 }
 
 #contact .layer {
-  background: var(--color-three);
+  background: var(--color-three-o);
 }
 
 #contact h1 {
@@ -295,11 +299,11 @@
 }
 
 #contact .back-layer {
-  background: var(--color-one);
+  background: var(--color-one-o);
 }
 
 #contact .side-layer {
-  background: var(--color-four);
+  background: var(--color-four-o);
   left: -100%;
 }
 

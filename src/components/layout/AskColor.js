@@ -33,13 +33,12 @@ const AskColor = () => {
 
 
   const onClick = () => {
-    setOpen(!open)
+    // setOpen(!open)
 
-    console.log(open)
-    // document.body.style.setProperty('--color-one', '#222c')
-    // document.body.style.setProperty('--color-two', '#555c')
-    // document.body.style.setProperty('--color-three', '#888c')
-    // document.body.style.setProperty('--color-four', '#bbbc')
+    document.body.style.setProperty('--color-one', '#222c')
+    document.body.style.setProperty('--color-two', '#555c')
+    document.body.style.setProperty('--color-three', '#888c')
+    document.body.style.setProperty('--color-four', '#bbbc')
   }
 
 
