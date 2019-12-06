@@ -5,7 +5,7 @@ import './AskColor.css';
 const AskColor = () => {
   console.warn('ask for color or choose randomlly or select one myself')
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   const circle = useRef(null)
 
