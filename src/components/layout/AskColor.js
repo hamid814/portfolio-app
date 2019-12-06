@@ -3,9 +3,81 @@ import React, { useState, useEffect, useRef } from 'react'
 import './AskColor.css';
 
 const AskColor = () => {
-  console.warn('ask for color or choose randomlly or select one myself')
+  const initialColors = {
+    pack1: {
+      active: true,
+      colorOne: {
+        color: '',
+        opacit: '',
+        title: ''
+      },
+      colorTwo: {
+        color: '',
+        opacit: '',
+        title: ''
+      },
+      colorThree: {
+        color: '',
+        opacit: '',
+        title: ''
+      },
+      colorFour: {
+        color: '',
+        opacit: '',
+        title: ''
+      }
+    },
+    pack2: {
+      active: true,
+      colorOne: {
+        color: '',
+        opacit: '',
+        title: ''
+      },
+      colorTwo: {
+        color: '',
+        opacit: '',
+        title: ''
+      },
+      colorThree: {
+        color: '',
+        opacit: '',
+        title: ''
+      },
+      colorFour: {
+        color: '',
+        opacit: '',
+        title: ''
+      }
+    },
+    pack3: {
+      active: true,
+      colorOne: {
+        color: '',
+        opacit: '',
+        title: ''
+      },
+      colorTwo: {
+        color: '',
+        opacit: '',
+        title: ''
+      },
+      colorThree: {
+        color: '',
+        opacit: '',
+        title: ''
+      },
+      colorFour: {
+        color: '',
+        opacit: '',
+        title: ''
+      }
+    }
+  }
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
+
+  const [colors, setColors] = useState(initialColors)
 
   const circle = useRef(null)
 
@@ -33,12 +105,12 @@ const AskColor = () => {
 
 
   const onClick = () => {
-    // setOpen(!open)
+    setOpen(!open)
 
-    document.body.style.setProperty('--color-one', '#222c')
-    document.body.style.setProperty('--color-two', '#555c')
-    document.body.style.setProperty('--color-three', '#888c')
-    document.body.style.setProperty('--color-four', '#bbbc')
+    document.body.style.setProperty('--color-one', '#222')
+    document.body.style.setProperty('--color-two', '#555')
+    document.body.style.setProperty('--color-three', '#888')
+    document.body.style.setProperty('--color-four', '#bbb')
   }
 
 
