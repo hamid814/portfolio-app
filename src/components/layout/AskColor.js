@@ -24,7 +24,8 @@ const AskColor = () => {
         color: 'rgba(110, 54, 26)',
         opacit: 'rgba(110, 54, 26, 0.9)',
         title: '#262626'
-      }
+      },
+      borderColor: 'transparent',
     },
     pack2: {
       colorOne: {
@@ -46,7 +47,8 @@ const AskColor = () => {
         color: 'rgb(216, 191, 216)',
         opacit: 'rgba(216, 191, 216, 0.9)',
         title: 'rgb(210, 180, 140)'
-      }
+      },
+      borderColor: 'transparent',
     },
     pack3: {
       colorOne: {
@@ -69,6 +71,7 @@ const AskColor = () => {
         opacit: 'rgba(90, 90, 90, 0.9)',
         title: '#262626'
       },
+      borderColor: 'transparent',
     },
     pack4: {
       colorOne: {
@@ -95,11 +98,13 @@ const AskColor = () => {
     }
   }
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   const [degree, setDegree] = useState(0)
 
   const [colors, setColors] = useState(initialColors)
+
+  const [activePackNumber, setActivePackNumber] = useState(1)
 
   const circle = useRef(null)
 
@@ -107,7 +112,7 @@ const AskColor = () => {
     if(open) {
       circle.current.style.transform = 'rotateZ(0deg)'
     } else if(!open) {
-      circle.current.style.transform = `rotateZ(${degree}deg)`
+      // circle.current.style.transform = `rotateZ(${degree}deg)`
       setTimeout(() => {
         if(degree === 360) {
           setDegree(0)
@@ -120,9 +125,7 @@ const AskColor = () => {
   }, [degree, open])
 
   const onClick = () => {
-    setOpen(true)
-
-    // document.body.style.setProperty('--color-one', '#222')
+    !open && setOpen(true)
   }
 
   const selectPack = (packName) => {

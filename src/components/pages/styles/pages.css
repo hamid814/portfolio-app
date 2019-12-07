@@ -1,6 +1,6 @@
 :root {
   /* pack 1 */
-  --color-one: rgb(38, 38, 38);
+  /* --color-one: rgb(38, 38, 38);
   --color-one-o: rgba(38, 38, 38, 0.9);
   --color-one-title: #56617c;
   --color-two: rgba(140, 133, 41);
@@ -12,6 +12,7 @@
   --color-four: rgba(110, 54, 26);
   --color-four-o: rgba(110, 54, 26, 0.9);
   --color-four-title: #262626;
+  --layers-border-color: transparent; */
   /* pack 2 */
   /* --color-one: rgb(210, 180, 140);
   --color-one-o: rgba(210, 180, 140, 0.9);
@@ -39,7 +40,7 @@
   --color-four-o: rgba(90, 90, 90, 0.5);
   --color-four-title: #262626; */
   /* pack 4 */
-  /* --color-one: rgba(0,0,0,0);
+  --color-one: rgba(0,0,0,0);
   --color-one-o: rgba(0,0,0,0);
   --color-one-title: #56617c;
   --color-two: rgba(0,0,0,0);
@@ -51,7 +52,7 @@
   --color-four: rgba(0,0,0,0);
   --color-four-o: rgba(0,0,0,0);
   --color-four-title: #262626;
-  --layers-border-color: #999; */
+  --layers-border-color: #999;
   
   /* utils */
   --page-title-font-size: 18vw;

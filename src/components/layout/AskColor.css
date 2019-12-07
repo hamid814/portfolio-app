@@ -6,24 +6,29 @@
   overflow: hidden;
   opacity: 1 !important;
   border-radius: 25px;
+  border: 1px solid var(--layers-border-color)
 }
 
 .color-one,
 .color-two,
 .color-three {
   transition: 1s;
+  border: 1px solid var(--layers-border-color)
 }
 
 .color-one {
   background: var(--color-one);
+  z-index: 3;
 }
 
 .color-two {
   background: var(--color-three);
+  z-index: 2;
 }
 
 .color-three {
   background: var(--color-two);
+  z-index: 1;
 }
 
 /* open styles */
@@ -69,12 +74,12 @@
 }
 
 #select-color.close .color-one {
-  color: red;
-  right: 50%;
-  top: 0;
+  right: 49%;
+  bottom: 48%;
   transform: skew(-30deg);
   transform-origin: bottom right;
   width: 35px;
+  height: 27px;
 }
 
 #select-color.close .color-two {
