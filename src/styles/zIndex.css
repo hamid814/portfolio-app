@@ -37,3 +37,22 @@
 #select-color {
   z-index: 20;
 }
+
+#select-color-container.active {
+  z-index: 21;
+}
+
+.color-one {
+  background: var(--color-one);
+  z-index: 1;
+}
+
+.color-two {
+  background: var(--color-three);
+  z-index: 2;
+}
+
+.color-three {
+  background: var(--color-two);
+  z-index: 3;
+}

@@ -109,10 +109,15 @@ const AskColor = () => {
   const circle = useRef(null)
 
   useEffect(() => {
+    selectPackOne()
+    // eslint-disable-next-line
+  }, [])
+
+  useEffect(() => {
     if(open) {
       circle.current.style.transform = 'rotateZ(0deg)'
     } else if(!open) {
-      // circle.current.style.transform = `rotateZ(${degree}deg)`
+      circle.current.style.transform = `rotateZ(${degree}deg)`
       setTimeout(() => {
         if(degree === 360) {
           setDegree(0)
@@ -161,9 +166,8 @@ const AskColor = () => {
     selectPack('pack4')
   }
 
-
   return (
-    <div id='select-color-container'>
+    <div id='select-color-container' className={`${open ? 'active' : 'deactive'}`}>
       <div
         id='select-color'
         className={`${open ? 'open' : 'close'}`}
