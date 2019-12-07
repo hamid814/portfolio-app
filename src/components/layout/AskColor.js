@@ -75,22 +75,22 @@ const AskColor = () => {
     },
     pack4: {
       colorOne: {
-        color: 'rgba(0,0,0,0)',
+        color: 'rgba(255,255,255,1)',
         opacit: 'rgba(0,0,0,0)',
         title: '#56617c'
       },
       colorTwo: {
-        color: 'rgba(0,0,0,0)',
+        color: 'rgba(255,255,255,1)',
         opacit: 'rgba(0,0,0,0)',
         title: '#8C8529'
       },
       colorThree: {
-        color: 'rgba(0,0,0,0)',
+        color: 'rgba(255,255,255,1)',
         opacit: 'rgba(0,0,0,0)',
         title: '#6E361A'
       },
       colorFour: {
-        color: 'rgba(0,0,0,0)',
+        color: 'rgba(255,255,255,1)',
         opacit: 'rgba(0,0,0,0)',
         title: '#262626'
       },
