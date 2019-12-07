@@ -95,13 +95,11 @@ const AskColor = () => {
     }
   }
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   const [degree, setDegree] = useState(0)
 
   const [colors, setColors] = useState(initialColors)
-
-  const [activePack, setActivePack] = useState(1)
 
   const circle = useRef(null)
 
@@ -122,12 +120,42 @@ const AskColor = () => {
   }, [degree, open])
 
   const onClick = () => {
-    setOpen(!open)
+    setOpen(true)
 
-    document.body.style.setProperty('--color-one', '#222')
-    document.body.style.setProperty('--color-two', '#555')
-    document.body.style.setProperty('--color-three', '#888')
-    document.body.style.setProperty('--color-four', '#bbb')
+    // document.body.style.setProperty('--color-one', '#222')
+  }
+
+  const selectPack = (packName) => {
+    const pack = colors[packName]
+    document.body.style.setProperty('--color-one', pack.colorOne.color)
+    document.body.style.setProperty('--color-one-o', pack.colorOne.opacit)
+    document.body.style.setProperty('--color-one-title', pack.colorOne.title)
+    document.body.style.setProperty('--color-two', pack.colorTwo.color)
+    document.body.style.setProperty('--color-two-o', pack.colorTwo.opacit)
+    document.body.style.setProperty('--color-two-title', pack.colorTwo.title)
+    document.body.style.setProperty('--color-three', pack.colorThree.color)
+    document.body.style.setProperty('--color-three-o', pack.colorThree.opacit)
+    document.body.style.setProperty('--color-three-title', pack.colorThree.title)
+    document.body.style.setProperty('--color-four', pack.colorFour.color)
+    document.body.style.setProperty('--color-four-o', pack.colorFour.opacit)
+    document.body.style.setProperty('--color-four-title', pack.colorFour.title)
+    document.body.style.setProperty('--layers-border-color', pack.borderColor)
+  }
+
+  const selectPackOne = () => {
+    selectPack('pack1')
+  }
+
+  const selectPackTwo = () => {
+    selectPack('pack2')
+  }
+
+  const selectPackThree = () => {
+    selectPack('pack3')
+  }
+
+  const selectPackFour = () => {
+    selectPack('pack4')
   }
 
 
@@ -139,17 +167,22 @@ const AskColor = () => {
         ref={circle}
         onClick={onClick}>
         <div className='color-one'>
-          <div className='pack-one'>
+          <div className='pack-one' onClick={selectPackOne}>
             
           </div>      
         </div>
         <div className='color-two'>
-          <div className='pack-two'>
+          <div className='pack-two' onClick={selectPackTwo}>
           
           </div>
         </div>
         <div className='color-three'>
-          <div className='pack-three'>
+          <div className='pack-three' onClick={selectPackThree}>
+            
+          </div>
+        </div>
+        <div className='color-four'>
+          <div className='pack-three' onClick={selectPackFour}>
             
           </div>
         </div>
