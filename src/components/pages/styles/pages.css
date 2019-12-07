@@ -1,6 +1,6 @@
 :root {
   /* pack 1 */
-  --color-one: rgb(38, 38, 38);
+  /* --color-one: rgb(38, 38, 38);
   --color-one-o: rgba(38, 38, 38, 0.9);
   --color-one-title: #56617c;
   --color-two: rgba(140, 133, 41);
@@ -11,7 +11,7 @@
   --color-three-title: #6E361A;
   --color-four: rgba(110, 54, 26);
   --color-four-o: rgba(110, 54, 26, 0.9);
-  --color-four-title: #262626;
+  --color-four-title: #262626; */
   /* pack 2 */
   /* --color-one: rgb(210, 180, 140);
   --color-one-o: rgba(210, 180, 140, 0.9);
@@ -27,31 +27,40 @@
   --color-four-title: rgb(210, 180, 140); */
   /* pack 3 */
   /* --color-one: rgb(30, 30, 30);
-  --color-one-o: rgba(30, 30, 30, 0.9);
+  --color-one-o: rgba(30, 30, 30, 0.5);
   --color-one-title: #56617c;
   --color-two: rgb(150, 150, 150);
-  --color-two-o: rgba(150, 150, 150, 0.9);
+  --color-two-o: rgba(150, 150, 150, 0.5);
   --color-two-title: #8C8529;
   --color-three: rgb(210, 210, 210);
-  --color-three-o: rgba(210, 210, 210, 0.9);
+  --color-three-o: rgba(210, 210, 210, 0.5);
   --color-three-title: #6E361A;
   --color-four: rgb(90, 90, 90);
-  --color-four-o: rgba(90, 90, 90, 0.9);
+  --color-four-o: rgba(90, 90, 90, 0.5);
   --color-four-title: #262626; 
   --layers-border-width: 0px; */
-  /* --color-one-title: #56617c;
+  /* pack 4 */
+  --color-one: rgba(0,0,0,0);
+  --color-one-o: rgba(0,0,0,0);
+  --color-one-title: #56617c;
+  --color-two: rgba(0,0,0,0);
+  --color-two-o: rgba(0,0,0,0);
   --color-two-title: #8C8529;
+  --color-three: rgba(0,0,0,0);
+  --color-three-o: rgba(0,0,0,0);
   --color-three-title: #6E361A;
-  --color-four-title: #262626; */
-  --layers-border-width: 0px;
-  --skew-degree: 45deg;
-  --skew-degree-n: -45deg;
+  --color-four: rgba(0,0,0,0);
+  --color-four-o: rgba(0,0,0,0);
+  --color-four-title: #262626;
+  --layers-border-color: #999;
   
   /* utils */
-  --page-title-font-size: 37vh;
-  --page-title-font-size: 20vw;
+  --page-title-font-size: 18vw;
   --page-title-font-weight: 100;
   --page-layer-opacity: 1;
+  --skew-degree: 45deg;
+  --skew-degree-n: -45deg;
+  --layers-border-width: 1px; /* helps for calc of centering the title verticaly */
 }
 
 .zoom-out .page {
@@ -59,8 +68,10 @@
 }
 
 .layer,
+.side-layer,
 .back-layer {
-  border: var(--layers-border-width) solid #888;
+  border: var(--layers-border-width) solid var(--layers-border-color);
+  /* border-radius: 900px; */
 }
 
 /* pages container */
@@ -392,7 +403,7 @@
 .transiting h1 {
   transform: skew(0) !important;
   transition: 1s;
-  border-radius: 0;
+  /* border-radius: 0; */
 }
 
 .transiting.come #contact .layer,

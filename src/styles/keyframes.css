@@ -19,22 +19,22 @@
 @keyframes layersComeAnim2 {
   0% {
     transform: skew(0);
-    border-radius: 70px;
+    /* border-radius: 70px; */
   }
   100% {
     transform: skew(45deg);
-    border-radius: 0;
+    /* border-radius: 0; */
   }
 }
 
 @keyframes layersGoAnim1 {
   0% {
-    border-radius: 70px;
+    /* border-radius: 70px; */
     transform: skew(-45deg);
   }
   100% {
     transform: skew(0deg);
-    border-radius: 0;
+    /* border-radius: 0; */
   }
 }
 
