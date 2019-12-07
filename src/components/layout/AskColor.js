@@ -97,33 +97,29 @@ const AskColor = () => {
 
   const [open, setOpen] = useState(false)
 
+  const [degree, setDegree] = useState(0)
+
   const [colors, setColors] = useState(initialColors)
 
   const [activePack, setActivePack] = useState(1)
 
   const circle = useRef(null)
 
-  let testD = 0;
-
   useEffect(() => {
-    rotate()
+    if(open) {
+      circle.current.style.transform = 'rotateZ(0deg)'
+    } else if(!open) {
+      circle.current.style.transform = `rotateZ(${degree}deg)`
+      setTimeout(() => {
+        if(degree === 360) {
+          setDegree(0)
+        } else if(degree < 360) {
+          setDegree(degree + 1)
+        }
+      }, 20);
+    }
     // eslint-disable-next-line
-  }, [])
-
-  const rotate = () => {
-    if(testD === 360 && true) {
-      testD = 1
-    } else if(testD < 360) {
-      testD++
-    }
-    if(!open) {
-      circle.current.style.transform = `rotateZ(${testD}deg)`
-    }
-
-    setTimeout(() => {
-      rotate()
-    }, 20);
-  }
+  }, [degree, open])
 
   const onClick = () => {
     setOpen(!open)
