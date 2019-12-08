@@ -31,19 +31,19 @@
 
 #select-color-container.active .close-select-color .line:first-child {
   transform-origin: top right;
-  transform: rotateZ(-90deg) translateY(8px) translateX(-9px);
+  transform: rotateZ(-90deg) translateY(7px) translateX(-10px);
   height: 14px;
 }
 
 #select-color-container.active .close-select-color .line:nth-child(2) {
   transform-origin: top right;
-  transform: translateY(9px) translateX(22px);
+  transform: translateY(10px) translateX(21px);
   height: 14px;
 }
 
 #select-color-container.active .close-select-color .line:last-child {
   transform-origin: top right;
-  transform: rotateZ(45deg) translateY(-8px) translateX(22.5px);
+  transform: rotateZ(45deg) translateY(-7px) translateX(22.5px);
   height: 18px;
 }
 

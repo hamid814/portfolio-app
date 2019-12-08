@@ -111,7 +111,7 @@ const AskColor = () => {
   const circle = useRef(null)
 
   useEffect(() => {
-    selectPackFour()
+    selectPackOne()
     // eslint-disable-next-line
   }, [])
 
@@ -217,42 +217,70 @@ const AskColor = () => {
         ref={circle}
         onClick={onClick}>
         <div className='color-one'>
-          <SelectPackOneButton select={selectPackOne} />
+          <SelectPackButton select={setColorPack} />
         </div>
         <div className='color-two'>
-          <div className='pack-two' onClick={selectPackTwo}>
-            <div className='slice-one'>
-            
-            </div>  
-            <div className='slice-two'>
-            
-            </div>
-            <div className='slice-three'>
-            
-            </div>
-          </div>
+          <SelectPackButton select={setColorPack} />
         </div>
         <div className='color-three'>
-          <div className='pack-three' onClick={selectPackThree}>
-            <div className='slice-one'>
-            
-            </div>  
-            <div className='slice-two'>
-            
-            </div>
-            <div className='slice-three'>
-            
-            </div>
-          </div>
+          <SelectPackButton select={setColorPack} />
         </div>
       </div>
     </div>
   )
 }
 
-const SelectPackOneButton = ({ select }) => {
+const SelectPackButton = ({ select }) => {
   return (
     <div className='pack-one' onClick={select}>
+      <div className='slice-one'>
+      
+      </div>  
+      <div className='slice-two'>
+      
+      </div>
+      <div className='slice-three'>
+      
+      </div>
+    </div>
+  )
+}
+
+const SelectPackTwoButton = ({ select }) => {
+  return (
+    <div className='pack-two' onClick={select}>
+      <div className='slice-one'>
+      
+      </div>  
+      <div className='slice-two'>
+      
+      </div>
+      <div className='slice-three'>
+      
+      </div>
+    </div>
+  )
+}
+
+const SelectPackThreeButton = ({ select }) => {
+  return (
+    <div className='pack-three' onClick={select}>
+      <div className='slice-one'>
+      
+      </div>  
+      <div className='slice-two'>
+      
+      </div>
+      <div className='slice-three'>
+      
+      </div>
+    </div>
+  )
+}
+
+const SelectPackFourButton = ({ select }) => {
+  return (
+    <div className='pack-four' onClick={select}>
       <div className='slice-one'>
       
       </div>  

@@ -90,36 +90,39 @@
 
 @keyframes closeSelectColorLineOneAnim {
   0% {
-    transform: rotateZ(-90deg) translateY(8px) translateX(-9px);
+    transform: rotateZ(-90deg) translateY(7px) translateX(-10px);
   }
   50% {
     transform: rotateZ(-90deg) translateY(10px) translateX(-7px);
   }
   100% {
-    transform: rotateZ(-90deg) translateY(8px) translateX(-9px);
+    transform: rotateZ(-90deg) translateY(7px) translateX(-10px);
   }
 }
 
 @keyframes closeSelectColorLineTwoAnim {
   0% {
-    transform: translateY(9px) translateX(22px);
+    transform: translateY(10px) translateX(21px);
   }
   50% {
     transform: translateY(7px) translateX(24px);
   }
   100% {
-    transform: translateY(9px) translateX(22px);
+    transform: translateY(10px) translateX(21px);
   }
 }
 
 @keyframes closeSelectColorLineThreeAnim {
   0% {
-    transform: rotateZ(45deg) translateY(-8px) translateX(22.5px);
+    transform: rotateZ(45deg) translateY(-7px) translateX(22.5px);
+    height: 18px;
   }
   50% {
     transform: rotateZ(45deg) translateY(-10px) translateX(22.5px);
+    /* height: 20px; */
   }
   100% {
-    transform: rotateZ(45deg) translateY(-8px) translateX(22.5px);
+    transform: rotateZ(45deg) translateY(-7px) translateX(22.5px);
+    height: 18px;
   }
 }
