@@ -1,3 +1,7 @@
+#select-color-container {
+  --pack-width: 50px;
+}
+
 #select-color-container.active {
   position: absolute;
   width: 100vw; 
@@ -122,13 +126,14 @@
 #select-color.open .color-three {
   width: 33.33%;
   height: 100%;
+  padding-top: calc((112% - var(--pack-width)) / 2);
 }
 
 #select-color.open .pack-one,
 #select-color.open .pack-two,
 #select-color.open .pack-three {
   background-image: linear-gradient(to top, #ccc, #666, #ccc);
-  width: 50px;
+  width: var(--pack-width);
   height: 50px;
   border-radius: 25px;
   margin: 0 auto;

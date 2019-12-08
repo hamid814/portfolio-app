@@ -109,7 +109,7 @@ const AskColor = () => {
   const circle = useRef(null)
 
   useEffect(() => {
-    selectPackFour()
+    selectPackOne()
     // eslint-disable-next-line
   }, [])
 
@@ -176,6 +176,10 @@ const AskColor = () => {
     selectPack('pack4')
   }
 
+  const thisStyle = {
+    background: 'var(--color-two)'
+  }
+
   return (
     <div
       onClick={close}
@@ -195,7 +199,7 @@ const AskColor = () => {
         ref={circle}
         onClick={onClick}>
         <div className='color-one'>
-          <div className='pack-one' onClick={selectPackOne}>
+          <div className='pack-one' style={thisStyle} onClick={selectPackOne}>
             
           </div>      
         </div>
