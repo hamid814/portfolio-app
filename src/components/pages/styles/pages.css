@@ -403,7 +403,7 @@
 .transiting h1 {
   transform: skew(0) !important;
   transition: 1s;
-  /* border-radius: 0; */
+  border-radius: 0;
 }
 
 .transiting.come #contact .layer,

@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 
-.close-select-color .line {
+#select-color-container.active .close-select-color .line {
   position: absolute;
   width: 1.5px;
   height: 20px;
@@ -30,70 +30,56 @@
   border-radius: 50px;
 }
 
-.close-select-color .line:first-child {
+#select-color-container.active .close-select-color .line:first-child {
   transform-origin: top right;
   transform: rotateZ(-90deg) translateY(8px) translateX(-9px);
   height: 14px;
 }
 
-.close-select-color .line:nth-child(2) {
+#select-color-container.active .close-select-color .line:nth-child(2) {
   transform-origin: top right;
   transform: translateY(9px) translateX(22px);
   height: 14px;
 }
 
-.close-select-color .line:last-child {
+#select-color-container.active .close-select-color .line:last-child {
   transform-origin: top right;
   transform: rotateZ(45deg) translateY(-8px) translateX(22.5px);
   height: 18px;
 }
 
-.close-select-color:hover .line:first-child {
-  animation: thisAnimHere1 0.5s ease-in-out;
+#select-color-container.active .close-select-color:hover .line:first-child {
+  animation: closeSelectColorLineAnim1 0.5s ease-in-out;
 }
 
-.close-select-color:hover .line:nth-child(2) {
-  animation: thisAnimHere2 0.5s ease-in-out;
+#select-color-container.active .close-select-color:hover .line:nth-child(2) {
+  animation: closeSelectColorLineAnim2 0.5s ease-in-out;
 }
 
-.close-select-color:hover .line:last-child {
-  animation: thisAnimHere3 0.5s ease-in-out;
+#select-color-container.active .close-select-color:hover .line:last-child {
+  animation: closeSelectColorLineAnim3 0.5s ease-in-out;
 }
 
-@keyframes thisAnimHere1 {
-  0% {
-    transform: rotateZ(-90deg) translateY(8px) translateX(-9px);
-  }
-  50% {
-    transform: rotateZ(-90deg) translateY(10px) translateX(-7px);
-  }
-  100% {
-    transform: rotateZ(-90deg) translateY(8px) translateX(-9px);
-  }
+#select-color-container .desc {
+  position: absolute;
+  background: rgba(0,0,0,0.7);
+  color: rgb(200,200,200);
+  padding: 2px 3px;
+  border-radius: 5px;
+  top: 55px;
+  right: 18px;
+  opacity: 0;
 }
 
-@keyframes thisAnimHere2 {
-  0% {
-    transform: translateY(9px) translateX(22px);
-  }
-  50% {
-    transform: translateY(7px) translateX(24px);
-  }
-  100% {
-    transform: translateY(9px) translateX(22px);
-  }
+#select-color-container.active .desc {
+  position: absolute;
+  opacity: 0;
 }
 
-@keyframes thisAnimHere3 {
-  0% {
-    transform: rotateZ(45deg) translateY(-8px) translateX(22.5px);
-  }
-  50% {
-    transform: rotateZ(45deg) translateY(-10px) translateX(22.5px);
-  }
-  100% {
-    transform: rotateZ(45deg) translateY(-8px) translateX(22.5px);
-  }
+#select-color-container.deactive:hover .desc {
+  position: absolute;
+  opacity: 1;
+  top: 70px;
 }
 
 #select-color {

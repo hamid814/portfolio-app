@@ -109,7 +109,7 @@ const AskColor = () => {
   const circle = useRef(null)
 
   useEffect(() => {
-    selectPackOne()
+    selectPackFour()
     // eslint-disable-next-line
   }, [])
 
