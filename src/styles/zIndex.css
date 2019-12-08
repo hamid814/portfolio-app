@@ -42,17 +42,27 @@
   z-index: 21;
 }
 
-.color-one {
-  background: var(--color-one);
+
+#select-color-container.deactive {
+  z-index: -9999;
+}
+
+#select-color-container.active .close-select-color {
+  z-index: 22;
+}
+
+#select-color-container .desc {
+  z-index: 20;
+}
+
+#select-color-container .color-one {
   z-index: 1;
 }
 
-.color-two {
-  background: var(--color-three);
+#select-color-container .color-two {
   z-index: 2;
 }
 
-.color-three {
-  background: var(--color-two);
+#select-color-container .color-three {
   z-index: 3;
 }

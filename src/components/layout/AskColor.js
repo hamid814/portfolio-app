@@ -98,7 +98,7 @@ const AskColor = () => {
     }
   }
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   const [degree, setDegree] = useState(0)
 
