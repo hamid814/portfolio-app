@@ -2,13 +2,23 @@
   position: absolute;
   width: 100vw; 
   height: 100vh; 
-  background: #333;
-  /* make it with z index active or deactive */
+  background: #0000;
 }
 
 #select-color-container.deactive {
-  width: 0;
-  height: 0;
+  z-index: -9999;
+}
+
+#select-color-container.active .close-select-color {
+  width: 33px;
+  height: 33px;
+  background: #ddd;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 10px;
+  border-top-right-radius: 20px;
+  z-index: 22;
 }
 
 #select-color {

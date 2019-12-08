@@ -98,7 +98,7 @@ const AskColor = () => {
     }
   }
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
 
   const [degree, setDegree] = useState(0)
 
@@ -131,6 +131,16 @@ const AskColor = () => {
 
   const onClick = () => {
     !open && setOpen(true)
+  }
+
+  const closeFromXBtn = () => {
+    setOpen(false)
+  }
+
+  const close = (e) => {
+    if(e.target.classList.contains('func-colse-select-color')) {
+      setOpen(false)
+    }
   }
 
   const selectPack = (packName) => {
@@ -167,7 +177,18 @@ const AskColor = () => {
   }
 
   return (
-    <div id='select-color-container' className={`${open ? 'active' : 'deactive'}`}>
+    <div
+      onClick={close}
+      id='select-color-container'
+      className={`func-colse-select-color ${open ? 'active' : 'deactive'}`}>
+      <div className='close-select-color' onClick={closeFromXBtn}>
+        <div className='line'></div>
+        <div className='line'></div>
+        <div className='line'></div>
+      </div>
+      <div className='desc'>
+        color set
+      </div>
       <div
         id='select-color'
         className={`${open ? 'open' : 'close'}`}
