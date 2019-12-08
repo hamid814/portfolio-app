@@ -128,9 +128,7 @@
   padding-top: calc((112% - var(--pack-width)) / 2);
 }
 
-#select-color.open .pack-one,
-#select-color.open .pack-two,
-#select-color.open .pack-three {
+#select-color.open .color-pack {
   position: relative;
   width: var(--pack-width);
   height: 50px;
@@ -142,8 +140,12 @@
   animation: selectColorPackAnim 12s cubic-bezier(1,1,1,1) infinite;
 }
 
-#select-color.open .pack-two {
+#select-color.open .color-two .color-pack {
   animation-direction: reverse;
+}
+
+#select-color.open .color-three .color-pack {
+  animation-delay: 3s;
 }
 
 #select-color.open .slice-one,
@@ -220,8 +222,6 @@
   transform: skew(30deg) translateX(-3px);
 }
 
-#select-color.close .pack-one,
-#select-color.close .pack-two,
-#select-color.close .pack-three {
+#select-color.close .color-pack {
   display: none;
 }

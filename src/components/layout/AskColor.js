@@ -244,7 +244,7 @@ const SelectPackButton = ({ select, defaultPack, activePack }) => {
   }
 
   return (
-    <div className='pack-one' onClick={selectThisPack} style={borderStyle}>
+    <div className='color-pack' onClick={selectThisPack} style={borderStyle}>
       <div className='slice-one' style={color1}>
       
       </div>

@@ -73,6 +73,12 @@
   border: var(--layers-border-width) solid var(--layers-border-color);
 }
 
+.pages.traversing .layer,
+.pages.traversing .back-layer,
+.pages.traversing .side-layer {
+  border: none;
+}
+
 /* pages container */
 .pages {
   position: absolute;
