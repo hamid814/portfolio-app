@@ -5,6 +5,7 @@ import './AskColor.css';
 const AskColor = () => {
   const initialColors = {
     pack1: {
+      packNameString: 'pack1',
       colorOne: {
         color: 'rgb(38, 38, 38)',
         opacit: 'rgba(38, 38, 38, 0.9)',
@@ -28,6 +29,7 @@ const AskColor = () => {
       borderColor: 'transparent',
     },
     pack2: {
+      packNameString: 'pack2',
       colorOne: {
         color: 'rgb(210, 180, 140)',
         opacit: 'rgba(210, 180, 140, 0.9)',
@@ -51,6 +53,7 @@ const AskColor = () => {
       borderColor: 'transparent',
     },
     pack3: {
+      packNameString: 'pack3',
       colorOne: {
         color: 'rgb(30, 30, 30)',
         opacit: 'rgba(30, 30, 30, 0.9)',
@@ -74,6 +77,7 @@ const AskColor = () => {
       borderColor: 'transparent',
     },
     pack4: {
+      packNameString: 'pack4',
       colorOne: {
         color: 'rgba(255,255,255,1)',
         opacit: 'rgba(0,0,0,0)',
@@ -98,20 +102,21 @@ const AskColor = () => {
     }
   }
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   const [hover, setHover] = useState(false)
 
   const [degree, setDegree] = useState(0)
 
+  // eslint-disable-next-line
   const [colors, setColors] = useState(initialColors)
 
-  const [activePackNumber, setActivePackNumber] = useState(1)
+  const [activePackNumber, setActivePackNumber] = useState('pack1')
 
   const circle = useRef(null)
 
   useEffect(() => {
-    selectPackOne()
+    setColorPack(colors['pack1'])
     // eslint-disable-next-line
   }, [])
 
@@ -159,8 +164,7 @@ const AskColor = () => {
     }
   }
 
-  const setColorPack = (packName) => {
-    const pack = colors[packName]
+  const setColorPack = (pack) => {
     document.body.style.setProperty('--color-one', pack.colorOne.color)
     document.body.style.setProperty('--color-one-o', pack.colorOne.opacit)
     document.body.style.setProperty('--color-one-title', pack.colorOne.title)
@@ -174,26 +178,8 @@ const AskColor = () => {
     document.body.style.setProperty('--color-four-o', pack.colorFour.opacit)
     document.body.style.setProperty('--color-four-title', pack.colorFour.title)
     document.body.style.setProperty('--layers-border-color', pack.borderColor)
-  }
 
-  const selectPackOne = () => {
-    setColorPack('pack1')
-  }
-
-  const selectPackTwo = () => {
-    setColorPack('pack2')
-  }
-
-  const selectPackThree = () => {
-    setColorPack('pack3')
-  }
-
-  const selectPackFour = () => {
-    setColorPack('pack4')
-  }
-
-  const thisStyle = {
-    background: 'var(--color-two)'
+    setActivePackNumber(pack.packNameString)
   }
 
   return (
@@ -217,77 +203,55 @@ const AskColor = () => {
         ref={circle}
         onClick={onClick}>
         <div className='color-one'>
-          <SelectPackButton select={setColorPack} />
+          <SelectPackButton select={setColorPack} defaultPack={colors['pack4']} activePack={colors[activePackNumber]} />
         </div>
         <div className='color-two'>
-          <SelectPackButton select={setColorPack} />
+          <SelectPackButton select={setColorPack} defaultPack={colors['pack2']} activePack={colors[activePackNumber]} />
         </div>
         <div className='color-three'>
-          <SelectPackButton select={setColorPack} />
+          <SelectPackButton select={setColorPack} defaultPack={colors['pack3']} activePack={colors[activePackNumber]} />
         </div>
       </div>
     </div>
   )
 }
 
-const SelectPackButton = ({ select }) => {
-  return (
-    <div className='pack-one' onClick={select}>
-      <div className='slice-one'>
-      
-      </div>  
-      <div className='slice-two'>
-      
-      </div>
-      <div className='slice-three'>
-      
-      </div>
-    </div>
-  )
-}
+const SelectPackButton = ({ select, defaultPack, activePack }) => {
+  const [pack, setPack] = useState(defaultPack)
 
-const SelectPackTwoButton = ({ select }) => {
-  return (
-    <div className='pack-two' onClick={select}>
-      <div className='slice-one'>
-      
-      </div>  
-      <div className='slice-two'>
-      
-      </div>
-      <div className='slice-three'>
-      
-      </div>
-    </div>
-  )
-}
+  const selectThisPack = () => {
+    setPack(activePack)
+    select(pack)
+  }
 
-const SelectPackThreeButton = ({ select }) => {
-  return (
-    <div className='pack-three' onClick={select}>
-      <div className='slice-one'>
-      
-      </div>  
-      <div className='slice-two'>
-      
-      </div>
-      <div className='slice-three'>
-      
-      </div>
-    </div>
-  )
-}
+  const color1 = {
+    background: pack.colorOne.color,
+    border: `1px solid ${pack.borderColor}`
+  }
 
-const SelectPackFourButton = ({ select }) => {
+  const color2 = {
+    background: pack.colorTwo.color,
+    border: `1px solid ${pack.borderColor}`
+  }
+
+  const color3 = {
+    background: pack.colorThree.color,
+    border: `1px solid ${pack.borderColor}`
+  }
+
+  const borderStyle = {
+    border: `1px solid ${pack.borderColor}`
+  }
+
   return (
-    <div className='pack-four' onClick={select}>
-      <div className='slice-one'>
-      
-      </div>  
-      <div className='slice-two'>
+    <div className='pack-one' onClick={selectThisPack} style={borderStyle}>
+      <div className='slice-one' style={color1}>
       
       </div>
-      <div className='slice-three'>
+      <div className='slice-two' style={color2}>
+      
+      </div>
+      <div className='slice-three' style={color3}>
       
       </div>
     </div>

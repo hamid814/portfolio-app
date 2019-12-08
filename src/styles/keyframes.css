@@ -115,14 +115,20 @@
 @keyframes closeSelectColorLineThreeAnim {
   0% {
     transform: rotateZ(45deg) translateY(-7px) translateX(22.5px);
-    height: 18px;
   }
   50% {
     transform: rotateZ(45deg) translateY(-10px) translateX(22.5px);
-    /* height: 20px; */
   }
   100% {
     transform: rotateZ(45deg) translateY(-7px) translateX(22.5px);
-    height: 18px;
+  }
+}
+
+@keyframes selectColorPackAnim {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
   }
 }
