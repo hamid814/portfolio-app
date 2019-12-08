@@ -19,6 +19,7 @@
   border-radius: 10px;
   border-top-right-radius: 20px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 #select-color-container.active .close-select-color .line {
@@ -41,22 +42,64 @@
   height: 14px;
 }
 
-#select-color-container.active .close-select-color .line:last-child {
+#select-color-container.active .close-select-color .line:nth-child(3) {
   transform-origin: top right;
   transform: rotateZ(45deg) translateY(-7px) translateX(22.5px);
   height: 18px;
 }
 
+#select-color-container.active .close-select-color .line:nth-child(4) {
+  transform-origin: top right;
+  transform: rotateZ(-90deg) translateY(-13px) translateX(-30px);
+  height: 14px;
+}
+
+#select-color-container.active .close-select-color .line:nth-child(5) {
+  transform-origin: top right;
+  transform: translateY(30px) translateX(1px);
+  height: 14px;
+}
+
+#select-color-container.active .close-select-color .line:nth-child(6) {
+  transform-origin: top right;
+  transform: rotateZ(45deg) translateY(21px) translateX(22.5px);
+  height: 18px;
+}
+
 #select-color-container.active .close-select-color:hover .line:first-child {
-  animation: closeSelectColorLineOneAnim 0.5s ease-in-out;
+  transform-origin: top right;
+  transform: rotateZ(-90deg) translateY(27px) translateX(10px);
+  height: 14px;
 }
 
 #select-color-container.active .close-select-color:hover .line:nth-child(2) {
-  animation: closeSelectColorLineTwoAnim 0.5s ease-in-out;
+  transform-origin: top right;
+  transform: translateY(-10px) translateX(41px);
+  height: 14px;
 }
 
-#select-color-container.active .close-select-color:hover .line:last-child {
-  animation: closeSelectColorLineThreeAnim 0.5s ease-in-out;
+#select-color-container.active .close-select-color:hover .line:nth-child(3) {
+  transform-origin: top right;
+  transform: rotateZ(45deg) translateY(-35px) translateX(22.5px);
+  height: 18px;
+}
+
+#select-color-container.active .close-select-color:hover .line:nth-child(4) {
+  transform-origin: top right;
+  transform: rotateZ(-90deg) translateY(7px) translateX(-10px);
+  height: 14px;
+}
+
+#select-color-container.active .close-select-color:hover .line:nth-child(5) {
+  transform-origin: top right;
+  transform: translateY(10px) translateX(21px);
+  height: 14px;
+}
+
+#select-color-container.active .close-select-color:hover .line:nth-child(6) {
+  transform-origin: top right;
+  transform: rotateZ(45deg) translateY(-7px) translateX(22.5px);
+  height: 18px;
 }
 
 #select-color-container .desc {
@@ -98,7 +141,6 @@
 .color-two,
 .color-three {
   transition: 1s;
-  border: 1px solid var(--layers-border-color)
 }
 
 .color-one {
@@ -154,7 +196,6 @@
 }
 
 #select-color.open .slice-one {
-  background: magenta;
   right: 49%;
   bottom: 48%;
   transform: skew(-30deg);
@@ -164,7 +205,6 @@
 }
 
 #select-color.open .slice-two {
-  background: mediumblue;
   left: 50%;
   top: 50%;
   width: 45px;
@@ -174,7 +214,6 @@
 }
 
 #select-color.open .slice-three {
-  background: sandybrown;
   left: 0;
   top: 50%;
   width: 35px;
@@ -196,6 +235,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
+  border: 1px solid var(--layers-border-color)
 }
 
 #select-color.close .color-one {
