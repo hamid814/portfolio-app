@@ -19,7 +19,6 @@
   border-radius: 10px;
   border-top-right-radius: 20px;
   cursor: pointer;
-  overflow: hidden;
 }
 
 #select-color-container.active .close-select-color .line {
@@ -48,58 +47,16 @@
   height: 18px;
 }
 
-#select-color-container.active .close-select-color .line:nth-child(4) {
-  transform-origin: top right;
-  transform: rotateZ(-90deg) translateY(-13px) translateX(-30px);
-  height: 14px;
-}
-
-#select-color-container.active .close-select-color .line:nth-child(5) {
-  transform-origin: top right;
-  transform: translateY(30px) translateX(1px);
-  height: 14px;
-}
-
-#select-color-container.active .close-select-color .line:nth-child(6) {
-  transform-origin: top right;
-  transform: rotateZ(45deg) translateY(21px) translateX(22.5px);
-  height: 18px;
-}
-
 #select-color-container.active .close-select-color:hover .line:first-child {
-  transform-origin: top right;
-  transform: rotateZ(-90deg) translateY(27px) translateX(10px);
-  height: 14px;
+  animation: closeSelectColorLineOneAnim 0.5s ease-in-out;
 }
 
 #select-color-container.active .close-select-color:hover .line:nth-child(2) {
-  transform-origin: top right;
-  transform: translateY(-10px) translateX(41px);
-  height: 14px;
+  animation: closeSelectColorLineTwoAnim 0.5s ease-in-out;
 }
 
 #select-color-container.active .close-select-color:hover .line:nth-child(3) {
-  transform-origin: top right;
-  transform: rotateZ(45deg) translateY(-35px) translateX(22.5px);
-  height: 18px;
-}
-
-#select-color-container.active .close-select-color:hover .line:nth-child(4) {
-  transform-origin: top right;
-  transform: rotateZ(-90deg) translateY(7px) translateX(-10px);
-  height: 14px;
-}
-
-#select-color-container.active .close-select-color:hover .line:nth-child(5) {
-  transform-origin: top right;
-  transform: translateY(10px) translateX(21px);
-  height: 14px;
-}
-
-#select-color-container.active .close-select-color:hover .line:nth-child(6) {
-  transform-origin: top right;
-  transform: rotateZ(45deg) translateY(-7px) translateX(22.5px);
-  height: 18px;
+  animation: closeSelectColorLineThreeAnim 0.5s ease-in-out;
 }
 
 #select-color-container .desc {

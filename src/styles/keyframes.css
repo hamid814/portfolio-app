@@ -87,6 +87,43 @@
   }
 }
 
+
+@keyframes closeSelectColorLineOneAnim {
+  0% {
+    transform: rotateZ(-90deg) translateY(7px) translateX(-10px);
+  }
+  50% {
+    transform: rotateZ(-90deg) translateY(10px) translateX(-7px);
+  }
+  100% {
+    transform: rotateZ(-90deg) translateY(7px) translateX(-10px);
+  }
+}
+
+@keyframes closeSelectColorLineTwoAnim {
+  0% {
+    transform: translateY(10px) translateX(21px);
+  }
+  50% {
+    transform: translateY(7px) translateX(24px);
+  }
+  100% {
+    transform: translateY(10px) translateX(21px);
+  }
+}
+
+@keyframes closeSelectColorLineThreeAnim {
+  0% {
+    transform: rotateZ(45deg) translateY(-7px) translateX(22.5px);
+  }
+  50% {
+    transform: rotateZ(45deg) translateY(-10px) translateX(22.5px);
+  }
+  100% {
+    transform: rotateZ(45deg) translateY(-7px) translateX(22.5px);
+  }
+}
+
 @keyframes selectColorPackAnim {
   0% {
     transform: rotateZ(0);

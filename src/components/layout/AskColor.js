@@ -193,9 +193,6 @@ const AskColor = () => {
         <div className='line'></div>
         <div className='line'></div>
         <div className='line'></div>
-        <div className='line'></div>
-        <div className='line'></div>
-        <div className='line'></div>
       </div>
       <div className='desc'>
         color set
