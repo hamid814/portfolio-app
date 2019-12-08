@@ -88,7 +88,7 @@
 }
 
 
-@keyframes closeSelectColorLineAnim1 {
+@keyframes closeSelectColorLineOneAnim {
   0% {
     transform: rotateZ(-90deg) translateY(8px) translateX(-9px);
   }
@@ -100,7 +100,7 @@
   }
 }
 
-@keyframes closeSelectColorLineAnim2 {
+@keyframes closeSelectColorLineTwoAnim {
   0% {
     transform: translateY(9px) translateX(22px);
   }
@@ -112,7 +112,7 @@
   }
 }
 
-@keyframes closeSelectColorLineAnim3 {
+@keyframes closeSelectColorLineThreeAnim {
   0% {
     transform: rotateZ(45deg) translateY(-8px) translateX(22.5px);
   }

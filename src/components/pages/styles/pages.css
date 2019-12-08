@@ -71,7 +71,6 @@
 .side-layer,
 .back-layer {
   border: var(--layers-border-width) solid var(--layers-border-color);
-  /* border-radius: 900px; */
 }
 
 /* pages container */

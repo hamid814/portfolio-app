@@ -48,15 +48,15 @@
 }
 
 #select-color-container.active .close-select-color:hover .line:first-child {
-  animation: closeSelectColorLineAnim1 0.5s ease-in-out;
+  animation: closeSelectColorLineOneAnim 0.5s ease-in-out;
 }
 
 #select-color-container.active .close-select-color:hover .line:nth-child(2) {
-  animation: closeSelectColorLineAnim2 0.5s ease-in-out;
+  animation: closeSelectColorLineTwoAnim 0.5s ease-in-out;
 }
 
 #select-color-container.active .close-select-color:hover .line:last-child {
-  animation: closeSelectColorLineAnim3 0.5s ease-in-out;
+  animation: closeSelectColorLineThreeAnim 0.5s ease-in-out;
 }
 
 #select-color-container .desc {
@@ -132,13 +132,54 @@
 #select-color.open .pack-one,
 #select-color.open .pack-two,
 #select-color.open .pack-three {
-  background-image: linear-gradient(to top, #ccc, #666, #ccc);
+  position: relative;
   width: var(--pack-width);
   height: 50px;
   border-radius: 25px;
   margin: 0 auto;
   cursor: pointer;
-  animation: sdjbvksjdvkjdv 8s cubic-bezier(1,1,1,1) infinite;
+  overflow: hidden;
+  animation: sdjbvksjdvkjdv 12s cubic-bezier(1,1,1,1) infinite;
+}
+
+#select-color.open .pack-two {
+  animation-direction: reverse;
+}
+
+#select-color.open .slice-one,
+#select-color.open .slice-two,
+#select-color.open .slice-three {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+#select-color.open .slice-one {
+  background: magenta;
+  right: 49%;
+  bottom: 48%;
+  transform: skew(-30deg);
+  transform-origin: bottom right;
+  width: 35px;
+  height: 27px;
+}
+
+#select-color.open .slice-two {
+  background: mediumblue;
+  left: 50%;
+  top: 50%;
+  width: 45px;
+  height: 25px;
+  transform-origin: top left;
+  transform: rotateZ(-60deg) translateX(-15px);
+}
+
+#select-color.open .slice-three {
+  background: sandybrown;
+  left: 0;
+  top: 50%;
+  width: 35px;
+  transform: skew(30deg) translateX(-3px);
 }
 
 @keyframes sdjbvksjdvkjdv {

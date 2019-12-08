@@ -100,6 +100,8 @@ const AskColor = () => {
 
   const [open, setOpen] = useState(true)
 
+  const [hover, setHover] = useState(false)
+
   const [degree, setDegree] = useState(0)
 
   const [colors, setColors] = useState(initialColors)
@@ -109,7 +111,7 @@ const AskColor = () => {
   const circle = useRef(null)
 
   useEffect(() => {
-    selectPackOne()
+    selectPackFour()
     // eslint-disable-next-line
   }, [])
 
@@ -120,9 +122,15 @@ const AskColor = () => {
       circle.current.style.transform = `rotateZ(${degree}deg)`
       setTimeout(() => {
         if(degree === 360) {
-          setDegree(0)
+          setDegree(1)
+        } else if(degree === 0) {
+          setDegree(359)
         } else if(degree < 360) {
-          setDegree(degree + 1)
+          if(hover) {
+            setDegree(degree - 1)
+          } else if(!hover) {
+            setDegree(degree + 1)
+          }
         }
       }, 20);
     }
@@ -131,6 +139,14 @@ const AskColor = () => {
 
   const onClick = () => {
     !open && setOpen(true)
+  }
+
+  const onMouseEnter = () => {
+    setHover(true)
+  }
+
+  const onMouseLeave = () => {
+    setHover(false)
   }
 
   const closeFromXBtn = () => {
@@ -143,7 +159,7 @@ const AskColor = () => {
     }
   }
 
-  const selectPack = (packName) => {
+  const setColorPack = (packName) => {
     const pack = colors[packName]
     document.body.style.setProperty('--color-one', pack.colorOne.color)
     document.body.style.setProperty('--color-one-o', pack.colorOne.opacit)
@@ -161,19 +177,19 @@ const AskColor = () => {
   }
 
   const selectPackOne = () => {
-    selectPack('pack1')
+    setColorPack('pack1')
   }
 
   const selectPackTwo = () => {
-    selectPack('pack2')
+    setColorPack('pack2')
   }
 
   const selectPackThree = () => {
-    selectPack('pack3')
+    setColorPack('pack3')
   }
 
   const selectPackFour = () => {
-    selectPack('pack4')
+    setColorPack('pack4')
   }
 
   const thisStyle = {
@@ -183,6 +199,8 @@ const AskColor = () => {
   return (
     <div
       onClick={close}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
       id='select-color-container'
       className={`func-colse-select-color ${open ? 'active' : 'deactive'}`}>
       <div className='close-select-color' onClick={closeFromXBtn}>
@@ -199,25 +217,50 @@ const AskColor = () => {
         ref={circle}
         onClick={onClick}>
         <div className='color-one'>
-          <div className='pack-one' style={thisStyle} onClick={selectPackOne}>
-            
-          </div>      
+          <SelectPackOneButton select={selectPackOne} />
         </div>
         <div className='color-two'>
           <div className='pack-two' onClick={selectPackTwo}>
-          
+            <div className='slice-one'>
+            
+            </div>  
+            <div className='slice-two'>
+            
+            </div>
+            <div className='slice-three'>
+            
+            </div>
           </div>
         </div>
         <div className='color-three'>
           <div className='pack-three' onClick={selectPackThree}>
+            <div className='slice-one'>
             
+            </div>  
+            <div className='slice-two'>
+            
+            </div>
+            <div className='slice-three'>
+            
+            </div>
           </div>
         </div>
-        <div className='color-four'>
-          <div className='pack-three' onClick={selectPackFour}>
-            
-          </div>
-        </div>
+      </div>
+    </div>
+  )
+}
+
+const SelectPackOneButton = ({ select }) => {
+  return (
+    <div className='pack-one' onClick={select}>
+      <div className='slice-one'>
+      
+      </div>  
+      <div className='slice-two'>
+      
+      </div>
+      <div className='slice-three'>
+      
       </div>
     </div>
   )
