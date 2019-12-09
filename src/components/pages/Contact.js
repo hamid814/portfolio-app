@@ -49,25 +49,29 @@ const Contact = () => {
         </h1>
       </div>
       <div className='page'>
-        Contact
-        <br/>
-        email
-        <br/>
-        github ( repos )
-        <br/>
-        insta
-        <br/>
-        tweet
-        <br/>
-        <div className='go-to-works-container' onClick={goToWorks}>
-          <div className='go-to-works'>
-            <div className='desc'>
-                works
+        <div className='social'>
+          email
+          <br/>
+          github ( repos )
+          <br/>
+          insta
+          <br/>
+          tweet
+        </div>
+        <div id='form'>
+          <form>
+            <div className='form-header'>
+              <h2>
+                Send Me a Message
+              </h2>
             </div>
-            <div className='bar'>
+            <div className='form-group'>
 
             </div>
-          </div>
+          </form>
+        </div>
+        <div className='go-to-works-container' onClick={goToWorks}>
+          See My works
         </div>
         <div className='go-to-home-container' onClick={goToHome}>
           Home

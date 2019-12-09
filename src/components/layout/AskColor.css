@@ -145,7 +145,7 @@
 }
 
 #select-color.open .color-three .color-pack {
-  animation-delay: 3s;
+  animation-delay: -2.5s;
 }
 
 #select-color.open .slice-one,

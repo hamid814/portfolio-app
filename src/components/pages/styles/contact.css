@@ -1,35 +1,10 @@
 #contact .go-to-works-container {
   position: absolute;
-  top: 65%;
-  right: 5%;
+  top: 50%;
+  right: -5%;
   cursor: pointer;
-}
-
-#contact .go-to-works {
-  position: relative;
-}
-
-#contact .go-to-works .desc {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  margin-left: -50px;
+  font-size: 200%;
   transform: rotateZ(-90deg);
-  font-size: 300%;
-  transition: 0.3s;
-}
-
-#contact .go-to-works .bar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  background: magenta;
-}
-
-#contact .go-to-works:hover .bar {
-  width: 7%;
 }
 
 #contact .go-to-home-container {
