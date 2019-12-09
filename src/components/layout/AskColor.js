@@ -195,7 +195,9 @@ const AskColor = () => {
         <div className='line'></div>
       </div>
       <div className='desc'>
-        color set
+        <div className='desc-text'>
+          color set
+        </div>
       </div>
       <div
         id='select-color'

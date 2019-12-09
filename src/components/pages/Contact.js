@@ -66,6 +66,15 @@ const Contact = () => {
               </h2>
             </div>
             <div className='form-group'>
+              <label htmlFor=""></label>
+            </div>
+            <div className='form-group'>
+
+            </div>
+            <div className='form-group'>
+
+            </div>
+            <div className='form-group'>
 
             </div>
           </form>
