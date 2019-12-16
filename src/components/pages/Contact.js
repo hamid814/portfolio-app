@@ -49,14 +49,14 @@ const Contact = () => {
         </h1>
       </div>
       <div className='page'>
+        <div className='background'>
+          CONTACT
+        </div>
         <div className='social'>
           email
           <br/>
-          github ( repos )
+          github ( repos goes in works page )
           <br/>
-          insta
-          <br/>
-          tweet
         </div>
         <div id='form'>
           <form>
@@ -66,16 +66,26 @@ const Contact = () => {
               </h2>
             </div>
             <div className='form-group'>
-              <label htmlFor=""></label>
+              <label>Name:</label>
+              <input type='text' name='name' placeholder='Name'/>
+              <div className='input-side-layer'></div>
             </div>
             <div className='form-group'>
-
+              <label>Email:</label>
+              <input type='text' name='email' placeholder='Email'/>
+              <div className='input-side-layer'></div>
             </div>
             <div className='form-group'>
-
+              <label>Message:</label>
+              <input type='text' name='message' placeholder='Message'/>
+              <div className='input-side-layer'></div>
             </div>
             <div className='form-group'>
-
+              <button>
+                <div className="text">
+                  Send
+                </div>
+              </button>
             </div>
           </form>
         </div>
