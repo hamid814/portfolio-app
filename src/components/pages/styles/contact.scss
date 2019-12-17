@@ -36,18 +36,38 @@
   }
   
   #form {
-    border: 1px solid red;
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 90px;
-    
+
+    .form-header {
+      margin-bottom: 50px;
+      font-weight: 100;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--color-three);
+      border-right: 2px solid var(--color-three);
+      box-shadow: 0px 14px 10px -10px var(--color-two);
+      transform: skew(45deg);
+      
+      h2 {
+        transform: skew(-45deg);
+      }
+    }
+
     .form-group {
       max-width: 200px;
       height: 40px;
       position: relative;
       margin-bottom: 35px;
+
+      &:hover {
+
+        .input-side-rect {
+          background: var(--color-four);  
+        }
+      }
     }
     
     label {
@@ -67,9 +87,12 @@
       padding-left: 40px;
       margin-bottom: 10px;
       background: var(--color-four-title);
+      background: transparent;
       color: var(--color-three);
       font-size: 150%;
-      border: none;
+      border: 1px solid var(--color-four-title);
+      border-right-color: transparent;
+      z-index: 2;
     }
     
     .input-side-layer {
@@ -80,31 +103,29 @@
       height: 40px;
       right: -60px;
       background: var(--color-four-title);
+      background: transparent;
+      border: 1px solid var(--color-four-title);
+      border-left-color: transparent;
       transform: skew(45deg);
+      z-index: 1;
     }
     
     .input-side-rect {
       position: absolute;
       width: 15px;
       height: 40px;
-      transform: skew(45deg);
       left: -25px;
       background: var(--color-three);
     }
     
-    .input-side-rect:nth-of-type(2) {
-      background: var(--color-four);
-    }
-    
-    input {
+    input[type="submit"] {
       border: none;
       width: 170px;
       padding: 12px;
       margin-left: 40px;
       background-color: var(--color-two);
       color: var(--color-three-title);
-      cursor: pointer;
-      transform: skew(45deg);
+        cursor: pointer;
       font-size: 150%;
     }
   }

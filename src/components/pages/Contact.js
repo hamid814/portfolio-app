@@ -84,7 +84,7 @@ const Contact = () => {
               <div className='input-side-rect'></div>
             </div>
             <div className='form-group'>
-              <input type="submit" value="Send"/>
+              <input type='submit' value='Send'/>
             </div>
           </form>
         </div>
