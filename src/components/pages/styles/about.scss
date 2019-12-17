@@ -1,21 +1,24 @@
-#about .header {
-  font-size: 400%;
-  text-align: center;
-}
+#about {
 
-#about .go-to-home-container {
-  position: absolute;
-  left: 0%;
-  top: 40%;
-  cursor: pointer;
-  font-size: 200%;
-  transform: rotateZ(90deg);
-}
+  .header {
+    font-size: 400%;
+    text-align: center;
+  }
+  
+  .go-to-home-container {
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    cursor: pointer;
+    font-size: 200%;
+    transform: rotateZ(90deg);
+  }
 
-#about .go-to-works-container {
-  position: absolute;
-  bottom: 4%;
-  left: 45%;
-  cursor: pointer;
-  font-size: 200%;
+  .go-to-works-container {
+    position: absolute;
+    bottom: 4%;
+    left: 45%;
+    cursor: pointer;
+    font-size: 200%;
+  }
 }

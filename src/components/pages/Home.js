@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 
 import Context from '../../context/Context.js';
 
-import './styles/home.css';
+import './styles/home.scss';
 
 const Home = () => {
   const { myName,

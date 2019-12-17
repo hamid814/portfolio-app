@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import Context from '../../context/Context.js';
 
-import './styles/works.css';
+import './styles/works.scss';
 
 const Works = () => {
   const { setActivePage,
