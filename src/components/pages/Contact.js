@@ -69,23 +69,22 @@ const Contact = () => {
               <label>Name:</label>
               <input type='text' name='name' placeholder='Name'/>
               <div className='input-side-layer'></div>
+              <div className='input-side-rect'></div>
             </div>
             <div className='form-group'>
               <label>Email:</label>
               <input type='text' name='email' placeholder='Email'/>
               <div className='input-side-layer'></div>
+              <div className='input-side-rect'></div>
             </div>
             <div className='form-group'>
               <label>Message:</label>
               <input type='text' name='message' placeholder='Message'/>
               <div className='input-side-layer'></div>
+              <div className='input-side-rect'></div>
             </div>
             <div className='form-group'>
-              <button>
-                <div className="text">
-                  Send
-                </div>
-              </button>
+              <input type="submit" value="Send"/>
             </div>
           </form>
         </div>
