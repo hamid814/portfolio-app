@@ -48,10 +48,12 @@ const Works = () => {
           </span>
         </h1>
       </div>
-      <div className='page'>
+      <div className={`page ${activePage === 'works' ? 'on' : 'off'}`}>
         Works
         <div className='go-to-contact-container' onClick={goToContact}>
-          Contact Me
+          <div className='text'>
+            Contact Me
+          </div>
         </div>
         <div className='go-to-about-container' onClick={goToAbout}>
           About Me

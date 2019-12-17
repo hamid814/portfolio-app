@@ -1,22 +1,48 @@
 #contact {
 
   .background {
-    position: absolute;
-    color: #88888815;
-    font-size: 2000%;
-    top: 10vh;
-    left: -7vw;
-    background-color: #0000;
+    color: rgba(129, 129, 129, 0.1);
+    font-size: 2500%;
+    background: #0000;
     z-index: -1;
+    filter: blur(5px);
+    
+    .line-one {
+      position: absolute;
+      left: 0;
+      top: -5vh;
+    }
+    
+    .line-two {
+      position: absolute;
+      top: 40vh;
+      left: 25vw;
+    }
   }
   
   .go-to-works-container {
     position: absolute;
-    top: 50%;
-    right: -5%;
+    top: 85%;
+    right: -25px;
+    width: 370px;
     cursor: pointer;
     font-size: 200%;
-    transform: rotateZ(-90deg);
+    background: transparent;
+    border: 1px solid var(--color-three);
+    border-right-color: transparent;
+    height: 50px;
+    font-size: 40px;
+    padding-left: 30px;
+    color: var(--color-three-title);
+    transform: skew(-45deg);
+    
+    &:hover {
+      padding-left: 70px;
+    }
+
+    .text {
+      transform: skew(45deg);
+    }
   }
   
   .go-to-home-container {
@@ -27,12 +53,41 @@
     font-size: 200%;
   }
   
-  .page {
-    display: flex;
+  .page.on {
+    display: flex !important;
   }
 
   .social {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .item {
+      width: 300px;
+      height: 200px;
+      margin: 20px;
+      padding: 40px;
+      font-size: 170%;
+      border: 3px solid var(--layers-border-color);
+      border-radius: 9px;
+      color: var(--color-three-title);
+      background: var(--color-two);
+      cursor: pointer;
+      transform: skew(15deg);
+      box-shadow: 9px 9px 0px 0px var(--color-one-title);
+      
+      &:hover {
+        box-shadow: 20px 20px 0px 0px var(--color-one-title);
+        text-shadow: 11px 11px var(--color-three-title);
+        color: transparent;
+      }
+      
+      .text {
+        transform: skew(-15deg);
+      }
+    }
   }
   
   #form {
@@ -118,7 +173,6 @@
       top: 3px;
       height: 48px;
       right: -40px;
-      // border: 1px solid red;
     }
     
     .input-side-rect {

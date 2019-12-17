@@ -2,11 +2,27 @@
   
   .go-to-contact-container {
     position: absolute;
-    left: -3%;
-    top: 46%;
+    top: 85%;
+    left: -25px;
+    width: 370px;
     cursor: pointer;
     font-size: 200%;
-    transform: rotateZ(90deg);
+    background: transparent;
+    border: 1px solid var(--color-three);
+    border-left-color: transparent;
+    height: 50px;
+    font-size: 40px;
+    padding-left: 130px;
+    color: var(--color-three-title);
+    transform: skew(45deg);
+    
+    &:hover {
+      padding-left: 100px;
+    }
+
+    .text {
+      transform: skew(-45deg);
+    }
   }
   
   .go-to-about-container {

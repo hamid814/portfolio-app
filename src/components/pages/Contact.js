@@ -48,15 +48,26 @@ const Contact = () => {
           </span>
         </h1>
       </div>
-      <div className='page'>
+      <div className={`page ${activePage === 'contact' ? 'on' : 'off'}`}>
         <div className='background'>
-          CONTACT
+          <div className='line-one'>
+            CON
+          </div>
+          <div className='line-two'>
+            TACT
+          </div>
         </div>
         <div className='social'>
-          email
-          <br/>
-          github ( repos goes in works page )
-          <br/>
+          <div className='item'>
+            <div className="text">
+              email
+            </div>
+          </div>
+          <div className='item'>
+            <div className="text">
+              github
+            </div>
+          </div>
         </div>
         <div id='form'>
           <form>
@@ -90,7 +101,9 @@ const Contact = () => {
           </form>
         </div>
         <div className='go-to-works-container' onClick={goToWorks}>
-          See My works
+          <div className='text'>
+            See My works
+          </div>
         </div>
         <div className='go-to-home-container' onClick={goToHome}>
           Home
