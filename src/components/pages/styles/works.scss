@@ -1,4 +1,7 @@
 #works {
+  .page {
+    display: flex;
+  }
   
   .go-to-contact-container {
     position: absolute;
@@ -8,13 +11,14 @@
     cursor: pointer;
     font-size: 200%;
     background: transparent;
-    border: 1px solid var(--color-three);
+    border: 1px solid var(--color-one-title);
     border-left-color: transparent;
     height: 50px;
     font-size: 40px;
     padding-left: 130px;
     color: var(--color-three-title);
     transform: skew(45deg);
+    transform-origin: rig;
     
     &:hover {
       padding-left: 100px;
@@ -31,5 +35,15 @@
     left: 47%;
     cursor: pointer;
     font-size: 200%;
+  }
+
+  .work {
+    border: 1px solid red;
+    cursor: pointer;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 400%;
   }
 }

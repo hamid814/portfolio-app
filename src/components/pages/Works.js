@@ -49,7 +49,21 @@ const Works = () => {
         </h1>
       </div>
       <div className={`page ${activePage === 'works' ? 'on' : 'off'}`}>
-        Works
+        <div className='work works-one'>
+          trello
+        </div>
+        <div className='work work-two'>
+          formi
+        </div>
+        <div className='work work-three'>
+          diprella
+        </div>
+        <div className='work work-four'>
+          todo
+        </div>
+        <div className='work github'>
+          github
+        </div>
         <div className='go-to-contact-container' onClick={goToContact}>
           <div className='text'>
             Contact Me
