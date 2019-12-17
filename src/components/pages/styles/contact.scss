@@ -43,26 +43,14 @@
     justify-content: center;
     margin-right: 90px;
     
-    #form .form-group {
+    .form-group {
       max-width: 200px;
       height: 40px;
       position: relative;
       margin-bottom: 35px;
     }
     
-    #form .form-group:nth-child(2) {
-      /* margin-left: 40px; */
-    }
-    
-    #form .form-group:nth-child(3) {
-      /* margin-left: 25px; */
-    }
-    
-    #form .form-group:nth-child(4) {
-      /* margin-left: 10px; */
-    }
-    
-    #form label {
+    label {
       position: absolute;
       margin: 0;
       padding: 0;
@@ -71,7 +59,7 @@
       color: var(--color-four);
     }
     
-    #form input[type="text"] {
+    input[type="text"] {
       position: absolute;
       height: 40px;
       padding: 0;
@@ -84,7 +72,7 @@
       border: none;
     }
     
-    #form .input-side-layer {
+    .input-side-layer {
       position: absolute;
       margin: 0;
       padding: 0;
@@ -95,7 +83,7 @@
       transform: skew(45deg);
     }
     
-    #form .input-side-rect {
+    .input-side-rect {
       position: absolute;
       width: 15px;
       height: 40px;
@@ -104,11 +92,11 @@
       background: var(--color-three);
     }
     
-    #form .input-side-rect:nth-of-type(2) {
+    .input-side-rect:nth-of-type(2) {
       background: var(--color-four);
     }
     
-    #form input {
+    input {
       border: none;
       width: 170px;
       padding: 12px;
@@ -118,18 +106,6 @@
       cursor: pointer;
       transform: skew(45deg);
       font-size: 150%;
-    }
-    
-    #form button:hover {
-      transform: skew(0);
-    }
-    
-    #form button .text {
-      transform: skew(-45deg);
-    }
-    
-    #form button:hover .text {
-      transform: skew(0);
     }
   }
 }
