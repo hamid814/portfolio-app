@@ -1,135 +1,135 @@
 #contact {
+
+  .background {
+    position: absolute;
+    color: #88888815;
+    font-size: 2000%;
+    top: 10vh;
+    left: -7vw;
+    background-color: #0000;
+    z-index: -1;
+  }
   
-}
-.background {
-  position: absolute;
-  color: #88888815;
-  font-size: 2000%;
-  top: 10vh;
-  left: -7vw;
-  background-color: #0000;
-  z-index: -1;
-}
+  .go-to-works-container {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    cursor: pointer;
+    font-size: 200%;
+    transform: rotateZ(-90deg);
+  }
+  
+  .go-to-home-container {
+    position: absolute;
+    left: 45%;
+    top: 2%;
+    cursor: pointer;
+    font-size: 200%;
+  }
+  
+  .page {
+    display: flex;
+  }
 
-#contact .go-to-works-container {
-  position: absolute;
-  top: 50%;
-  right: -5%;
-  cursor: pointer;
-  font-size: 200%;
-  transform: rotateZ(-90deg);
-}
-
-#contact .go-to-home-container {
-  position: absolute;
-  left: 45%;
-  top: 2%;
-  cursor: pointer;
-  font-size: 200%;
-}
-
-#contact .page {
-  display: flex;
-}
-
-#contact .social {
-  flex-grow: 1;
-}
-
-#form {
-  border: 1px solid red;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 90px;
-}
-
-#form .form-group {
-  max-width: 200px;
-  height: 40px;
-  position: relative;
-  margin-bottom: 35px;
-}
-
-#form .form-group:nth-child(2) {
-  /* margin-left: 40px; */
-}
-
-#form .form-group:nth-child(3) {
-  /* margin-left: 25px; */
-}
-
-#form .form-group:nth-child(4) {
-  /* margin-left: 10px; */
-}
-
-#form label {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  top: -20px;
-  margin-left: 40px;
-  color: var(--color-four);
-}
-
-#form input[type="text"] {
-  position: absolute;
-  height: 40px;
-  padding: 0;
-  margin: 0;
-  padding-left: 40px;
-  margin-bottom: 10px;
-  background: var(--color-four-title);
-  color: var(--color-three);
-  font-size: 150%;
-  border: none;
-}
-
-#form .input-side-layer {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 80px;
-  height: 40px;
-  right: -60px;
-  background: var(--color-four-title);
-  transform: skew(45deg);
-}
-
-#form .input-side-rect {
-  position: absolute;
-  width: 15px;
-  height: 40px;
-  transform: skew(45deg);
-  left: -25px;
-  background: var(--color-three);
-}
-
-#form .input-side-rect:nth-of-type(2) {
-  background: var(--color-four);
-}
-
-#form input {
-  border: none;
-  width: 170px;
-  padding: 12px;
-  margin-left: 40px;
-  background-color: var(--color-two);
-  color: var(--color-three-title);
-  cursor: pointer;
-  transform: skew(45deg);
-  font-size: 150%;
-}
-
-#form button:hover {
-  transform: skew(0);
-}
-
-#form button .text {
-  transform: skew(-45deg);
-}
-
-#form button:hover .text {
-  transform: skew(0);
+  .social {
+    flex-grow: 1;
+  }
+  
+  #form {
+    border: 1px solid red;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 90px;
+  }
+  
+  #form .form-group {
+    max-width: 200px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 35px;
+  }
+  
+  #form .form-group:nth-child(2) {
+    /* margin-left: 40px; */
+  }
+  
+  #form .form-group:nth-child(3) {
+    /* margin-left: 25px; */
+  }
+  
+  #form .form-group:nth-child(4) {
+    /* margin-left: 10px; */
+  }
+  
+  #form label {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: -20px;
+    margin-left: 40px;
+    color: var(--color-four);
+  }
+  
+  #form input[type="text"] {
+    position: absolute;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    background: var(--color-four-title);
+    color: var(--color-three);
+    font-size: 150%;
+    border: none;
+  }
+  
+  #form .input-side-layer {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 40px;
+    right: -60px;
+    background: var(--color-four-title);
+    transform: skew(45deg);
+  }
+  
+  #form .input-side-rect {
+    position: absolute;
+    width: 15px;
+    height: 40px;
+    transform: skew(45deg);
+    left: -25px;
+    background: var(--color-three);
+  }
+  
+  #form .input-side-rect:nth-of-type(2) {
+    background: var(--color-four);
+  }
+  
+  #form input {
+    border: none;
+    width: 170px;
+    padding: 12px;
+    margin-left: 40px;
+    background-color: var(--color-two);
+    color: var(--color-three-title);
+    cursor: pointer;
+    transform: skew(45deg);
+    font-size: 150%;
+  }
+  
+  #form button:hover {
+    transform: skew(0);
+  }
+  
+  #form button .text {
+    transform: skew(-45deg);
+  }
+  
+  #form button:hover .text {
+    transform: skew(0);
+  }
 }
