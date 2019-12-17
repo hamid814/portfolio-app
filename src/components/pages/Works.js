@@ -50,18 +50,23 @@ const Works = () => {
       </div>
       <div className={`page ${activePage === 'works' ? 'on' : 'off'}`}>
         <div className='work works-one'>
+          <div className="background"></div>
           trello
         </div>
         <div className='work work-two'>
+          <div className="background"></div>
           formi
         </div>
         <div className='work work-three'>
+          <div className="background"></div>
           diprella
         </div>
         <div className='work work-four'>
+          <div className="background"></div>
           todo
         </div>
         <div className='work github'>
+          <div className="background"></div>
           github
         </div>
         <div className='go-to-contact-container' onClick={goToContact}>
