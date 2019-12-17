@@ -109,6 +109,17 @@
       transform: skew(45deg);
       z-index: 1;
     }
+
+    .submit-side-layer {
+      @extend .input-side-layer;
+      border: none;
+      background: var(--color-two);
+      width: 60px;
+      top: 3px;
+      height: 48px;
+      right: -40px;
+      // border: 1px solid red;
+    }
     
     .input-side-rect {
       position: absolute;
@@ -123,9 +134,9 @@
       width: 170px;
       padding: 12px;
       margin-left: 40px;
-      background-color: var(--color-two);
+      background: var(--color-two);
       color: var(--color-three-title);
-        cursor: pointer;
+      cursor: pointer;
       font-size: 150%;
     }
   }
