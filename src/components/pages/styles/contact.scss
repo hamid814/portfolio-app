@@ -56,6 +56,14 @@
     text-align: center;
     border-radius: 9999px;
     cursor: pointer;
+
+    .arrow {
+
+    }
+
+    .text {
+      
+    }
   }
   
   .page.on {
@@ -77,13 +85,17 @@
       font-size: 170%;
       border-radius: 9px;
       cursor: pointer;
-      color: var(--color-three-title);
+      color: var(--color-one-title);
       transform: skew(10deg);
       
       &:hover {
         
         .item {
           transform: translateX(-14px) translateY(-14px);
+
+          .text {
+            transform: skew(-10deg) translateX(14px) translateY(14px);
+          }
         }
       }
       
@@ -101,7 +113,7 @@
         
         .text {
           transform: skew(-10deg);
-
+          font-weight: bolder;
         }
       }
       
@@ -112,6 +124,7 @@
         width: 99%;
         height: 99%;
         border: 4px dashed var(--color-one-title);
+        background: var(--color-one-title);
         z-index: -1;
         border-radius: 9px;
       }
