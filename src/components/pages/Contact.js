@@ -112,7 +112,12 @@ const Contact = () => {
           </div>
         </div>
         <div className='go-to-home-container' onClick={goToHome}>
-          Home
+          <div className='arrow'>
+            <div className='line-one'></div>
+            <div className='line-two'></div>
+            <div className='line-three'></div>
+          </div>
+          <div className='text'></div>
         </div>
       </div>
     </div>
