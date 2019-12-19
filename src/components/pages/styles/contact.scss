@@ -1,5 +1,5 @@
 #contact {
-  --go-to-home-width: 40px;
+  --go-to-home-width: 60px;
 
   .background {
     color: rgba(129, 129, 129, 0.1);
@@ -52,17 +52,78 @@
     height: var(--go-to-home-width);
     left: calc((100vw - var(--go-to-home-width)) / 2);
     top: 20px;
-    border: 1px solid red;
-    text-align: center;
-    border-radius: 9999px;
+    // border: 1px solid red;
     cursor: pointer;
 
-    .arrow {
-
+    .go-to-home {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      // border: 1px solid black;
+      overflow: hidden;
     }
 
-    .text {
+    &:hover {
+
+      .arrow {
+        // width: 0;
+        height: 0;
+        // left: calc(var(--go-to-home-width) / 2);
+
+        .line {
+          height: 0;
+        }
+      }
+
+      .text {
+        top: 0;
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: brown;
+      border-radius: 9999px;
+      overflow: hidden;
+
+      .line {
+        position: absolute;
+        width: 4px;
+        height: 25px;
+        background: #222c;
+      }
       
+      .line-one {
+        transform: rotateZ(45deg) translateX(17px) translateY(-11px);
+      }
+      
+      .line-two {
+        height: 40px;
+        transform: translateX(28px) translateY(10px);
+      }
+      
+      .line-three {
+        transform: rotateZ(-45deg) translateX(22px) translateY(28px);
+        
+      }
+    }
+    
+    .text {
+      position: absolute;
+      width: calc(var(--go-to-home-width) * 2.4);
+      height: var(--go-to-home-width);
+      top: calc(var(--go-to-home-width) * 1.2);
+      left: calc(var(--go-to-home-width) * -0.7);
+      background: rgba(165, 42, 42, 1);
+      border-radius: 9999px;
+      text-align: center;
+      color: white;
+      font-size: calc(var(--go-to-home-width) * 0.7);
+      padding-top: calc(var(--go-to-home-width) * 0.10)
     }
   }
   
