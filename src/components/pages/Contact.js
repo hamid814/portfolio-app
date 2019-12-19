@@ -58,15 +58,21 @@ const Contact = () => {
           </div>
         </div>
         <div className='social'>
-          <div className='item'>
-            <div className="text">
-              email
+          <div className='item-container'>
+            <div className='item'>
+              <div className='text'>
+                email
+              </div>
             </div>
+            <div className='item-border'></div>
           </div>
-          <div className='item'>
-            <div className="text">
-              github
+          <div className='item-container'>
+            <div className='item'>
+              <div className='text'>
+                github
+              </div>
             </div>
+            <div className='item-border'></div>
           </div>
         </div>
         <div id='form'>
