@@ -1,6 +1,6 @@
 #contact {
   --go-to-home-width: 60px;
-
+  
   .background {
     color: rgba(129, 129, 129, 0.1);
     font-size: 2500%;
@@ -23,26 +23,31 @@
   
   .go-to-works-container {
     position: absolute;
+    width: 370px;
+    height: 45px;
     top: 85%;
     right: -25px;
-    width: 370px;
+    padding-left: 30px;
     cursor: pointer;
     font-size: 200%;
     background: transparent;
     border: 1px solid var(--color-one-title);
     border-right-color: transparent;
-    height: 50px;
-    font-size: 40px;
-    padding-left: 30px;
+    font-size: 34px;
     color: var(--color-three-title);
     transform: skew(45deg);
     
     &:hover {
       padding-left: 70px;
     }
-
+    
     .text {
       transform: skew(-45deg);
+      
+      span {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+      }
     }
   }
   
@@ -54,7 +59,8 @@
     top: 20px;
     // border: 1px solid red;
     cursor: pointer;
-
+    font-family: 'Courier New', Courier, monospace;
+    
     .go-to-home {
       position: relative;
       width: 100%;

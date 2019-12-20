@@ -108,7 +108,7 @@ const Contact = () => {
         </div>
         <div className='go-to-works-container' onClick={goToWorks}>
           <div className='text'>
-            See My works
+            See My <span>works</span>
           </div>
         </div>
         <div className='go-to-home-container' onClick={goToHome}>
