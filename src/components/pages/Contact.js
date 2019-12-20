@@ -22,6 +22,10 @@ const Contact = () => {
     }
   }
 
+  const onSubmit = e => {
+    e.preventDefault()
+  }
+
   const goToWorks = () => {
     traversPages('works')
   }
@@ -75,7 +79,7 @@ const Contact = () => {
             <div className='item-border'></div>
           </div>
         </div>
-        <div id='form'>
+        <div id='form' onSubmit={onSubmit}>
           <form>
             <div className='form-header'>
               <h2>
