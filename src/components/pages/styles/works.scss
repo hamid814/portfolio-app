@@ -55,13 +55,20 @@
     font-size: 400%;
     cursor: default;
     z-index: 1;
+    // border: 1px solid red;
 
     &:hover {
+      
+      &.reverse {
+        .title {
+          color: var(--color-three-title);
+        }
+      }
       
       .background {
         width: 100%;
       }
-
+      
       .title {
         color: var(--color-two-title);
       }
@@ -71,7 +78,18 @@
         margin-top: 20px;
       }
     }
-
+    
+    &.reverse {
+      .background {
+        transform: skew(15deg);
+        background: var(--color-two);
+      }
+      
+      .button {
+        background: var(--color-three-title);
+      }
+    }
+    
     &.active-work {
       flex-grow: 1;
     }
@@ -92,10 +110,6 @@
       z-index: 0;
     }
     
-    .background.r {
-      transform: skew(15deg);
-    }
-
     .title {
       color: var(--color-four-title);
       z-index: 2;

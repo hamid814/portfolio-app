@@ -15,6 +15,25 @@ const Works = () => {
           pagesTransiting } = useContext(Context)
 
   const [activeWork, setActiveWork] = useState(null)
+  // eslint-disable-next-line
+  const [works, setWorks] = useState({
+    workOne: {
+      name: 'trello',
+      description: 'desc',
+    },
+    workTwo: {
+      name: 'formi',
+      description: 'desc',
+    },
+    workThree: {
+      name: 'diprella',
+      description: 'desc',
+    },
+    workFour: {
+      name: 'todo',
+      description: 'desc',
+    },
+  })
 
   const onClick = () => {
     if(!aPageIsActive && !pagesTransiting.status) {
@@ -24,8 +43,14 @@ const Works = () => {
     }
   }
 
-  const onWorkClick = e => {
-    console.log(e.target.id)
+  const onWorkBtnClick = e => {
+    if(activeWork && e.target.id === activeWork) {
+      setActiveWork(null)
+    } else if(activeWork && e.target.id !== activeWork) {
+      setActiveWork(e.target.id)
+    } else if(activeWork === null) {
+      setActiveWork(e.target.id)
+    }
   }
 
   const goToContact = () => {
@@ -54,41 +79,65 @@ const Works = () => {
           </span>
         </h1>
       </div>
-      <div className={`page ${activePage === 'works' ? 'on' : 'off'}`}>
+      <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? '' : ''}`}>
         <div className='work works-one'>
           <div className='background'></div>
           <div className='title'>
-            trello
+            {
+              works.workOne.name
+            }
           </div>
-          <div className='button' id='work-one' onClick={onWorkClick}>
-            Open
+          <div className='button' id='work-one' onClick={onWorkBtnClick}>
+            {
+              activeWork !== 'work-one'
+              ? 'Open'
+              : 'Close'
+            }
           </div>
         </div>
-        <div className='work work-two'>
-          <div className='background r'></div>
+        <div className='work reverse work-two'>
+          <div className='background'></div>
           <div className='title'>
-            formi
+            {
+              works.workTwo.name
+            }
           </div>
-          <div className='button' id='work-two' onClick={onWorkClick}>
-            Open
+          <div className='button' id='work-two' onClick={onWorkBtnClick}>
+            {
+              activeWork !== 'work-two'
+              ? 'Open'
+              : 'Close'
+            }
           </div>
         </div>
         <div className='work work-three'>
           <div className='background'></div>
           <div className='title'>
-            diprella
+            {
+              works.workThree.name
+            }
           </div>
-          <div className='button' id='work-three' onClick={onWorkClick}>
-            Open
+          <div className='button' id='work-three' onClick={onWorkBtnClick}>
+            {
+              activeWork !== 'work-three'
+              ? 'Open'
+              : 'Close'
+            }
           </div>
         </div>
-        <div className='work work-four'>
-          <div className='background r'></div>
+        <div className='work reverse work-four'>
+          <div className='background'></div>
           <div className='title'>
-            todo
+            {
+              works.workFour.name
+            }
           </div>
-          <div className='button' id='work-four' onClick={onWorkClick}>
-            Open
+          <div className='button' id='work-four' onClick={onWorkBtnClick}>
+            {
+              activeWork !== 'work-four'
+              ? 'Open'
+              : 'Close'
+            }
           </div>
         </div>
         <div className='work github'>
@@ -96,8 +145,12 @@ const Works = () => {
           <div className='title'>
             github
           </div>
-          <div className='button' id='github' onClick={onWorkClick}>
-            Go to github
+          <div className='button' id='github' onClick={onWorkBtnClick}>
+            {
+              activeWork !== 'github'
+              ? 'Open'
+              : 'Close'
+            }
           </div>
         </div>
         <div className='go-to-contact-container' onClick={goToContact}>
