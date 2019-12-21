@@ -80,7 +80,7 @@ const Works = () => {
         </h1>
       </div>
       <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? 'a-work-is-active' : 'no-works-active'}`}>
-        <div className='work works-one'>
+        <div className={`work works-one ${activeWork === 'work-one' ? 'opened' : 'closed'}`}>
           <div className='background'></div>
           <div className='title'>
             {
@@ -97,7 +97,7 @@ const Works = () => {
             </div>
           </div>
         </div>
-        <div className='work reverse work-two'>
+        <div className={`work reverse works-two ${activeWork === 'work-two' ? 'opened' : 'closed'}`}>
           <div className='background'></div>
           <div className='title'>
             {
@@ -114,7 +114,7 @@ const Works = () => {
             </div>
           </div>
         </div>
-        <div className='work work-three'>
+        <div className={`work works-three ${activeWork === 'work-three' ? 'opened' : 'closed'}`}>
           <div className='background'></div>
           <div className='title'>
             {
@@ -131,7 +131,7 @@ const Works = () => {
             </div>
           </div>
         </div>
-        <div className='work reverse work-four'>
+        <div className={`work reverse works-four ${activeWork === 'work-four' ? 'opened' : 'closed'}`}>
           <div className='background'></div>
           <div className='title'>
             {
@@ -148,7 +148,7 @@ const Works = () => {
             </div>
           </div>
         </div>
-        <div className='work github'>
+        <div className={`work github ${activeWork === 'github' ? 'opened' : 'closed'}`}>
           <div className='background'></div>
           <div className='title'>
             github
