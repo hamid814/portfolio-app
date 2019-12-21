@@ -20,6 +20,9 @@ const Works = () => {
     workOne: {
       name: 'trello',
       description: 'desc',
+      ghLink: '',
+      ghPagesLink: '',
+      screenShotLink: '',
     },
     workTwo: {
       name: 'formi',
@@ -92,13 +95,25 @@ const Works = () => {
               works.workOne.name
             }
           </div>
-          <div className='button' id='work-one' onClick={onWorkBtnClick}>
-            <div className='text' id='work-one'>
-              {
-                activeWork !== 'work-one'
-                ? 'Open'
-                : 'Close'
-              }
+          <div className='buttons-panel'>
+            <div className='button' id='work-one' onClick={onWorkBtnClick}>
+              <div className='text' id='work-one'>
+                {
+                  activeWork !== 'work-one'
+                  ? 'Open'
+                  : 'Close'
+                }
+              </div>
+            </div>
+            <div className='button gh'>
+              <div className='text'>
+                Code on Github
+              </div>
+            </div>
+            <div className='button gh'>
+              <div className='text'>
+                View Project
+              </div>
             </div>
           </div>
         </div>

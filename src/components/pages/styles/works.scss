@@ -71,7 +71,7 @@
 
         .title {
           color: var(--color-two-title);
-          margin-left: -70%;
+          margin-left: -60%;
         }
 
         .button {
@@ -171,6 +171,7 @@
     .title {
       color: var(--color-four-title);
       z-index: 2;
+      text-shadow: 3px 3px 0px var(--color-three-o);
     }
     
     .button {

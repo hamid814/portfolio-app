@@ -4,7 +4,7 @@ import Reducer from './Reducer';
 
 const State = props => {
   const initialState = {
-    myName: 'H',
+    myName: 'H', // cans: api, // change all links to github after changing name
     activePage: 'works', // values: home, about, works, contact, none
     pagesStatus: 'zoom-in', // values: zoom-in | zoom-out
     pagesPos: 'bottom-right', // t-l | t-r | b-l | b-r
