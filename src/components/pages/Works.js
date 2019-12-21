@@ -50,24 +50,64 @@ const Works = () => {
       </div>
       <div className={`page ${activePage === 'works' ? 'on' : 'off'}`}>
         <div className='work works-one'>
-          <div className="background"></div>
-          trello
+          <div className='background'></div>
+          <div className='title'>
+            trello
+          </div>
+          <div className='work-desc'>
+            description
+          </div>
+          <div className='button'>
+            project
+          </div>
         </div>
         <div className='work work-two'>
-          <div className="background"></div>
-          formi
+          <div className='background r'></div>
+          <div className='title'>
+            formi
+          </div>
+          <div className='work-desc'>
+            description
+          </div>
+          <div className='button'>
+            project
+          </div>
         </div>
         <div className='work work-three'>
-          <div className="background"></div>
-          diprella
+          <div className='background'></div>
+          <div className='title'>
+            diprella
+          </div>
+          <div className='work-desc'>
+            description
+          </div>
+          <div className='button'>
+            project
+          </div>
         </div>
         <div className='work work-four'>
-          <div className="background"></div>
-          todo
+          <div className='background r'></div>
+          <div className='title'>
+            todo
+          </div>
+          <div className='work-desc'>
+            description
+          </div>
+          <div className='button'>
+            project
+          </div>
         </div>
         <div className='work github'>
-          <div className="background"></div>
-          github
+          <div className='background'></div>
+          <div className='title'>
+            github
+          </div>
+          <div className='work-desc'>
+            description
+          </div>
+          <div className='button'>
+            project
+          </div>
         </div>
         <div className='go-to-contact-container' onClick={goToContact}>
           <div className='text'>
