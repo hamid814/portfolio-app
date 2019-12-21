@@ -60,11 +60,6 @@
         color: var(--color-two-title);
       }
       
-      .work-desc {
-        opacity: 1;
-        margin-top: 20px;
-      }
-      
       .button {
         opacity: 1;
         margin-top: 20px;
@@ -94,15 +89,6 @@
     .title {
       color: var(--color-four-title);
       z-index: 2;
-    }
-    
-    .work-desc {
-      margin-top: -20px;
-      opacity: 0;
-      font-size: 30%;
-      color: var(--color-four-title);
-      z-index: 2;
-      // display: none;
     }
     
     .button {

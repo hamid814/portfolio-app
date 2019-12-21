@@ -54,9 +54,6 @@ const Works = () => {
           <div className='title'>
             trello
           </div>
-          <div className='work-desc'>
-            description
-          </div>
           <div className='button'>
             project
           </div>
@@ -65,9 +62,6 @@ const Works = () => {
           <div className='background r'></div>
           <div className='title'>
             formi
-          </div>
-          <div className='work-desc'>
-            description
           </div>
           <div className='button'>
             project
@@ -78,9 +72,6 @@ const Works = () => {
           <div className='title'>
             diprella
           </div>
-          <div className='work-desc'>
-            description
-          </div>
           <div className='button'>
             project
           </div>
@@ -90,9 +81,6 @@ const Works = () => {
           <div className='title'>
             todo
           </div>
-          <div className='work-desc'>
-            description
-          </div>
           <div className='button'>
             project
           </div>
@@ -101,9 +89,6 @@ const Works = () => {
           <div className='background'></div>
           <div className='title'>
             github
-          </div>
-          <div className='work-desc'>
-            description
           </div>
           <div className='button'>
             project
