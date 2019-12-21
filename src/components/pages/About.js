@@ -57,7 +57,7 @@ const About = () => {
           </span>
         </h1>
       </div>
-      <div className='page'>
+      <div className={`page ${activePage === 'about' ? 'on' : 'off'}`}>
         <div className='header' onClick={headerClick}>
           ABOUT ME
         </div>
@@ -77,6 +77,9 @@ const About = () => {
         </div>
         <div className="go-to-works-container" onClick={goToWorks}>
           works
+        </div>
+        <div className="go-to-Contact-container" onClick={goToWorks}>
+          Contect Me
         </div>
       </div>
     </div>

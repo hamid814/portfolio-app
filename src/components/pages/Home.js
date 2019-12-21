@@ -132,13 +132,22 @@ const Home = () => {
           </span>
         </h1>
       </div>
-      <div className='page'>
+      <div className={`page ${activePage === 'home' ? 'on' : 'off'}`}>
         Hi!
         <div>
           I'm { myName }
         </div>
         <div className='go-to-contact-container' onClick={goToContact}>
-          contact Me
+          <div className='go-to-contact'>
+            <div className='arrow'>
+              <div className='line line-one'></div>
+              <div className='line line-two'></div>
+              <div className='line line-three'></div>
+            </div>
+            <div className='text'>
+              Contact
+            </div>
+          </div>
         </div>
         <div className='go-to-about-container' onClick={goToAbout}>
           about Me
