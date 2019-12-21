@@ -14,20 +14,25 @@
     cursor: pointer;
     font-size: 200%;
     background: transparent;
-    border: 1px solid var(--color-one-title);
+    border: 1px solid var(--color-four-title);
     border-left-color: transparent;
     height: 50px;
     font-size: 40px;
-    padding-left: 130px;
-    color: var(--color-three-title);
+    padding-left: 110px;
+    color: var(--color-four-title);
     transform: skew(45deg);
+    z-index: 3;
     
     &:hover {
-      padding-left: 100px;
+      padding-left: 80px;
     }
     
     .text {
       transform: skew(-45deg);
+      
+      span {
+        font-family: 'Courier New', Courier, monospace;
+      }
     }
   }
   
@@ -37,6 +42,7 @@
     left: 47%;
     cursor: pointer;
     font-size: 200%;
+    z-index: 3;
   }
   
   .work {
@@ -49,7 +55,7 @@
     font-size: 400%;
     cursor: default;
     z-index: 1;
-    
+
     &:hover {
       
       .background {
@@ -65,17 +71,21 @@
         margin-top: 20px;
       }
     }
+
+    &.active-work {
+      flex-grow: 1;
+    }
     
     .background {
       position: absolute;
-      top: 20%;
+      top: 0;
       top: 0;
       left: 0;
-      width: 10%;
+      width: 30%;
       height: 100%;
       z-index: -1;
       background: var(--color-four);
-      border: 3px solid var(--color-three-title);
+      border: 3px solid var(--layers-border-color);
       border-top-color: transparent;
       border-bottom-color: transparent;
       transform: skew(-15deg);

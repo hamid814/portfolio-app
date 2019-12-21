@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 
 import Context from '../../context/Context.js';
 
@@ -14,12 +14,18 @@ const Works = () => {
           traversPages,
           pagesTransiting } = useContext(Context)
 
+  const [activeWork, setActiveWork] = useState(null)
+
   const onClick = () => {
     if(!aPageIsActive && !pagesTransiting.status) {
       setActivePage('works')
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
     }
+  }
+
+  const onWorkClick = e => {
+    console.log(e.target.id)
   }
 
   const goToContact = () => {
@@ -54,8 +60,8 @@ const Works = () => {
           <div className='title'>
             trello
           </div>
-          <div className='button'>
-            project
+          <div className='button' id='work-one' onClick={onWorkClick}>
+            Open
           </div>
         </div>
         <div className='work work-two'>
@@ -63,8 +69,8 @@ const Works = () => {
           <div className='title'>
             formi
           </div>
-          <div className='button'>
-            project
+          <div className='button' id='work-two' onClick={onWorkClick}>
+            Open
           </div>
         </div>
         <div className='work work-three'>
@@ -72,8 +78,8 @@ const Works = () => {
           <div className='title'>
             diprella
           </div>
-          <div className='button'>
-            project
+          <div className='button' id='work-three' onClick={onWorkClick}>
+            Open
           </div>
         </div>
         <div className='work work-four'>
@@ -81,8 +87,8 @@ const Works = () => {
           <div className='title'>
             todo
           </div>
-          <div className='button'>
-            project
+          <div className='button' id='work-four' onClick={onWorkClick}>
+            Open
           </div>
         </div>
         <div className='work github'>
@@ -90,13 +96,13 @@ const Works = () => {
           <div className='title'>
             github
           </div>
-          <div className='button'>
-            project
+          <div className='button' id='github' onClick={onWorkClick}>
+            Go to github
           </div>
         </div>
         <div className='go-to-contact-container' onClick={goToContact}>
           <div className='text'>
-            Contact Me
+            <span>Contact</span> Me
           </div>
         </div>
         <div className='go-to-about-container' onClick={goToAbout}>
