@@ -79,7 +79,7 @@ const Works = () => {
           </span>
         </h1>
       </div>
-      <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? '' : ''}`}>
+      <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? 'a-work-is-active' : 'no-works-active'}`}>
         <div className='work works-one'>
           <div className='background'></div>
           <div className='title'>
@@ -88,11 +88,13 @@ const Works = () => {
             }
           </div>
           <div className='button' id='work-one' onClick={onWorkBtnClick}>
-            {
-              activeWork !== 'work-one'
-              ? 'Open'
-              : 'Close'
-            }
+            <div className='text' id='work-one'>
+              {
+                activeWork !== 'work-one'
+                ? 'Open'
+                : 'Close'
+              }
+            </div>
           </div>
         </div>
         <div className='work reverse work-two'>
@@ -103,11 +105,13 @@ const Works = () => {
             }
           </div>
           <div className='button' id='work-two' onClick={onWorkBtnClick}>
-            {
-              activeWork !== 'work-two'
-              ? 'Open'
-              : 'Close'
-            }
+            <div className='text' id='work-two'>
+              {
+                activeWork !== 'work-two'
+                ? 'Open'
+                : 'Close'
+              }
+            </div>
           </div>
         </div>
         <div className='work work-three'>
@@ -118,11 +122,13 @@ const Works = () => {
             }
           </div>
           <div className='button' id='work-three' onClick={onWorkBtnClick}>
-            {
-              activeWork !== 'work-three'
-              ? 'Open'
-              : 'Close'
-            }
+            <div className='text' id='work-three'>
+              {
+                activeWork !== 'work-three'
+                ? 'Open'
+                : 'Close'
+              }
+            </div>
           </div>
         </div>
         <div className='work reverse work-four'>
@@ -133,11 +139,13 @@ const Works = () => {
             }
           </div>
           <div className='button' id='work-four' onClick={onWorkBtnClick}>
-            {
-              activeWork !== 'work-four'
-              ? 'Open'
-              : 'Close'
-            }
+            <div className='text' id='work-four'>
+              {
+                activeWork !== 'work-four'
+                ? 'Open'
+                : 'Close'
+              }
+            </div>
           </div>
         </div>
         <div className='work github'>
@@ -146,11 +154,13 @@ const Works = () => {
             github
           </div>
           <div className='button' id='github' onClick={onWorkBtnClick}>
-            {
-              activeWork !== 'github'
-              ? 'Open'
-              : 'Close'
-            }
+            <div className='text' id='github'>
+              {
+                activeWork !== 'github'
+                ? 'Open'
+                : 'Close'
+              }
+            </div>
           </div>
         </div>
         <div className='go-to-contact-container' onClick={goToContact}>
