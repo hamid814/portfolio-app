@@ -50,11 +50,43 @@
 
       &.opened {
         flex-grow: 1;
+
+        &.reverse {
+          .title {
+            color: var(--color-three-title);
+          }
+
+          .button {
+            transform: skew(15deg);
+            
+            .text {
+              transform: skew(-15deg);
+            }
+          }
+        }
+        
+        .background {
+          width: 100%;
+        }
+
+        .title {
+          color: var(--color-two-title);
+          margin-left: -70%;
+        }
+
+        .button {
+          opacity: 1;
+          margin-top: 20px;
+          transform: skew(-15deg);
+          
+          .text {
+            transform: skew(15deg);
+          }
+        }
       }
       
       &.closed {
         flex-shrink: 1;
-        font-size: 350%;
       }
     }
   }
@@ -121,10 +153,6 @@
       }
     }
     
-    &.active-work {
-      flex-grow: 1;
-    }
-    
     .background {
       position: absolute;
       top: 0;
@@ -132,7 +160,6 @@
       left: 0;
       width: 30%;
       height: 100%;
-      z-index: -1;
       background: var(--color-four);
       border: 3px solid var(--layers-border-color);
       border-top-color: transparent;

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
 import Context from '../../context/Context.js';
 
@@ -34,6 +34,11 @@ const Works = () => {
       description: 'desc',
     },
   })
+
+  useEffect(() => {
+    setActiveWork(null)
+    // eslint-disable-next-line
+  }, [activePage])
 
   const onClick = () => {
     if(!aPageIsActive && !pagesTransiting.status) {
