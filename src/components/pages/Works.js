@@ -59,8 +59,6 @@ const Works = () => {
     } else if(activeWork === null) {
       setActiveWork(e.target.id)
     }
-
-    console.log('here')
   }
 
   const goToContact = () => {
@@ -98,7 +96,7 @@ const Works = () => {
             }
           </div>
           <div className='buttons-panel'>
-            <div className='button' id='work-one' onClick={onWorkBtnClick}>
+            <div className='button toggle' id='work-one' onClick={onWorkBtnClick}>
               <div className='text' id='work-one'>
                 {
                   activeWork !== 'work-one'
@@ -109,12 +107,12 @@ const Works = () => {
             </div>
             <div className='button gh'>
               <div className='text'>
-                Code on Github
+                Github
               </div>
             </div>
             <div className='button view'>
               <div className='text'>
-                View Project
+                View
               </div>
             </div>
           </div>
@@ -127,7 +125,7 @@ const Works = () => {
             }
           </div>
           <div className='buttons-panel'>
-            <div className='button' id='work-two' onClick={onWorkBtnClick}>
+            <div className='button toggle' id='work-two' onClick={onWorkBtnClick}>
               <div className='text' id='work-two'>
                 {
                   activeWork !== 'work-two'
@@ -138,12 +136,12 @@ const Works = () => {
             </div>
             <div className='button gh'>
               <div className='text'>
-                Code on Github
+                Github
               </div>
             </div>
             <div className='button view'>
               <div className='text'>
-                View Project
+                View
               </div>
             </div>
           </div>
@@ -156,7 +154,7 @@ const Works = () => {
             }
           </div>
           <div className='buttons-panel'>
-            <div className='button' id='work-three' onClick={onWorkBtnClick}>
+            <div className='button toggle' id='work-three' onClick={onWorkBtnClick}>
               <div className='text' id='work-three'>
                 {
                   activeWork !== 'work-three'
@@ -167,12 +165,12 @@ const Works = () => {
             </div>
             <div className='button gh'>
               <div className='text'>
-                Code on Github
+                Github
               </div>
             </div>
             <div className='button view'>
               <div className='text'>
-                View Project
+                View
               </div>
             </div>
           </div>
@@ -185,7 +183,7 @@ const Works = () => {
             }
           </div>
           <div className='buttons-panel'>
-            <div className='button' id='work-four' onClick={onWorkBtnClick}>
+            <div className='button toggle' id='work-four' onClick={onWorkBtnClick}>
               <div className='text' id='work-four'>
                 {
                   activeWork !== 'work-four'
@@ -196,12 +194,12 @@ const Works = () => {
             </div>
             <div className='button gh'>
               <div className='text'>
-                Code on Github
+                Github
               </div>
             </div>
             <div className='button view'>
               <div className='text'>
-                View Project
+                View
               </div>
             </div>
           </div>
@@ -223,7 +221,7 @@ const Works = () => {
             </div>
             <div className='button gh'>
               <div className='text'>
-                Go to Github
+                Github
               </div>
             </div>
           </div>

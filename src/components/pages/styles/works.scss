@@ -56,11 +56,14 @@
             color: var(--color-three-title);
           }
 
-          .button {
-            transform: skew(15deg);
-            
-            .text {
-              transform: skew(-15deg);
+          .buttons-panel {
+
+            .button {
+              transform: skew(15deg);
+                
+              .text {
+                transform: skew(-15deg);
+              }
             }
           }
         }
@@ -74,26 +77,25 @@
           margin-left: -60%;
         }
 
-        .button {
-          opacity: 1;
+        .buttons-panel {
           margin-top: 20px;
-          transform: skew(-15deg);
-          top: 60%;
-          left: 0;
-          
-          .text {
-            transform: skew(15deg);
-          }
-        }
 
-        .gh {
-          opacity: 1 !important;
-          left: 50%;
-        }
-        
-        .view {
-          opacity: 1 !important;
-          left: -50%;
+          .button {
+            opacity: 1;
+            transform: skew(-15deg);
+            
+            .text {
+              transform: skew(15deg);
+            }
+          }
+  
+          .gh {
+            opacity: 1 !important;
+          }
+          
+          .view {
+            opacity: 1 !important;
+          }
         }
       }
       
@@ -118,7 +120,7 @@
     font-size: 400%;
     cursor: default;
     z-index: 1;
-    border: 1px solid red;
+    // border: 1px solid red;
 
     &:hover {
       
@@ -205,30 +207,47 @@
     }
 
     .buttons-panel {
+      position: relative;
+      width: 80%;
       z-index: 1;
-      // opacity: 0;
+      text-align: center;
       margin-top: -40px;
-      border: 1px solid red;
+      margin-top: 20px;
+      // border: 1px solid red;
+      line-height: 0;
       
       .button {
-        position: absolute;
         display: inline-block;
-        opacity: 0;
+        opacity: 1;
+        margin-top: 0;
         font-size: 30%;
         background: var(--color-two-title);
         padding: 10px 20px;
         color: var(--color-four-title);
         cursor: pointer;
+        line-height: initial;
+        border: 1px solid red;
+      }
+      
+      .toggle {
+        left: 10%;
+        position: absolute;
         z-index: 3;
       }
       
       .gh {
-        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1 !important;
         z-index: 2;
       }
       
       .view {
-        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 1 !important;
         z-index: 1;
       }
     }
