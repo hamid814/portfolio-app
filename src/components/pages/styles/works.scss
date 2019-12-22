@@ -1,19 +1,23 @@
 #works {
   .background-layer {
-    background: var(--color-one);
-    color: var(--color-two);
+    background: var(--color-three);
+    color: var(--color-three-title);
     font-size: 300%;
     padding-left: 75%;
+
+    span {
+      font-family: 'Courier New', Courier, monospace;
+    }
   }
   
   .page {
     display: flex;
-    background: var(--color-three);
+    background: var(--color-two);
     z-index: -1;
     transition: 0.6s;
     
     &.pull-down {
-      margin-top: 50px;
+      margin-top: 55px;
     }
   }
   
@@ -25,12 +29,12 @@
     cursor: pointer;
     font-size: 200%;
     background: transparent;
-    border: 1px solid var(--color-four-title);
+    border: 1px solid var(--color-one-title);
     border-left-color: transparent;
     height: 50px;
     font-size: 40px;
     padding-left: 110px;
-    color: var(--color-four-title);
+    color: var(--color-one-title);
     transform: skew(45deg);
     z-index: 3;
     
@@ -56,8 +60,8 @@
     cursor: pointer;
     font-size: 200%;
     z-index: 3;
-    background: var(--color-two);
-    border: 3px solid var(--color-three-title);
+    background: var(--color-one);
+    border: 3px solid var(--color-one-title);
     border-top-color: transparent;
     border-bottom-left-radius: 999px;
     border-bottom-right-radius: 999px;
@@ -65,6 +69,7 @@
     
     &:hover {
       height: 110px;
+      border-color: var(--color-four-title);
     }
   }
 
@@ -149,19 +154,19 @@
     font-size: 400%;
     cursor: default;
     z-index: 1;
-
+    
     &:hover {
       
       &.reverse {
         .title {
           color: var(--color-three-title);
         }
-
+        
         .buttons-panel {
-
+          
           .button {
             transform: skew(15deg);
-  
+            
             .text {
               transform: skew(-15deg);
             }
@@ -177,9 +182,14 @@
         color: var(--color-two-title);
       }
       
+      .work-description {
+        margin-top: 15px;
+        opacity: 1;
+      }
+      
       .buttons-panel {
         margin-top: 20px;
-
+        
         .button {
           opacity: 1;
           transform: skew(-15deg);
@@ -188,11 +198,11 @@
             transform: skew(15deg);
           }
         }
-
+        
         .gh {
           opacity: 0;
         }
-
+        
         .view {
           opacity: 0;
         }
@@ -202,11 +212,11 @@
     &.reverse {
       .background {
         transform: skew(15deg);
-        background: var(--color-two-o);
+        background: var(--color-three-o);
       }
       
       .buttons-panel {
-
+        
         .button {
           background: var(--color-three-title);
         }
@@ -232,6 +242,13 @@
       color: var(--color-four-title);
       z-index: 2;
       text-shadow: 3px 3px 0px var(--color-three-o);
+    }
+    
+    .work-description {
+      font-size: 25%;      
+      opacity: 0;
+      z-index: 1;
+      margin-top: -30px;
     }
 
     .buttons-panel {

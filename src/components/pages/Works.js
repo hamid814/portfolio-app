@@ -20,33 +20,38 @@ const Works = () => {
   // eslint-disable-next-line
   const [works, setWorks] = useState({
     workOne: {
-      name: 'trello',
-      description: 'desc',
+      name: 'Trello',
+      description: 'a clone for trello',
       ghLink: 'https://github.com/hamid814/trello-clone',
       ghPagesLink: 'https://hamid814.github.io/trello-clone/',
       screenShotLink: '',
     },
     workTwo: {
-      name: 'formi',
-      description: 'desc',
+      name: 'Formi',
+      description: 'make forms fast',
       ghLink: 'https://github.com/hamid814/r-p',
       ghPagesLink: 'https://hamid814.github.io/r-p/',
       screenShotLink: '',
     },
     workThree: {
-      name: 'diprella',
-      description: 'desc',
+      name: 'Diprella',
+      description: 'design concept made visual',
       ghLink: 'https://github.com/hamid814/signup-signin-concept',
       ghPagesLink: 'https://hamid814.github.io/signup-signin-concept/',
       screenShotLink: '',
     },
     workFour: {
-      name: 'todo',
-      description: 'desc',
+      name: 'Todo',
+      description: 'my first project',
       ghLink: 'https://github.com/hamid814/todo-app',
       ghPagesLink: 'https://hamid814.github.io/todo-app/',
       screenShotLink: '',
     },
+    github: {
+      name: 'Github',
+      description: 'my github repos',
+      ghLink: 'https://github.com/hamid814/',
+    }
   })
 
   useEffect(() => {
@@ -80,6 +85,11 @@ const Works = () => {
     }
   }
 
+  const goToLinkOnId = e => {
+    window.open(e.target.id)
+    // console.log(e.target.id)
+  }
+
   const goToContact = () => {
     traversPages('contact')
   }
@@ -107,10 +117,9 @@ const Works = () => {
         </h1>
       </div>
       <div className='background-layer'>
-        {/* About Me */}
         {
           !pagesTraversing.status && !pagesTransiting.status
-            && 'About Me'
+            && <div><span>About</span> Me</div>
         }
       </div>
       <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? 'a-work-is-active' : 'no-works-active'} ${goingToAbout && 'pull-down'}`}>
@@ -119,6 +128,11 @@ const Works = () => {
           <div className='title'>
             {
               works.workOne.name
+            }
+          </div>
+          <div className='work-description'>
+            {
+              works.workOne.description
             }
           </div>
           <div className='buttons-panel'>
@@ -131,13 +145,13 @@ const Works = () => {
                 }
               </div>
             </div>
-            <div className='button gh'>
-              <div className='text'>
+            <div className='button gh' id={works.workOne.ghLink} onClick={goToLinkOnId}>
+              <div className='text' id={works.workOne.ghLink}>
                 Github
               </div>
             </div>
-            <div className='button view'>
-              <div className='text'>
+            <div className='button view' id={works.workOne.ghPagesLink} onClick={goToLinkOnId}>
+              <div className='text' id={works.workOne.ghPagesLink}>
                 View
               </div>
             </div>
@@ -150,6 +164,11 @@ const Works = () => {
               works.workTwo.name
             }
           </div>
+          <div className='work-description'>
+            {
+              works.workTwo.description
+            }
+          </div>
           <div className='buttons-panel'>
             <div className='button toggle' id='work-two' onClick={onWorkBtnClick}>
               <div className='text' id='work-two'>
@@ -160,13 +179,13 @@ const Works = () => {
                 }
               </div>
             </div>
-            <div className='button gh'>
-              <div className='text'>
+            <div className='button gh' id={works.workTwo.ghLink} onClick={goToLinkOnId}>
+              <div className='text' id={works.workTwo.ghLink}>
                 Github
               </div>
             </div>
-            <div className='button view'>
-              <div className='text'>
+            <div className='button view' id={works.workTwo.ghPagesLink} onClick={goToLinkOnId}>
+              <div className='text' id={works.workTwo.ghPagesLink}>
                 View
               </div>
             </div>
@@ -179,6 +198,11 @@ const Works = () => {
               works.workThree.name
             }
           </div>
+          <div className='work-description'>
+            {
+              works.workThree.description
+            }
+          </div>
           <div className='buttons-panel'>
             <div className='button toggle' id='work-three' onClick={onWorkBtnClick}>
               <div className='text' id='work-three'>
@@ -189,13 +213,13 @@ const Works = () => {
                 }
               </div>
             </div>
-            <div className='button gh'>
-              <div className='text'>
+            <div className='button gh' id={works.workThree.ghLink} onClick={goToLinkOnId}>
+              <div className='text' id={works.workThree.ghLink}>
                 Github
               </div>
             </div>
-            <div className='button view'>
-              <div className='text'>
+            <div className='button view' id={works.workThree.ghPagesLink} onClick={goToLinkOnId}>
+              <div className='text' id={works.workThree.ghLink}>
                 View
               </div>
             </div>
@@ -208,6 +232,11 @@ const Works = () => {
               works.workFour.name
             }
           </div>
+          <div className='work-description'>
+            {
+              works.workFour.description
+            }
+          </div>
           <div className='buttons-panel'>
             <div className='button toggle' id='work-four' onClick={onWorkBtnClick}>
               <div className='text' id='work-four'>
@@ -218,13 +247,13 @@ const Works = () => {
                 }
               </div>
             </div>
-            <div className='button gh'>
-              <div className='text'>
+            <div className='button gh' id={works.workFour.ghLink} onClick={goToLinkOnId}>
+              <div className='text' id={works.workFour.ghLink}>
                 Github
               </div>
             </div>
-            <div className='button view'>
-              <div className='text'>
+            <div className='button view' id={works.workFour.ghPagesLink} onClick={goToLinkOnId}>
+              <div className='text' id={works.workFour.ghPagesLink}>
                 View
               </div>
             </div>
@@ -233,7 +262,14 @@ const Works = () => {
         <div className={`work github ${activeWork === 'github' ? 'opened' : 'closed'}`}>
           <div className='background'></div>
           <div className='title'>
-            github
+            {
+              works.github.name
+            }
+          </div>
+          <div className='work-description'>
+            {
+              works.github.description
+            }
           </div>
           <div className='buttons-panel'>
             <div className='button toggle' id='github' onClick={onWorkBtnClick}>
@@ -245,8 +281,8 @@ const Works = () => {
                 }
               </div>
             </div>
-            <div className='button gh'>
-              <div className='text'>
+            <div className='button gh' id={works.github.ghLink} onClick={goToLinkOnId}>
+              <div className='text' id={works.github.ghLink}>
                 Github
               </div>
             </div>

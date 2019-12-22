@@ -116,7 +116,7 @@ const AskColor = () => {
   const circle = useRef(null)
 
   useEffect(() => {
-    setColorPack(colors['pack1'])
+    setColorPack(colors['pack2'])
     // eslint-disable-next-line
   }, [])
 
@@ -208,7 +208,7 @@ const AskColor = () => {
           <SelectPackButton select={setColorPack} defaultPack={colors['pack4']} activePack={colors[activePackNumber]} />
         </div>
         <div className='color-two'>
-          <SelectPackButton select={setColorPack} defaultPack={colors['pack2']} activePack={colors[activePackNumber]} />
+          <SelectPackButton select={setColorPack} defaultPack={colors['pack1']} activePack={colors[activePackNumber]} />
         </div>
         <div className='color-three'>
           <SelectPackButton select={setColorPack} defaultPack={colors['pack3']} activePack={colors[activePackNumber]} />
