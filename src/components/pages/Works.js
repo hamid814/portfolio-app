@@ -12,6 +12,7 @@ const Works = () => {
           aPageIsActive,
           setPagesTransiting,
           traversPages,
+          pagesTraversing,
           pagesTransiting } = useContext(Context)
 
   const [goingToAbout, setGoingToAbout] = useState(false)
@@ -21,21 +22,30 @@ const Works = () => {
     workOne: {
       name: 'trello',
       description: 'desc',
-      ghLink: '',
-      ghPagesLink: '',
+      ghLink: 'https://github.com/hamid814/trello-clone',
+      ghPagesLink: 'https://hamid814.github.io/trello-clone/',
       screenShotLink: '',
     },
     workTwo: {
       name: 'formi',
       description: 'desc',
+      ghLink: 'https://github.com/hamid814/r-p',
+      ghPagesLink: 'https://hamid814.github.io/r-p/',
+      screenShotLink: '',
     },
     workThree: {
       name: 'diprella',
       description: 'desc',
+      ghLink: 'https://github.com/hamid814/signup-signin-concept',
+      ghPagesLink: 'https://hamid814.github.io/signup-signin-concept/',
+      screenShotLink: '',
     },
     workFour: {
       name: 'todo',
       description: 'desc',
+      ghLink: 'https://github.com/hamid814/todo-app',
+      ghPagesLink: 'https://hamid814.github.io/todo-app/',
+      screenShotLink: '',
     },
   })
 
@@ -97,7 +107,11 @@ const Works = () => {
         </h1>
       </div>
       <div className='background-layer'>
-        About Me
+        {/* About Me */}
+        {
+          !pagesTraversing.status && !pagesTransiting.status
+            && 'About Me'
+        }
       </div>
       <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? 'a-work-is-active' : 'no-works-active'} ${goingToAbout && 'pull-down'}`}>
         <div className={`work works-one ${activeWork === 'work-one' ? 'opened' : 'closed'}`}>
