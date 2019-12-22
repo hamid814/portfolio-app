@@ -1,16 +1,19 @@
 #contact {
   --go-to-home-width: 60px;
+
+  .background-layer {
+    background: var(--color-three);
+    display: inline;
+  }
   
   .background {
     position: absolute;
     width: 100%;
     height: 100%;
-    color: rgba(220, 220, 220, 0.35);
-    // color: rgba(120, 120, 120, 0.1);
+    color: rgba(220, 220, 220, 0.2);
     font-size: 2500%;
     background: #0005;
     background: var(--color-four);
-    // background: #0000;
     z-index: -1;
     font-weight: 900;
     
@@ -39,10 +42,10 @@
     cursor: pointer;
     font-size: 200%;
     background: transparent;
-    border: 1px solid var(--color-one-title);
+    border: 1px solid var(--color-four-title);
     border-right-color: transparent;
     font-size: 34px;
-    color: var(--color-three-title);
+    color: var(--color-four-title);
     transform: skew(45deg);
     
     &:hover {

@@ -66,3 +66,7 @@
 #select-color-container .color-three {
   z-index: 3;
 }
+
+.background-layer {
+  z-index: -99999; /* backer than -9999 */
+}

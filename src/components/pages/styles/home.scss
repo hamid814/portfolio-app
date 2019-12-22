@@ -1,6 +1,10 @@
 #home {
   --go-to-contact-width: 60px;
 
+  .background-layer {
+    background: var(--color-one);
+  }
+
   .go-to-contact-container {
     position: absolute;
     width: var(--go-to-contact-width);

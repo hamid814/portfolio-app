@@ -14,6 +14,7 @@ const Works = () => {
           traversPages,
           pagesTransiting } = useContext(Context)
 
+  const [goingToAbout, setGoingToAbout] = useState(false)
   const [activeWork, setActiveWork] = useState(null)
   // eslint-disable-next-line
   const [works, setWorks] = useState({
@@ -49,6 +50,14 @@ const Works = () => {
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
     }
+  }
+
+  const onMouseEnterAbout = () => {
+    setGoingToAbout(true);
+  }
+
+  const onMouseLeaveAbout = () => {
+    setGoingToAbout(false);
   }
 
   const onWorkBtnClick = e => {
@@ -87,10 +96,10 @@ const Works = () => {
           </span>
         </h1>
       </div>
-      <div className='background'>
-        about
+      <div className='background-layer'>
+        About Me
       </div>
-      <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? 'a-work-is-active' : 'no-works-active'}`}>
+      <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? 'a-work-is-active' : 'no-works-active'} ${goingToAbout && 'pull-down'}`}>
         <div className={`work works-one ${activeWork === 'work-one' ? 'opened' : 'closed'}`}>
           <div className='background'></div>
           <div className='title'>
@@ -234,8 +243,8 @@ const Works = () => {
             <span>Contact</span> Me
           </div>
         </div>
-        <div className='go-to-about-container' onClick={goToAbout}>
-          About Me
+        <div className='go-to-about-container' onClick={goToAbout} onMouseEnter={onMouseEnterAbout} onMouseLeave={onMouseLeaveAbout}>
+          
         </div>
       </div>
     </div>

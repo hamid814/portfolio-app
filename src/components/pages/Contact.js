@@ -52,7 +52,7 @@ const Contact = () => {
           </span>
         </h1>
       </div>
-      <div className='background'></div>
+      <div className='background-layer'></div>
       <div className={`page ${activePage === 'contact' ? 'on' : 'off'}`}>
         <div className='background'>
           <div className='line-one'>

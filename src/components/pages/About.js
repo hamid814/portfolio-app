@@ -57,6 +57,7 @@ const About = () => {
           </span>
         </h1>
       </div>
+      <div className='background-layer'></div>
       <div className={`page ${activePage === 'about' ? 'on' : 'off'}`}>
         <div className='header' onClick={headerClick}>
           ABOUT ME

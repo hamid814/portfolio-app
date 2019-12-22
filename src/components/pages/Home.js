@@ -132,6 +132,7 @@ const Home = () => {
           </span>
         </h1>
       </div>
+      <div className='background-layer'></div>
       <div className={`page ${activePage === 'home' ? 'on' : 'off'}`}>
         Hi!
         <div>

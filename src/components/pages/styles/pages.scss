@@ -224,6 +224,18 @@
   cursor: crosshair;
 }
 
+.background-layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: skew(0);
+}
+
+.zoom-out .background-layer {
+  transform: skew(45deg);
+  transition: 1s;
+}
+
 .zoom-out-vertical {
   padding-top: calc((100vh - var(--layers-border-width) * 4 - var(--page-title-font-size)) / 4);
 }
