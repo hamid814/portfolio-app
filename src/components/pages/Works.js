@@ -87,7 +87,9 @@ const Works = () => {
           </span>
         </h1>
       </div>
-      <div className='background'></div>
+      <div className='background'>
+        about
+      </div>
       <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? 'a-work-is-active' : 'no-works-active'}`}>
         <div className={`work works-one ${activeWork === 'work-one' ? 'opened' : 'closed'}`}>
           <div className='background'></div>
