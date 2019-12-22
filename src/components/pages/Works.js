@@ -87,6 +87,7 @@ const Works = () => {
           </span>
         </h1>
       </div>
+      <div className='background'></div>
       <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? 'a-work-is-active' : 'no-works-active'}`}>
         <div className={`work works-one ${activeWork === 'work-one' ? 'opened' : 'closed'}`}>
           <div className='background'></div>
@@ -210,7 +211,7 @@ const Works = () => {
             github
           </div>
           <div className='buttons-panel'>
-            <div className='button' id='github' onClick={onWorkBtnClick}>
+            <div className='button toggle' id='github' onClick={onWorkBtnClick}>
               <div className='text' id='github'>
                 {
                   activeWork !== 'github'
