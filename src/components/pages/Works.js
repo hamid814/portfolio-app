@@ -59,6 +59,8 @@ const Works = () => {
     } else if(activeWork === null) {
       setActiveWork(e.target.id)
     }
+
+    console.log('here')
   }
 
   const goToContact = () => {
@@ -110,7 +112,7 @@ const Works = () => {
                 Code on Github
               </div>
             </div>
-            <div className='button gh'>
+            <div className='button view'>
               <div className='text'>
                 View Project
               </div>
@@ -124,13 +126,25 @@ const Works = () => {
               works.workTwo.name
             }
           </div>
-          <div className='button' id='work-two' onClick={onWorkBtnClick}>
-            <div className='text' id='work-two'>
-              {
-                activeWork !== 'work-two'
-                ? 'Open'
-                : 'Close'
-              }
+          <div className='buttons-panel'>
+            <div className='button' id='work-two' onClick={onWorkBtnClick}>
+              <div className='text' id='work-two'>
+                {
+                  activeWork !== 'work-two'
+                  ? 'Open'
+                  : 'Close'
+                }
+              </div>
+            </div>
+            <div className='button gh'>
+              <div className='text'>
+                Code on Github
+              </div>
+            </div>
+            <div className='button view'>
+              <div className='text'>
+                View Project
+              </div>
             </div>
           </div>
         </div>
@@ -141,13 +155,25 @@ const Works = () => {
               works.workThree.name
             }
           </div>
-          <div className='button' id='work-three' onClick={onWorkBtnClick}>
-            <div className='text' id='work-three'>
-              {
-                activeWork !== 'work-three'
-                ? 'Open'
-                : 'Close'
-              }
+          <div className='buttons-panel'>
+            <div className='button' id='work-three' onClick={onWorkBtnClick}>
+              <div className='text' id='work-three'>
+                {
+                  activeWork !== 'work-three'
+                  ? 'Open'
+                  : 'Close'
+                }
+              </div>
+            </div>
+            <div className='button gh'>
+              <div className='text'>
+                Code on Github
+              </div>
+            </div>
+            <div className='button view'>
+              <div className='text'>
+                View Project
+              </div>
             </div>
           </div>
         </div>
@@ -158,13 +184,25 @@ const Works = () => {
               works.workFour.name
             }
           </div>
-          <div className='button' id='work-four' onClick={onWorkBtnClick}>
-            <div className='text' id='work-four'>
-              {
-                activeWork !== 'work-four'
-                ? 'Open'
-                : 'Close'
-              }
+          <div className='buttons-panel'>
+            <div className='button' id='work-four' onClick={onWorkBtnClick}>
+              <div className='text' id='work-four'>
+                {
+                  activeWork !== 'work-four'
+                  ? 'Open'
+                  : 'Close'
+                }
+              </div>
+            </div>
+            <div className='button gh'>
+              <div className='text'>
+                Code on Github
+              </div>
+            </div>
+            <div className='button view'>
+              <div className='text'>
+                View Project
+              </div>
             </div>
           </div>
         </div>
@@ -173,13 +211,20 @@ const Works = () => {
           <div className='title'>
             github
           </div>
-          <div className='button' id='github' onClick={onWorkBtnClick}>
-            <div className='text' id='github'>
-              {
-                activeWork !== 'github'
-                ? 'Open'
-                : 'Close'
-              }
+          <div className='buttons-panel'>
+            <div className='button' id='github' onClick={onWorkBtnClick}>
+              <div className='text' id='github'>
+                {
+                  activeWork !== 'github'
+                  ? 'Open'
+                  : 'Close'
+                }
+              </div>
+            </div>
+            <div className='button gh'>
+              <div className='text'>
+                Go to Github
+              </div>
             </div>
           </div>
         </div>

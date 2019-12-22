@@ -78,10 +78,22 @@
           opacity: 1;
           margin-top: 20px;
           transform: skew(-15deg);
+          top: 60%;
+          left: 0;
           
           .text {
             transform: skew(15deg);
           }
+        }
+
+        .gh {
+          opacity: 1 !important;
+          left: 50%;
+        }
+        
+        .view {
+          opacity: 1 !important;
+          left: -50%;
         }
       }
       
@@ -106,6 +118,7 @@
     font-size: 400%;
     cursor: default;
     z-index: 1;
+    border: 1px solid red;
 
     &:hover {
       
@@ -114,11 +127,14 @@
           color: var(--color-three-title);
         }
 
-        .button {
-          transform: skew(15deg);
+        .buttons-panel {
 
-          .text {
-            transform: skew(-15deg);
+          .button {
+            transform: skew(15deg);
+  
+            .text {
+              transform: skew(-15deg);
+            }
           }
         }
       }
@@ -131,13 +147,24 @@
         color: var(--color-two-title);
       }
       
-      .button {
-        opacity: 1;
+      .buttons-panel {
         margin-top: 20px;
-        transform: skew(-15deg);
-        
-        .text {
-          transform: skew(15deg);
+
+        .button {
+          opacity: 1;
+          transform: skew(-15deg);
+          
+          .text {
+            transform: skew(15deg);
+          }
+        }
+
+        .gh {
+          opacity: 0;
+        }
+
+        .view {
+          opacity: 0;
         }
       }
     }
@@ -145,11 +172,14 @@
     &.reverse {
       .background {
         transform: skew(15deg);
-        background: var(--color-two);
+        background: var(--color-two-o);
       }
       
-      .button {
-        background: var(--color-three-title);
+      .buttons-panel {
+
+        .button {
+          background: var(--color-three-title);
+        }
       }
     }
     
@@ -160,7 +190,7 @@
       left: 0;
       width: 30%;
       height: 100%;
-      background: var(--color-four);
+      background: var(--color-four-o);
       border: 3px solid var(--layers-border-color);
       border-top-color: transparent;
       border-bottom-color: transparent;
@@ -173,16 +203,34 @@
       z-index: 2;
       text-shadow: 3px 3px 0px var(--color-three-o);
     }
-    
-    .button {
+
+    .buttons-panel {
       z-index: 1;
-      opacity: 0;
+      // opacity: 0;
       margin-top: -40px;
-      font-size: 30%;
-      background: var(--color-two-title);
-      padding: 10px 20px;
-      color: var(--color-four-title);
-      cursor: pointer;
+      border: 1px solid red;
+      
+      .button {
+        position: absolute;
+        display: inline-block;
+        opacity: 0;
+        font-size: 30%;
+        background: var(--color-two-title);
+        padding: 10px 20px;
+        color: var(--color-four-title);
+        cursor: pointer;
+        z-index: 3;
+      }
+      
+      .gh {
+        opacity: 0;
+        z-index: 2;
+      }
+      
+      .view {
+        opacity: 0;
+        z-index: 1;
+      }
     }
   }
 }
