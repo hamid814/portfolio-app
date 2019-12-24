@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 
 import Context from '../../context/Context.js';
 
@@ -13,7 +13,10 @@ const About = () => {
           setModal,
           setPagesTransiting,
           traversPages,
+          pagesTraversing,
           pagesTransiting } = useContext(Context)
+
+  const [goingToWorks, setgoingToWorks] = useState(false)
 
   const onClick = () => {
     if(!aPageIsActive && !pagesTransiting.status) {
@@ -21,6 +24,15 @@ const About = () => {
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
     }
+  }
+
+  const onMouseEnterWorks = () => {
+    setgoingToWorks(true)
+  }
+
+  const onMouseLeaveWorks = () => {
+    setgoingToWorks(false)
+
   }
 
   const headerClick = () => {
@@ -57,8 +69,13 @@ const About = () => {
           </span>
         </h1>
       </div>
-      <div className='background-layer'></div>
-      <div className={`page ${activePage === 'about' ? 'on' : 'off'}`}>
+      <div className='background-layer'>
+        {
+          !pagesTraversing.status && !pagesTransiting.status
+            && <div>my <span>Works</span></div>
+        }
+      </div>
+      <div className={`page ${activePage === 'about' ? 'on' : 'off'} ${goingToWorks && 'pull-up'}`}>
         <div className='header' onClick={headerClick}>
           ABOUT ME
         </div>
@@ -73,13 +90,13 @@ const About = () => {
             item
           </div>
         </div>
-        <div className="go-to-home-container" onClick={goToHome}>
+        <div className='go-to-home-container' onClick={goToHome}>
           Home
         </div>
-        <div className="go-to-works-container" onClick={goToWorks}>
-          works
+        <div className='go-to-works-container' onClick={goToWorks} onMouseEnter={onMouseEnterWorks} onMouseLeave={onMouseLeaveWorks}>
+          
         </div>
-        <div className="go-to-Contact-container" onClick={goToWorks}>
+        <div className='go-to-Contact-container' onClick={goToWorks}>
           Contect Me
         </div>
       </div>

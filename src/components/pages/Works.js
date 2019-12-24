@@ -219,7 +219,7 @@ const Works = () => {
               </div>
             </div>
             <div className='button view' id={works.workThree.ghPagesLink} onClick={goToLinkOnId}>
-              <div className='text' id={works.workThree.ghLink}>
+              <div className='text' id={works.workThree.ghPagesLink}>
                 View
               </div>
             </div>
