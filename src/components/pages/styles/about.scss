@@ -16,9 +16,22 @@
     }
   }
 
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    
+    path {
+      fill: green;
+      cursor: pointer;
+      transform: translate(-150px,0);
+      // z-index: 99999;
+    }
+  }
+
   .page {
     background: var(--color-four);
-    margin-top: -55px;
     
     &.pull-up {
       margin-top: -55px;
@@ -37,6 +50,7 @@
     cursor: pointer;
     font-size: 200%;
     transform: rotateZ(90deg);
+    z-index: 20;
   }
 
   .go-to-works-container {

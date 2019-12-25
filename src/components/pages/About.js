@@ -17,6 +17,10 @@ const About = () => {
           pagesTransiting } = useContext(Context)
 
   const [goingToWorks, setgoingToWorks] = useState(false)
+  const [pathHover, setPathHover] = useState(false)
+
+  const path1 = `M 150 0 Q 170 150 180 250 Q 190 300 180 350 Q 170 430 150 600`
+  const path2 = `M 150 0 Q 170 150 180 250 Q 220 300 180 350 Q 170 430 150 600 `
 
   const onClick = () => {
     if(!aPageIsActive && !pagesTransiting.status) {
@@ -51,6 +55,14 @@ const About = () => {
     traversPages('contact')
   }
 
+  const onMouseEnterPath = () => {
+    setPathHover(true)
+  }
+
+  const onMouseLeavePath = () => {
+    setPathHover(false)
+  }
+
   return (
     <div className={`page-container ${activePage === 'home' && aPageIsActive && 'active'}`} id='about'>
       <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
@@ -79,6 +91,7 @@ const About = () => {
         <div className='header' onClick={headerClick}>
           ABOUT ME
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 600"><path onMouseEnter={onMouseEnterPath} onMouseLeave={onMouseLeavePath} fill-opacity="1" d={`${!pathHover ? path1 : path2}`}></path></svg>
         <div className='content'>
           <div className='item'>
             item
@@ -96,7 +109,7 @@ const About = () => {
         <div className='go-to-works-container' onClick={goToWorks} onMouseEnter={onMouseEnterWorks} onMouseLeave={onMouseLeaveWorks}>
           
         </div>
-        <div className='go-to-Contact-container' onClick={goToWorks}>
+        <div className='go-to-Contact-container' onClick={goToContact}>
           Contect Me
         </div>
       </div>
