@@ -17,12 +17,6 @@ const About = () => {
           pagesTransiting } = useContext(Context)
 
   const [goingToWorks, setgoingToWorks] = useState(false)
-  const [pathHover, setPathHover] = useState(false)
-
-  // const path1 = `M 150 0 Q 170 150 180 250 Q 190 300 180 350 Q 170 430 150 600`
-  const path1 = `M 0 0 Q 65 300 0 600`
-  // const path2 = `M 150 0 Q 170 150 180 250 Q 220 300 180 350 Q 170 430 150 600 `
-  const path2 = `M 0 0 Q 130 300 0 600`
 
   const onClick = () => {
     if(!aPageIsActive && !pagesTransiting.status) {
@@ -57,14 +51,6 @@ const About = () => {
     traversPages('contact')
   }
 
-  const onMouseEnterPath = () => {
-    setPathHover(true)
-  }
-
-  const onMouseLeavePath = () => {
-    setPathHover(false)
-  }
-
   return (
     <div className={`page-container ${activePage === 'home' && aPageIsActive && 'active'}`} id='about'>
       <div className={`side-layer ${aPageIsActive ? 'not' : 'is'}`}>
@@ -94,13 +80,10 @@ const About = () => {
           ABOUT ME
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 600">
-          <path onMouseEnter={onMouseEnterPath} onMouseLeave={onMouseLeavePath} fill="#fff" fill-opacity="1">
-            <title>
-              hamid
-            </title>
+          <path fill="#fff" fill-opacity="1">
           </path>
           <text fill="#fff">
-            hamid
+            Home
           </text>
         </svg>
         <div className='content'>

@@ -151,7 +151,13 @@ const Home = () => {
           </div>
         </div>
         <div className='go-to-about-container' onClick={goToAbout}>
-          about Me
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 600">
+            <path fill="#fff" fill-opacity="1">
+            </path>
+            <text fill="#fff">
+              Home
+            </text>
+          </svg>
         </div>
       </div>
     </div>
