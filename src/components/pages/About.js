@@ -79,13 +79,6 @@ const About = () => {
         <div className='header' onClick={headerClick}>
           ABOUT ME
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 600">
-          <path fill="#fff" fill-opacity="1">
-          </path>
-          <text fill="#fff">
-            Home
-          </text>
-        </svg>
         <div className='content'>
           <div className='item'>
             item
@@ -98,7 +91,13 @@ const About = () => {
           </div>
         </div>
         <div className='go-to-home-container' onClick={goToHome}>
-          Home
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 600">
+            <path fill="#fff" fill-opacity="1">
+            </path>
+            <text fill="#fff">
+              Home
+            </text>
+          </svg>
         </div>
         <div className='go-to-works-container' onClick={goToWorks} onMouseEnter={onMouseEnterWorks} onMouseLeave={onMouseLeaveWorks}>
           

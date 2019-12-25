@@ -16,28 +16,6 @@
     }
   }
 
-  svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    overflow: hidden;
-    
-    path {
-      fill: green;
-      cursor: pointer;
-      d: path("M 0 0 Q 65 300 0 600");
-
-      &:hover {
-        d: path("M 0 0 Q 130 300 0 600");
-      }
-    }
-
-    text {
-      transform: translate(0,280px) rotateZ(90deg);
-    }
-  }
-
   .page {
     background: var(--color-four);
     transition: 0.6s;
@@ -53,13 +31,37 @@
   }
   
   .go-to-home-container {
-    position: absolute;
-    left: 0%;
-    top: 40%;
-    cursor: pointer;
-    font-size: 200%;
-    transform: rotateZ(90deg);
-    z-index: 20;
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow: hidden;
+      
+      &:hover {
+
+        path {
+          d: path("M 0 0 Q 130 300 0 600");
+        }
+
+        text {
+          transform: translate(21px, 38vh) rotateZ(90deg);
+          font-size: 200%;
+        }
+      }
+      
+      path {
+        fill: green;
+        cursor: pointer;
+        d: path("M 0 0 Q 65 300 0 600");
+      }
+
+      text {
+        transform: translate(10px, 38vh) rotateZ(90deg);
+        font-size: 140%;
+        cursor: pointer;
+      }
+    }
   }
 
   .go-to-works-container {

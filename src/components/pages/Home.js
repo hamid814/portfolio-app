@@ -155,7 +155,7 @@ const Home = () => {
             <path fill="#fff" fill-opacity="1">
             </path>
             <text fill="#fff">
-              Home
+              About
             </text>
           </svg>
         </div>
