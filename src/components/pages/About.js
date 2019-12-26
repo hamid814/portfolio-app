@@ -79,19 +79,16 @@ const About = () => {
         <div className='header' onClick={headerClick}>
           ABOUT ME
         </div>
-        <div className='content'>
-          <div className='item'>
-            item
-          </div>
-          <div className='item'>
-            item
-          </div>
-          <div className='item'>
-            item
-          </div>
+        <div className='back-sheet'>
+        
         </div>
-        <div id='shapes'>
-          <div className='circle'></div>
+        <div className='content'>
+          <div className='content-sheet'>
+          
+          </div>
+          <div className='front-sheet'>
+          
+          </div>
         </div>
         <div className='go-to-home-container' onClick={goToHome}>
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 65 600'>
