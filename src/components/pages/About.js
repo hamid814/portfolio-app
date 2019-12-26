@@ -90,17 +90,20 @@ const About = () => {
             item
           </div>
         </div>
+        <div id='shapes'>
+          <div className='circle'></div>
+        </div>
         <div className='go-to-home-container' onClick={goToHome}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 600">
-            <path fill="#fff" fill-opacity="1">
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 65 600'>
+            <path fill='#fff' fill-opacity='1'>
             </path>
-            <text fill="#fff">
+            <text fill='#fff'>
               Home
             </text>
           </svg>
         </div>
         <div className='go-to-works-container' onClick={goToWorks} onMouseEnter={onMouseEnterWorks} onMouseLeave={onMouseLeaveWorks}>
-          
+        
         </div>
         <div className='go-to-Contact-container' onClick={goToContact}>
           Contect Me

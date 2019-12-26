@@ -46,20 +46,22 @@
 
         text {
           transform: translate(21px, 38vh) rotateZ(90deg);
-          font-size: 200%;
+          font-size: 220%;
         }
       }
       
       path {
-        fill: green;
+        fill: var(--color-one-title);
         cursor: pointer;
         d: path("M 0 0 Q 65 300 0 600");
       }
-
+      
       text {
         transform: translate(10px, 38vh) rotateZ(90deg);
-        font-size: 140%;
+        font-size: 160%;
         cursor: pointer;
+        fill: var(--color-three-title);
+        font-family: 'Courier New', Courier, monospace;
       }
     }
   }
