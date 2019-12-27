@@ -16,6 +16,7 @@ import './styles/index.css';
 import './styles/haden.css';
 import './styles/zIndex.css';
 import './styles/keyframes.css';
+// import './styles/media900px.scss';
 
 const App = () => {
   const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting, pagesTransiting, pagesTraversing } = useContext(Context)

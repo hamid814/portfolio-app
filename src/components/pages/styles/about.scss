@@ -25,15 +25,56 @@
       margin-top: -55px;
     }
   }
+
+  .shapes-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    border: 10px solid red;
+    background: transparent;
+    // border-width: 0px !important;
+    // z-index: 9999;
+
+    .line-1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60vh;
+      background: darkgoldenrod;
+      transform: skew(45deg);
+      transform-origin: top left;
+      opacity: 0.4;
+    }
+
+    .line-2 {
+      position: absolute;
+      top: 60vh;
+      left: 30.5vw;
+      width: 60px;
+      height: 40vh;
+      background: darkgoldenrod;
+      transform: skew(-45deg);
+      transform-origin: top left;
+      opacity: 0.4;
+    }
+  }
   
   .back-sheet {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    right: 0;
-    border: 10px solid var(--color-four-title);
-    border-color: transparent;
+    left: 0;
+    border: 0px solid var(--color-four-title);
+    // border-color: transparent;
+    
+    .shapes-container {
+      top: 0;
+      left: 0;
+      background: skyblue;
+      background: transparent;
+    }
   }
   
   .content {
@@ -43,10 +84,9 @@
     top: 15%;
     left: 15%;
     border: 10px solid var(--color-three-title);
-    // border-color: transparent;
     border-radius: 20px;
-    background: var(--color-two);
-    overflow: hidden;
+    background: transparent;
+    // overflow: hidden;
     
     .content-sheet {
       position: absolute;
@@ -57,6 +97,16 @@
       border: 10px solid var(--color-one-title);
       border-radius: 20px;
       background: var(--color-one);
+      // overflow: hidden;
+      
+      .shapes-container {
+        top: -37%;
+        left: -62%;
+        border-color: green;
+        border-width: 7px;
+        background: indigo;
+        background: transparent;
+      }
     }
     
     .front-sheet {
@@ -68,6 +118,16 @@
       border: 10px solid var(--color-three-title);
       border-radius: 20px;
       background: var(--color-one);
+      // overflow: hidden;
+      
+      .shapes-container {
+        top: -37%;
+        left: -178.5%;
+        border-color: blue;
+        border-width: 3px;
+        background: hotpink;
+        background: transparent;
+      }
     }
   }
   
