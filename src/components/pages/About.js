@@ -99,12 +99,12 @@ const About = () => {
             </text>
           </svg>
         </div>
-        <div className='go-to-works-container' onClick={goToWorks} onMouseEnter={onMouseEnterWorks} onMouseLeave={onMouseLeaveWorks}>
-        
-        </div>
         <div className='go-to-Contact-container' onClick={goToContact}>
           Contect Me
         </div>
+      </div>
+      <div className='go-to-works-container' onClick={goToWorks} onMouseEnter={onMouseEnterWorks} onMouseLeave={onMouseLeaveWorks}>
+      
       </div>
     </div>
   )
