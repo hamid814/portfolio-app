@@ -138,6 +138,9 @@ const Home = () => {
         <div>
           I'm { myName }
         </div>
+        <div className='circle'>
+          
+        </div>
         <div className='go-to-contact-container' onClick={goToContact}>
           <div className='go-to-contact'>
             <div className='arrow'>

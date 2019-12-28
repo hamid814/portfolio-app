@@ -5,9 +5,9 @@ import Reducer from './Reducer';
 const State = props => {
   const initialState = {
     myName: 'H', // cans: api, // change all links to github after changing name
-    activePage: 'about', // values: home, about, works, contact, none
+    activePage: 'home', // values: home, about, works, contact, none
     pagesStatus: 'zoom-in', // values: zoom-in | zoom-out
-    pagesPos: 'top-right', // t-l | t-r | b-l | b-r
+    pagesPos: 'top-left', // t-l | t-r | b-l | b-r
     aPageIsActive: true, // sets too true After 1s for anims
     pageDest: 'none', // dest-home | dest-about | dest-work | dest-contact
     pagesTransiting: { status: false, direction: 'come' },// true when pages is zoomin in or out
