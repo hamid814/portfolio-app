@@ -106,6 +106,15 @@ const Home = () => {
     }
   }
 
+  const onMousemove = e => {
+    const x = e.clientX
+    const y = e.clientY
+    setTimeout(() => {
+      document.querySelector('#home').style.setProperty('--mouse-x', `${x}px`)
+      document.querySelector('#home').style.setProperty('--mouse-y', `${y}px`)
+    }, 0);
+  }
+
   const goToAbout = () => {
     traversPages('about')
   }
@@ -133,13 +142,13 @@ const Home = () => {
         </h1>
       </div>
       <div className='background-layer'></div>
-      <div className={`page ${activePage === 'home' ? 'on' : 'off'}`}>
+      <div className={`page ${activePage === 'home' ? 'on' : 'off'}`} onMouseMove={onMousemove}>
         Hi!
         <div>
           I'm { myName }
         </div>
         <div className='circle'>
-          
+          <div className='dot'></div>
         </div>
         <div className='go-to-contact-container' onClick={goToContact}>
           <div className='go-to-contact'>
@@ -154,10 +163,10 @@ const Home = () => {
           </div>
         </div>
         <div className='go-to-about-container' onClick={goToAbout}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 600">
-            <path fill="#fff" fill-opacity="1">
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 65 600'>
+            <path fill='#fff' fillOpacity='1'>
             </path>
-            <text fill="#fff">
+            <text fill='#fff'>
               About
             </text>
           </svg>

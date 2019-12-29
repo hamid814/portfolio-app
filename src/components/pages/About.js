@@ -108,7 +108,7 @@ const About = () => {
       </div>
       <div className='go-to-home-container' onClick={goToHome}>
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 65 600'>
-          <path fill='#fff' fill-opacity='1'>
+          <path fill='#fff' fillOpacity='1'>
           </path>
           <text fill='#fff'>
             Home
