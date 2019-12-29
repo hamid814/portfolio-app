@@ -147,6 +147,9 @@ const Home = () => {
         <div>
           I'm { myName }
         </div>
+        <div className='background-image'>
+
+        </div>
         <div className='circle'>
           <div className='dot'></div>
         </div>
