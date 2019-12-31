@@ -17,12 +17,21 @@ const About = () => {
           pagesTransiting } = useContext(Context)
 
   const [goingToWorks, setgoingToWorks] = useState(false)
+  const [contentPos, setContentPos] = useState('left')
 
   const onClick = () => {
     if(!aPageIsActive && !pagesTransiting.status) {
       setActivePage('about')
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
+    }
+  }
+
+  const changeContentPos = () => {
+    if(contentPos === 'left') {
+      setContentPos('right');
+    } else if(contentPos === 'right') {
+      setContentPos('left');
     }
   }
 
@@ -80,20 +89,14 @@ const About = () => {
           ABOUT ME
         </div>
         <div className='back-sheet'>
-          <div className='shapes-container'>
 
-          </div>
         </div>
         <div className='content'>
-          <div className='content-sheet'>
-            <div className='shapes-container'>
-              
-            </div>
+          <div className='content-sheet' onMouseEnter={changeContentPos}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea ullam temporibus consectetur quis, ab animi cupiditate nostrum dolor suscipit provident recusandae. Aperiam excepturi corrupti amet tempora?
           </div>
           <div className='front-sheet'>
-            <div className='shapes-container'>
 
-            </div>
           </div>
         </div>
         <div className='go-to-Contact-container' onClick={goToContact}>
