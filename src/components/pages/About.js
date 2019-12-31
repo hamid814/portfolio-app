@@ -81,23 +81,17 @@ const About = () => {
         </div>
         <div className='back-sheet'>
           <div className='shapes-container'>
-            <div className='line-1'></div>
-            <div className='line-2'></div>
 
           </div>
         </div>
         <div className='content'>
           <div className='content-sheet'>
             <div className='shapes-container'>
-              <div className='line-1'></div>
-              <div className='line-2'></div>
               
             </div>
           </div>
           <div className='front-sheet'>
             <div className='shapes-container'>
-              <div className='line-1'></div>
-              <div className='line-2'></div>
 
             </div>
           </div>
@@ -106,7 +100,7 @@ const About = () => {
           Contect Me
         </div>
       </div>
-      <div className='go-to-home-container' onClick={goToHome}>
+      <div className={`go-to-home-container ${pagesStatus !== 'zoom-in' && 'd-n'} ${pagesTransiting.status && 'd-n'} ${pagesTraversing.status && 'd-n'}`} onClick={goToHome}>
         <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 65 600'>
           <path fill='#fff' fillOpacity='1'>
           </path>
@@ -115,8 +109,10 @@ const About = () => {
           </text>
         </svg>
       </div>
-      <div className='go-to-works-container' onClick={goToWorks} onMouseEnter={onMouseEnterWorks} onMouseLeave={onMouseLeaveWorks}>
-      
+      <div className={`go-to-works-container ${pagesStatus !== 'zoom-in' && 'd-n'} ${pagesTransiting.status && 'd-n'} ${pagesTraversing.status && 'd-n'}`} onClick={goToWorks} onMouseEnter={onMouseEnterWorks} onMouseLeave={onMouseLeaveWorks}>
+        {
+          console.log(pagesStatus)
+        }
       </div>
     </div>
   )
