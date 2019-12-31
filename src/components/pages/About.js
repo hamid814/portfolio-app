@@ -92,10 +92,10 @@ const About = () => {
 
         </div>
         <div className='content'>
-          <div className='content-sheet' onMouseEnter={changeContentPos}>
+          <div className={`content-sheet ${contentPos}`} onMouseEnter={changeContentPos}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea ullam temporibus consectetur quis, ab animi cupiditate nostrum dolor suscipit provident recusandae. Aperiam excepturi corrupti amet tempora?
           </div>
-          <div className='front-sheet'>
+          <div className={`front-sheet ${contentPos}`}>
 
           </div>
         </div>
