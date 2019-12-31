@@ -63,13 +63,21 @@
       width: 45%;
       height: 90%;
       top: 5%;
-      left: 2.5%;
       border: 10px solid var(--color-one-title);
       border-radius: 20px;
       background: var(--color-one);
       font-size: 150%;
       text-align: center;
       padding-top: 80px;
+      transition: 1s;
+      
+      &.left {
+        left: 2.5%;
+      }
+      
+      &.right {
+        left: 52.5%;
+      }
     }
     
     .front-sheet {
@@ -77,7 +85,6 @@
       width: 45%;
       height: 90%;
       top: 5%;
-      left: 52.5%;
       border: 10px solid var(--color-three-title);
       border-radius: 20px;
       background: var(--color-two);
@@ -85,6 +92,15 @@
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-position: center;
+      transition: 1s;
+      
+      &.left {
+        left: 52.5%;
+      }
+      
+      &.right {
+        left: 2.5%;
+      }
     }
   }
   
