@@ -99,8 +99,12 @@ const About = () => {
 
           </div>
         </div>
-        <div className='go-to-Contact-container' onClick={goToContact}>
-          Contect Me
+        <div className='go-to-contact-container' onClick={goToContact}>
+          <div>
+            <span>Contact</span>
+            <br/>
+            <span>Me</span>
+          </div>
         </div>
       </div>
       <div className={`go-to-home-container ${pagesStatus !== 'zoom-in' && 'd-n'} ${pagesTransiting.status && 'd-n'} ${pagesTraversing.status && 'd-n'}`} onClick={goToHome}>
@@ -113,9 +117,7 @@ const About = () => {
         </svg>
       </div>
       <div className={`go-to-works-container ${pagesStatus !== 'zoom-in' && 'd-n'} ${pagesTransiting.status && 'd-n'} ${pagesTraversing.status && 'd-n'}`} onClick={goToWorks} onMouseEnter={onMouseEnterWorks} onMouseLeave={onMouseLeaveWorks}>
-        {
-          console.log(pagesStatus)
-        }
+        
       </div>
     </div>
   )

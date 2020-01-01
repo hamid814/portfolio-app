@@ -153,6 +153,11 @@ const Home = () => {
         <div className='circle'>
           <div className='dot'></div>
         </div>
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1500 1000'>
+            <path fill="#fff" d="M 100 185 L 160 185 L 230 255 L 245 240 L 275 270 L 265 280 L 365 380 L 495 250 L 525 280 L 395 410 L 435 450 L 635 250 L 615 230 L 645 200 L 665 220">
+
+            </path>
+          </svg>
         <div className='go-to-contact-container' onClick={goToContact}>
           <div className='go-to-contact'>
             <div className='arrow'>
