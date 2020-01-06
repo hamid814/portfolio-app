@@ -66,6 +66,9 @@
       padding: 50px;
       border-radius: 9999px;
       transition: 1s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       
       &.left {
         left: 2.5%;
