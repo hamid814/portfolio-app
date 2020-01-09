@@ -2,16 +2,29 @@ import React from 'react'
 
 const BetaBadge = () => {
   const thisStyle = {
-    positon: 'absolute',
-    top: 50,
-    left: 50,
+    position: 'absolute',
+    top: 70,
+    right: -410,
+    display: 'inline-block',
+    background: '#6c9',
+    padding: 7,
+    transform: 'rotateZ(45deg)',
+    textAlign: 'center',
+    width: 1000,
+    zIndex: 999999,
   }
   
-  return (
-    <div style={thisStyle}>
-      Beta
-    </div>
-  )
+  if(process.env.NODE_ENV !== 'development') {
+    return (
+      <div style={thisStyle}>
+        Site is under Development
+      </div>
+    )
+  } else {
+    return(
+      <></>
+    )
+  }
 }
 
 export default BetaBadge

@@ -57,9 +57,9 @@ const App = () => {
       <Modal />
       <AskColor />
       <BackButton />
-      <BetaBadge />
       <Pages />
       <BackScroll />
+      <BetaBadge />
     </div>
   )
 }
