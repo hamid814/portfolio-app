@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+
+import Context from '../../context/Context'
 
 const BetaBadge = () => {
+  const { isDeveloping } = useContext(Context)
+  
   const thisStyle = {
     position: 'absolute',
     top: 70,
@@ -14,7 +18,7 @@ const BetaBadge = () => {
     zIndex: 999999,
   }
   
-  if(process.env.NODE_ENV !== 'development') {
+  if(process.env.NODE_ENV !== 'development' && isDeveloping) {
     return (
       <div style={thisStyle}>
         Site is under Development
