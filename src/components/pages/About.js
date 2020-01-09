@@ -18,6 +18,28 @@ const About = () => {
 
   const [goingToWorks, setgoingToWorks] = useState(false)
   const [contentPos, setContentPos] = useState('left')
+  const [data, setData] = useState([
+    {
+      id: 1,
+      initialPos: 'right',
+      text: 'NOT golem'
+    },
+    {
+      id: 2,
+      initialPos: 'left',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea'
+    },
+    {
+      id: 3,
+      initialPos: 'left',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea'
+    },
+    {
+      id: 4,
+      initialPos: 'right',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea'
+    },
+  ])
 
   const onClick = () => {
     if(!aPageIsActive && !pagesTransiting.status) {
@@ -88,16 +110,15 @@ const About = () => {
         <div className='header' onClick={headerClick}>
           ABOUT ME
         </div>
-        <div className='back-sheet'>
+        <div className='back-sheet background-pattern-1'>
 
         </div>
         <div className='content'>
-          <div className={`content-sheet ${contentPos}`} onMouseEnter={changeContentPos}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea ullam temporibus consectetur quis, ab animi cupiditate nostrum dolor suscipit provident recusandae. Aperiam excepturi corrupti amet tempora?
-          </div>
-          <div className={`front-sheet ${contentPos}`}>
-
-          </div>
+          {
+            data.map(item => (
+              <ContentGroup key={item.id} item={item} />    
+            ))
+          }
         </div>
         <div className='go-to-contact-container' onClick={goToContact}>
           <div>
@@ -118,6 +139,31 @@ const About = () => {
       </div>
       <div className={`go-to-works-container ${pagesStatus !== 'zoom-in' && 'd-n'} ${pagesTransiting.status && 'd-n'} ${pagesTraversing.status && 'd-n'}`} onClick={goToWorks} onMouseEnter={onMouseEnterWorks} onMouseLeave={onMouseLeaveWorks}>
         
+      </div>
+    </div>
+  )
+}
+
+const ContentGroup = ({ item }) => {
+  const [contentPos, setContentPos] = useState(item.initialPos)
+  
+  const changeContentPos = () => {
+    if(contentPos === 'left') {
+      setContentPos('right');
+    } else if(contentPos === 'right') {
+      setContentPos('left');
+    }
+  }
+  
+  return (
+    <div className='content-group'>
+      <div className={`content-sheet ${contentPos}`}>
+        {
+          item.text
+        }
+      </div>
+      <div className={`front-sheet background-pattern-2 ${contentPos}`} onMouseEnter={changeContentPos}>
+
       </div>
     </div>
   )
