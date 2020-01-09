@@ -122,9 +122,7 @@ const About = () => {
         </div>
         <div className='go-to-contact-container' onClick={goToContact}>
           <div>
-            <span>Contact</span>
-            <br/>
-            <span>Me</span>
+            Contact Me
           </div>
         </div>
       </div>

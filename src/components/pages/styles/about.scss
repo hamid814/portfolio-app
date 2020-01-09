@@ -157,31 +157,29 @@
 
   .go-to-contact-container {
     position: absolute;
-    bottom: 60px;
-    right: 40px;
-    line-height: 40px;
+    width: 160px;
     height: 55px;
+    bottom: 5px;
+    right: 25px;
     color: var(--color-four-title);
     border: 2px solid var(--color-one-title);
     cursor: pointer;
     font-size: 40px;
     overflow: hidden;
     padding: 5px;
-    transform: skew(-45deg);
+    transform: skew(-35deg);
+    color: var(--color-four-title);
+    background: transparent;
     
     &:hover {
-      bottom: 20px;
-      height: 95px;
-      transform: skew(0);
-      border-radius: 8px;
-      
-      div {
-        transform: skew(0);
-      }
+      background: var(--color-two);
+      width: 245px;
     }
     
     div {
-      transform: skew(45deg) translateX(16px);
+      transform: skew(35deg);
+      width: 260px;
+      word-spacing: 10px;
     }
   }
 

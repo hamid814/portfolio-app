@@ -5,16 +5,18 @@ import Reducer from './Reducer';
 const State = props => {
   const initialState = {
     myName: 'H', // cans: api, // change all links to github after changing name
-    activePage: 'about', // values: home, about, works, contact, none
+    activePage: 'works', // values: home, about, works, contact, none
     pagesStatus: 'zoom-in', // values: zoom-in | zoom-out
-    pagesPos: 'top-right', // t-l | t-r | b-l | b-r
+    pagesPos: 'bottom-right', // t-l | t-r | b-l | b-r
     aPageIsActive: true, // sets too true After 1s for anims
     pageDest: 'none', // dest-home | dest-about | dest-work | dest-contact
     pagesTransiting: { status: false, direction: 'come' },// true when pages is zoomin in or out
     pagesTraversing: { status: false }, // true when going from one page to another
     // MODAL STUFF
     modalStatus: 'first-off',
-    modalData: null
+    modalData: null,
+    // is being build
+    isDeveloping: true,
   };
 
   const [state, dispatch] = useReducer(Reducer, initialState);
@@ -145,6 +147,7 @@ const State = props => {
         modalData: state.modalData,
         pagesTransiting: state.pagesTransiting,
         pagesTraversing: state.pagesTraversing,
+        isDeveloping: state.isDeveloping,
         setActivePage,
         setPagesStatus,
         setApageIsActive,

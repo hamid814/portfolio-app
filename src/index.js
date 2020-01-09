@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
 
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 import BackButton from './components/layout/BackButton.js';
 import BackScroll from './components/pages/BackScroll.js';
 import Pages from './components/pages/Pages.js';
 import Modal from './components/modal/Modal';
 import AskColor from './components/layout/AskColor';
+import BetaBadge from './components/layout/BetaBadge';
 
 import State from './context/State.js';
 import Context from './context/Context.js';
@@ -58,6 +57,7 @@ const App = () => {
       <Modal />
       <AskColor />
       <BackButton />
+      <BetaBadge />
       <Pages />
       <BackScroll />
     </div>
