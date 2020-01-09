@@ -124,7 +124,9 @@ const Works = () => {
       </div>
       <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? 'a-work-is-active' : 'no-works-active'} ${goingToAbout && 'pull-down'}`}>
         <div className={`work works-one ${activeWork === 'work-one' ? 'opened' : 'closed'}`}>
-          <div className='background'></div>
+          <div className='background'>
+            <div className="background-image"></div>
+          </div>
           <div className='title'>
             {
               works.workOne.name
