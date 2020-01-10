@@ -42,10 +42,10 @@
     cursor: pointer;
     font-size: 200%;
     background: transparent;
-    border: 1px solid var(--color-four-title);
+    border: 1px solid var(--color-two-title);
     border-right-color: transparent;
     font-size: 34px;
-    color: var(--color-four-title);
+    color: var(--color-two-title);
     transform: skew(45deg);
     
     &:hover {
@@ -148,7 +148,7 @@
   }
   
   .social {
-    flex-grow: 1;
+    flex-basis: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +162,7 @@
       font-size: 170%;
       border-radius: 39px;
       cursor: pointer;
-      color: var(--color-one-title);
+      color: var(--color-three-title);
       transform: skew(10deg);
       
       &:hover {

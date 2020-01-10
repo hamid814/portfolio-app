@@ -68,7 +68,9 @@ const Contact = () => {
               <div className='text'>
                 email
               </div>
-              <div className='item-desc'></div>
+              <div className='item-desc'>
+                item desc
+              </div>
             </div>
             <div className='item-border'></div>
           </div>
