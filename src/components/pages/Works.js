@@ -22,7 +22,7 @@ const Works = () => {
     workOne: {
       name: 'Trello',
       description: 'a clone for trello',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea',
+      text: 'haha',
       ghLink: 'https://github.com/hamid814/trello-clone',
       ghPagesLink: 'https://hamid814.github.io/trello-clone/',
       screenShotLink: '',
@@ -30,6 +30,7 @@ const Works = () => {
     workTwo: {
       name: 'Formi',
       description: 'make forms fast',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea',
       ghLink: 'https://github.com/hamid814/r-p',
       ghPagesLink: 'https://hamid814.github.io/r-p/',
       screenShotLink: '',
@@ -37,6 +38,7 @@ const Works = () => {
     workThree: {
       name: 'Diprella',
       description: 'design concept made visual',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea',
       ghLink: 'https://github.com/hamid814/signup-signin-concept',
       ghPagesLink: 'https://hamid814.github.io/signup-signin-concept/',
       screenShotLink: '',
@@ -44,6 +46,7 @@ const Works = () => {
     workFour: {
       name: 'Todo',
       description: 'my first project',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea',
       ghLink: 'https://github.com/hamid814/todo-app',
       ghPagesLink: 'https://hamid814.github.io/todo-app/',
       screenShotLink: '',
@@ -51,6 +54,7 @@ const Works = () => {
     github: {
       name: 'Github',
       description: 'my github repos',
+      text: 'for more wroks and other reposetories, check out my github profile...',
       ghLink: 'https://github.com/hamid814/',
     }
   })
@@ -136,12 +140,12 @@ const Works = () => {
               works.workOne.description
             }
           </div>
-          <div className="details-placeholder"></div>
-          <div className="work-details">
-            <div className="work-image">
+          <div className='details-placeholder'></div>
+          <div className='work-details'>
+            <div className={`work-image ${works.workOne.name}`}>
             
             </div>
-            <div className="work-text">
+            <div className='work-text'>
               {
                 works.workOne.text
               }
@@ -181,14 +185,14 @@ const Works = () => {
               works.workTwo.description
             }
           </div>
-          <div className="details-placeholder"></div>
-          <div className="work-details">
-            <div className="work-image">
+          <div className='details-placeholder'></div>
+          <div className='work-details'>
+            <div className={`work-image ${works.workTwo.name}`}>
             
             </div>
-            <div className="work-text">
+            <div className='work-text'>
               {
-                works.workOne.text
+                works.workTwo.text
               }
             </div>
           </div>
@@ -226,14 +230,14 @@ const Works = () => {
               works.workThree.description
             }
           </div>
-          <div className="details-placeholder"></div>
-          <div className="work-details">
-            <div className="work-image">
+          <div className='details-placeholder'></div>
+          <div className='work-details'>
+            <div className={`work-image ${works.workThree.name}`}>
             
             </div>
-            <div className="work-text">
+            <div className='work-text'>
               {
-                works.workOne.text
+                works.workThree.text
               }
             </div>
           </div>
@@ -271,14 +275,14 @@ const Works = () => {
               works.workFour.description
             }
           </div>
-          <div className="details-placeholder"></div>
-          <div className="work-details">
-            <div className="work-image">
+          <div className='details-placeholder'></div>
+          <div className='work-details'>
+            <div className={`work-image ${works.workFour.name}`}>
             
             </div>
-            <div className="work-text">
+            <div className='work-text'>
               {
-                works.workOne.text
+                works.workFour.text
               }
             </div>
           </div>
@@ -316,14 +320,11 @@ const Works = () => {
               works.github.description
             }
           </div>
-          <div className="details-placeholder"></div>
-          <div className="work-details">
-            <div className="work-image">
-            
-            </div>
-            <div className="work-text">
+          <div className='details-placeholder'></div>
+          <div className='work-details'>
+            <div className='work-text'>
               {
-                works.workOne.text
+                works.github.text
               }
             </div>
           </div>
