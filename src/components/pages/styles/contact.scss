@@ -169,6 +169,11 @@
         
         .item {
           transform: translateX(-14px) translateY(-14px);
+
+          .item-desc {
+            opacity: 1;
+            margin-top: 10px;
+          }
         }
       }
       
@@ -186,6 +191,13 @@
         .text {
           transform: skew(-10deg);
           font-weight: bolder;
+        }
+        
+        .item-desc {
+          font-size: 70%;
+          transform: skew(-10deg);
+          margin-top: 40px;
+          opacity: 0;
         }
       }
       

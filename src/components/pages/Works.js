@@ -22,34 +22,37 @@ const Works = () => {
     workOne: {
       name: 'Trello',
       description: 'a clone for trello',
-      text: 'haha',
+      text: <span>this project is the best example for minapulating data in several layers
+      <br />fully made with <b>react</b>.</span>,
       ghLink: 'https://github.com/hamid814/trello-clone',
       ghPagesLink: 'https://hamid814.github.io/trello-clone/',
-      screenShotLink: '',
     },
     workTwo: {
       name: 'Formi',
       description: 'make forms fast',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea',
+      text: <span>applicatin idea is to construct simple html'5' forms with just some clicks
+      <br />its a classBased component application
+      <br />fully made with <b>react</b>.</span>,
       ghLink: 'https://github.com/hamid814/r-p',
       ghPagesLink: 'https://hamid814.github.io/r-p/',
-      screenShotLink: '',
     },
     workThree: {
       name: 'Diprella',
       description: 'design concept made visual',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea',
+      text: <span>
+      <br />designed by <a href='https://selectoglobal.com/' target='_blanck'>SELECTO</a>
+      <br />fully made with <b>react</b>.</span>,
       ghLink: 'https://github.com/hamid814/signup-signin-concept',
       ghPagesLink: 'https://hamid814.github.io/signup-signin-concept/',
-      screenShotLink: '',
     },
     workFour: {
       name: 'Todo',
       description: 'my first project',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea',
+      text: <span>project that every Developer should do, a simple Todo app
+      <br />CRUD application
+      <br />fully made with <b>react</b>.</span>,
       ghLink: 'https://github.com/hamid814/todo-app',
       ghPagesLink: 'https://hamid814.github.io/todo-app/',
-      screenShotLink: '',
     },
     github: {
       name: 'Github',

@@ -21,7 +21,7 @@ const About = () => {
   const [data, setData] = useState([
     {
       id: 1,
-      initialPos: 'right',
+      initialPos: 'left',
       text: 'NOT golem'
     },
     {
@@ -31,7 +31,7 @@ const About = () => {
     },
     {
       id: 3,
-      initialPos: 'left',
+      initialPos: 'right',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea'
     },
     {

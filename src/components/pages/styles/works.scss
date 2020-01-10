@@ -84,23 +84,22 @@
         }
         
         .work-details {
-          width: 80%;
           margin-top: 25px;
           opacity: 1;
           transition-delay: 0.15s;
         }
-          
+        
         &.reverse {
-
+          
           .title {
             color: var(--color-three-title);
           }
-
+          
           .buttons-panel {
-
+            
             .button {
               transform: skew(15deg);
-                
+              
               .text {
                 transform: skew(-15deg);
               }
@@ -111,21 +110,21 @@
         .background {
           width: 100%;
         }
-
+        
         .title {
           color: var(--color-two-title);
           margin-left: -60%;
         }
-
+        
         .work-description {
           margin-top: 20px;
           margin-left: -50%;
           opacity: 1;
         }
-
+        
         .buttons-panel {
           margin-top: 20px;
-
+          
           .button {
             opacity: 1;
             transform: skew(-15deg);
@@ -153,9 +152,10 @@
       
       &.closed {
         flex-shrink: 1;
-
+        
         .work-details {
           width: 0;
+          transition-delay: 0.15s;
         }
       }
     }
@@ -294,7 +294,7 @@
     
     .work-details {
       position: absolute;
-      width: 0%;
+      width: 80%;
       height: 20%;
       z-index: 1;
       margin-top: -130px;
@@ -329,14 +329,13 @@
       }
       
       .work-text {
-        flex-basis: 47%;
+        flex-basis: 44%;
         font-size: 25%;      
         background: transparent;
         color: var(--color-two);
         overflow: hidden;
         display: flex;
         align-items: center;
-        justify-content: center;
       }
     }
     

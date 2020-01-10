@@ -68,6 +68,7 @@ const Contact = () => {
               <div className='text'>
                 email
               </div>
+              <div className='item-desc'></div>
             </div>
             <div className='item-border'></div>
           </div>
@@ -75,6 +76,9 @@ const Contact = () => {
             <div className='item'>
               <div className='text'>
                 github
+              </div>
+              <div className='item-desc'>
+                click to go to github
               </div>
             </div>
             <div className='item-border'></div>
