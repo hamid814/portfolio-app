@@ -79,10 +79,15 @@
       &.opened {
         flex-grow: 1;
 
+        .details-placeholder {
+          margin-top: 10px;
+        }
+        
         .work-details {
           width: 80%;
-          margin-top: 10px;
+          margin-top: 25px;
           opacity: 1;
+          transition-delay: 0.15s;
         }
           
         &.reverse {
@@ -275,7 +280,13 @@
       color: var(--color-two);
     }
     
+    .details-placeholder {
+      height: 20%;
+      margin-top: -130px;
+    }
+    
     .work-details {
+      position: absolute;
       width: 0%;
       height: 20%;
       z-index: 1;
@@ -285,17 +296,14 @@
       padding: 0px;
       border: 1px solid red;
       opacity: 0;
-      display: none;
 
       .work-image {
         flex-grow: 1;
         flex-basis: 50%;
-        border: 1px solid red;
         background-image: url('../../../screenShots/formi.png');
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
-        border-radius: 20px;
       }
       
       .work-text {
@@ -303,7 +311,6 @@
         flex-basis: 50%;
         font-size: 25%;      
         background: #6c9;
-        border: 1px solid red;
         overflow: hidden;
       }
     }

@@ -136,6 +136,7 @@ const Works = () => {
               works.workOne.description
             }
           </div>
+          <div className="details-placeholder"></div>
           <div className="work-details">
             <div className="work-image">
             
@@ -180,6 +181,7 @@ const Works = () => {
               works.workTwo.description
             }
           </div>
+          <div className="details-placeholder"></div>
           <div className="work-details">
             <div className="work-image">
             
@@ -224,6 +226,7 @@ const Works = () => {
               works.workThree.description
             }
           </div>
+          <div className="details-placeholder"></div>
           <div className="work-details">
             <div className="work-image">
             
@@ -268,6 +271,7 @@ const Works = () => {
               works.workFour.description
             }
           </div>
+          <div className="details-placeholder"></div>
           <div className="work-details">
             <div className="work-image">
             
@@ -312,6 +316,7 @@ const Works = () => {
               works.github.description
             }
           </div>
+          <div className="details-placeholder"></div>
           <div className="work-details">
             <div className="work-image">
             
