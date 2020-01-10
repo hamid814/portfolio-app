@@ -22,6 +22,7 @@ const Works = () => {
     workOne: {
       name: 'Trello',
       description: 'a clone for trello',
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea',
       ghLink: 'https://github.com/hamid814/trello-clone',
       ghPagesLink: 'https://hamid814.github.io/trello-clone/',
       screenShotLink: '',
@@ -124,9 +125,7 @@ const Works = () => {
       </div>
       <div className={`page ${activePage === 'works' ? 'on' : 'off'} ${activeWork !== null ? 'a-work-is-active' : 'no-works-active'} ${goingToAbout && 'pull-down'}`}>
         <div className={`work works-one ${activeWork === 'work-one' ? 'opened' : 'closed'}`}>
-          <div className='background'>
-            <div className="background-image"></div>
-          </div>
+          <div className='background'></div>
           <div className='title'>
             {
               works.workOne.name
@@ -136,6 +135,16 @@ const Works = () => {
             {
               works.workOne.description
             }
+          </div>
+          <div className="work-details">
+            <div className="work-image">
+            
+            </div>
+            <div className="work-text">
+              {
+                works.workOne.text
+              }
+            </div>
           </div>
           <div className='buttons-panel'>
             <div className='button toggle' id='work-one' onClick={onWorkBtnClick}>
@@ -171,6 +180,16 @@ const Works = () => {
               works.workTwo.description
             }
           </div>
+          <div className="work-details">
+            <div className="work-image">
+            
+            </div>
+            <div className="work-text">
+              {
+                works.workOne.text
+              }
+            </div>
+          </div>
           <div className='buttons-panel'>
             <div className='button toggle' id='work-two' onClick={onWorkBtnClick}>
               <div className='text' id='work-two'>
@@ -204,6 +223,16 @@ const Works = () => {
             {
               works.workThree.description
             }
+          </div>
+          <div className="work-details">
+            <div className="work-image">
+            
+            </div>
+            <div className="work-text">
+              {
+                works.workOne.text
+              }
+            </div>
           </div>
           <div className='buttons-panel'>
             <div className='button toggle' id='work-three' onClick={onWorkBtnClick}>
@@ -239,6 +268,16 @@ const Works = () => {
               works.workFour.description
             }
           </div>
+          <div className="work-details">
+            <div className="work-image">
+            
+            </div>
+            <div className="work-text">
+              {
+                works.workOne.text
+              }
+            </div>
+          </div>
           <div className='buttons-panel'>
             <div className='button toggle' id='work-four' onClick={onWorkBtnClick}>
               <div className='text' id='work-four'>
@@ -272,6 +311,16 @@ const Works = () => {
             {
               works.github.description
             }
+          </div>
+          <div className="work-details">
+            <div className="work-image">
+            
+            </div>
+            <div className="work-text">
+              {
+                works.workOne.text
+              }
+            </div>
           </div>
           <div className='buttons-panel'>
             <div className='button toggle' id='github' onClick={onWorkBtnClick}>
