@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 
 import Context from '../../context/Context.js';
 
@@ -20,10 +20,6 @@ const Contact = () => {
       setPagesStatus('zoom-in')
       setPagesTransiting(true, 'go')
     }
-  }
-
-  const onSubmit = e => {
-    e.preventDefault()
   }
 
   const goToWorks = () => {
@@ -80,43 +76,13 @@ const Contact = () => {
                 github
               </div>
               <div className='item-desc'>
-                click to go to github
+                click to open github
               </div>
             </div>
             <div className='item-border'></div>
           </div>
         </div>
-        <div id='form' onSubmit={onSubmit}>
-          <form>
-            <div className='form-header'>
-              <h2>
-                Send Me a Message
-              </h2>
-            </div>
-            <div className='form-group'>
-              <label>Name:</label>
-              <input type='text' name='name' placeholder='Name'/>
-              <div className='input-side-layer'></div>
-              <div className='input-side-rect'></div>
-            </div>
-            <div className='form-group'>
-              <label>Email:</label>
-              <input type='text' name='email' placeholder='Email'/>
-              <div className='input-side-layer'></div>
-              <div className='input-side-rect'></div>
-            </div>
-            <div className='form-group'>
-              <label>Message:</label>
-              <input type='text' name='message' placeholder='Message'/>
-              <div className='input-side-layer'></div>
-              <div className='input-side-rect'></div>
-            </div>
-            <div className='form-group'>
-              <input type='submit' value='Send'/>
-              <div className='submit-side-layer'></div>
-            </div>
-          </form>
-        </div>
+        <Form />
         <div className='go-to-works-container' onClick={goToWorks}>
           <div className='text'>
             See My <span>works</span>
@@ -135,6 +101,103 @@ const Contact = () => {
           </div>
         </div>
       </div>
+    </div>
+  )
+}
+
+
+const Form = () => {
+  const [data, setData] = useState({
+    name: {
+      value: '',
+      focused: false
+    },
+    email: {
+      value: '',
+      focused: false
+    },
+    company: {
+      value: '',
+      focused: false
+    },
+    message: {
+      value: '',
+      focused: false
+    },
+  })
+  const [nameIsFocused, setNameIsFocused] = useState(false)
+  const [emailValue, setEmailValue] = useState('')
+  const [companyValue, setCompanyValue] = useState('')
+  const [messageValue, setMessageValue] = useState('')
+  
+  const onInputChange = e => {
+    const newData = {
+      ...data,
+      [e.target.name]: {
+        ...data[e.target.name],
+        value: e.target.value,
+      }
+    }
+
+    setData(newData)
+  }
+
+  const onInputFocus = e => {
+    const newData = {
+      ...data,
+      [e.target.name]: {
+        ...data[e.target.name],
+        focused: true,
+      }
+    }
+
+    setData(newData)
+  }
+
+  const onInputBlur = e => {
+    const newData = {
+      ...data,
+      [e.target.name]: {
+        ...data[e.target.name],
+        focused: false,
+      }
+    }
+
+    setData(newData)
+  }
+  
+  const onSubmit = e => {
+    e.preventDefault()
+  }
+  
+  return (
+    <div id='form' onSubmit={onSubmit}>
+      <form>
+        <div className='form-header'>
+          <h2>
+            Let's Get in touch
+          </h2>
+        </div>
+        <div className={`form-group ${data.name.value !== '' || data.name.focused ? 'active' : 'not-active'}`}>
+          <label onClick={onInputFocus}>Name</label>
+          <input type='text' name='name' value={data.name.value} onChange={onInputChange} onFocus={onInputFocus} onBlur={onInputBlur}/>
+        </div>
+        <div className={`form-group ${data.email.value !== '' || data.email.focused ? 'active' : 'not-active'}`}>
+          <label>Email</label>
+          <input type='text' name='email' value={data.email.value} onChange={onInputChange} onFocus={onInputFocus} onBlur={onInputBlur}/>
+        </div>
+        <div className={`form-group ${data.company.value !== '' || data.company.focused ? 'active' : 'not-active'}`}>
+          <label>Company</label>
+          <input type='text' name='company' value={data.company.value} onChange={onInputChange} onFocus={onInputFocus} onBlur={onInputBlur}/>
+        </div>
+        <div className={`form-group ${data.message.value !== '' || data.message.focused ? 'active' : 'not-active'}`}>
+          <label>Message</label>
+          <input type='text' name='message' value={data.message.value} onChange={onInputChange} onFocus={onInputFocus} onBlur={onInputBlur}/>
+        </div>
+        <div className='form-group'>
+          <input type='submit' value='Send'/>
+        </div>
+      </form>
     </div>
   )
 }
