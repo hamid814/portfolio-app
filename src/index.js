@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import ReactDOM from 'react-dom';
 
 import BackButton from './components/layout/BackButton.js';
@@ -19,6 +19,18 @@ import './styles/keyframes.css';
 
 const App = () => {
   const { aPageIsActive, setActivePage, setPagesStatus, setPagesTransiting, pagesTransiting, pagesTraversing } = useContext(Context)
+
+  useEffect(() => {
+    // set status to zoom-out if its production build
+    
+    if(process.env.NODE_ENV === 'production') {
+      setActivePage('from-menu')
+      setPagesStatus('zoom-out')
+      setPagesTransiting(true, 'come')
+    }
+
+    // eslint-disable-next-line
+  }, [])
 
   const onKeyUp = (e) => {
     if(e.keyCode === 27 && aPageIsActive && !pagesTraversing.status) {
