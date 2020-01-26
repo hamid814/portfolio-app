@@ -43,6 +43,7 @@
     top: 10%;
     left: 6%;
     display: grid;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     background: transparent;
@@ -90,13 +91,14 @@
       width: 40%;
       height: 100%;
       top: 0;
+      padding: 4%;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 7%;
       background-attachment: fixed;
       background-position: center;
       transition: 1s;
+      border: 7px solid var(--color-one);
       
       &.left {
         left: 60%;
@@ -106,9 +108,14 @@
         left: 0;
       }
 
-      img {
-        animation: aboutItemLogoRotateAnim 20s cubic-bezier(1,1,1,1) infinite;
+      i {
+        color: var(--color-one);
+
+        &.rotate {
+          animation: aboutItemLogoRotateAnim 20s cubic-bezier(1,1,1,1) infinite reverse;
+        }
       }
+      
     }
   }
   
