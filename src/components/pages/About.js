@@ -2,6 +2,8 @@ import React, { useState, useContext } from 'react';
 
 import Context from '../../context/Context.js';
 
+import reactLogo from '../../images/react.png';
+
 import './styles/about.scss';
 
 const About = () => {
@@ -22,22 +24,36 @@ const About = () => {
     {
       id: 1,
       initialPos: 'left',
-      text: 'NOT golem'
+      title: 'REACT',
+      text: <i>
+              experienced with <b>react</b> and have done several projects with
+            </i>
     },
     {
       id: 2,
       initialPos: 'left',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea'
+      title: 'JavaScript',
+      text: <i>
+              matered <b>es6</b> and <b>es7</b>
+            </i>
     },
     {
       id: 3,
       initialPos: 'right',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea'
+      title: 'HTML, CSS',
+      text: <i>
+              <b>html5</b> and <b>css3</b>
+              <br/>
+              the fundations of any page
+            </i>
     },
     {
       id: 4,
       initialPos: 'right',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur natus quos ea'
+      title: 'REACT',
+      text: <i>
+              hamid
+            </i>
     },
   ])
 
@@ -156,12 +172,19 @@ const ContentGroup = ({ item }) => {
   return (
     <div className='content-group'>
       <div className={`content-sheet ${contentPos}`}>
-        {
-          item.text
-        }
+        <div className='content-title'>
+          {
+            item.title
+          }
+        </div>
+        <div className='content-text'>
+          {
+            item.text
+          }
+        </div>
       </div>
       <div className={`front-sheet background-pattern-2 ${contentPos}`} onMouseEnter={changeContentPos}>
-
+        <img src={reactLogo} alt={item.imageAlt}/>
       </div>
     </div>
   )
