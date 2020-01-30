@@ -23,7 +23,6 @@ const About = () => {
       id: 1,
       initialPos: 'left',
       logo: ['fab fa-react fa-5x rotate'],
-      rotateLogo: true,
       title: <b>React</b>,
       text: <i>
               experienced with <b>react</b> and have done several projects with
@@ -33,7 +32,6 @@ const About = () => {
       id: 2,
       initialPos: 'left',
       logo: ['fab fa-js fa-5x'],
-      rotateLogo: false,
       title: 'JavaScript',
       text: <i>
               mastered <b>es6</b> and <b>es7</b>
@@ -43,7 +41,6 @@ const About = () => {
       id: 3,
       initialPos: 'right',
       logo: ['fab fa-html5 fa-5x mr-1', 'fab fa-css3-alt fa-5x'],
-      rotateLogo: false,
       title: 'HTML, CSS',
       text: <i>
               <b>html5</b> and <b>css3</b>
@@ -55,7 +52,6 @@ const About = () => {
       id: 4,
       initialPos: 'right',
       logo: ['fas fa-ruler-combined fa-5x'],
-      rotateLogo: false,
       title: 'UI',
       text: <i>
               have a passion for <b>greate</b> UIs
@@ -190,7 +186,6 @@ const ContentGroup = ({ item }) => {
       </div>
       <div className={`front-sheet background-pattern-2 ${contentPos}`} onMouseEnter={changeContentPos}>
         {
-          // console.log(item.logo)
           item.logo.map(i => (
             <i className={i}></i>    
           ))
