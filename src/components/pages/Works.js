@@ -95,7 +95,6 @@ const Works = () => {
 
   const goToLinkOnId = e => {
     window.open(e.target.id)
-    // console.log(e.target.id)
   }
 
   const goToContact = () => {

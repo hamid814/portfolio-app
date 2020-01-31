@@ -50,6 +50,8 @@
 
     .content-group {
       position: relative;
+      background: var(--color-one);
+
     }
     
     .content-sheet {
@@ -82,7 +84,11 @@
       }
 
       .content-text {
+        color: var(--color-two-title);
 
+        b {
+          color: var(--color-one-title);
+        }
       }
     }
     
@@ -120,6 +126,9 @@
   }
   
   .header {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
     font-size: 400%;
     text-align: center;
   }

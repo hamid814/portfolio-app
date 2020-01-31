@@ -92,7 +92,7 @@ const Home = () => {
     bugName.forEach(bug => {
       setTimeout(() => {
         setName(bug.name)
-      }, bug.time*1.8);
+      }, bug.time*2.4);
     })
 
     // eslint-disable-next-line

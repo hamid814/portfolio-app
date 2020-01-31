@@ -18,6 +18,7 @@ const About = () => {
 
   const [goingToWorks, setgoingToWorks] = useState(false)
   const [contentPos, setContentPos] = useState('left')
+  // eslint-disable-next-line
   const [data, setData] = useState([
     {
       id: 1,

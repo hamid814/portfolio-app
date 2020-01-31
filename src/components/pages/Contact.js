@@ -22,6 +22,10 @@ const Contact = () => {
     }
   }
 
+  const onGithubClick = () => {
+    window.open('https://github.com/hamid814')
+  }
+
   const goToWorks = () => {
     traversPages('works')
   }
@@ -62,15 +66,18 @@ const Contact = () => {
           <div className='item-container'>
             <div className='item'>
               <div className='text'>
-                email
+                hamid331994
+                <br/>
+                <br/>
+                @gmial.com
               </div>
               <div className='item-desc'>
-                item desc
+                {/* item desc */}
               </div>
             </div>
             <div className='item-border'></div>
           </div>
-          <div className='item-container'>
+          <div className='item-container' onClick={onGithubClick}>
             <div className='item'>
               <div className='text'>
                 github
