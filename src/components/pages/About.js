@@ -17,7 +17,6 @@ const About = () => {
           pagesTransiting } = useContext(Context)
 
   const [goingToWorks, setgoingToWorks] = useState(false)
-  const [contentPos, setContentPos] = useState('left')
   // eslint-disable-next-line
   const [data, setData] = useState([
     {
@@ -46,7 +45,9 @@ const About = () => {
       text: <i>
               <b>html5</b> and <b>css3</b>
               <br/>
-              the fundations of any page
+              <b>semantic</b> and <b>modern</b>
+              <br/>
+              the fundations of any webpage
             </i>
     },
     {
@@ -68,14 +69,6 @@ const About = () => {
     }
   }
 
-  const changeContentPos = () => {
-    if(contentPos === 'left') {
-      setContentPos('right');
-    } else if(contentPos === 'right') {
-      setContentPos('left');
-    }
-  }
-
   const onMouseEnterWorks = () => {
     setgoingToWorks(true)
   }
@@ -94,6 +87,10 @@ const About = () => {
 
   const goToHome = () => {
     traversPages('home')
+  }
+
+  const gotToAbout = () => {
+    
   }
 
   const goToContact = () => {
