@@ -89,10 +89,6 @@ const About = () => {
     traversPages('home')
   }
 
-  const gotToAbout = () => {
-    
-  }
-
   const goToContact = () => {
     traversPages('contact')
   }
