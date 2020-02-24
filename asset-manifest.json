@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio-app/static/css/main.5195a004.chunk.css",
-    "main.js": "/portfolio-app/static/js/main.4db272eb.chunk.js",
-    "main.js.map": "/portfolio-app/static/js/main.4db272eb.chunk.js.map",
+    "main.css": "/portfolio-app/static/css/main.b70678b7.chunk.css",
+    "main.js": "/portfolio-app/static/js/main.d3ec2fed.chunk.js",
+    "main.js.map": "/portfolio-app/static/js/main.d3ec2fed.chunk.js.map",
     "runtime-main.js": "/portfolio-app/static/js/runtime-main.78f1ddc5.js",
     "runtime-main.js.map": "/portfolio-app/static/js/runtime-main.78f1ddc5.js.map",
     "static/js/2.48d77f22.chunk.js": "/portfolio-app/static/js/2.48d77f22.chunk.js",
     "static/js/2.48d77f22.chunk.js.map": "/portfolio-app/static/js/2.48d77f22.chunk.js.map",
     "index.html": "/portfolio-app/index.html",
-    "precache-manifest.4b5e5c3a1e980a1360c24aee130be975.js": "/portfolio-app/precache-manifest.4b5e5c3a1e980a1360c24aee130be975.js",
+    "precache-manifest.7aece4acc32685510134b697c0c99e09.js": "/portfolio-app/precache-manifest.7aece4acc32685510134b697c0c99e09.js",
     "service-worker.js": "/portfolio-app/service-worker.js",
-    "static/css/main.5195a004.chunk.css.map": "/portfolio-app/static/css/main.5195a004.chunk.css.map",
+    "static/css/main.b70678b7.chunk.css.map": "/portfolio-app/static/css/main.b70678b7.chunk.css.map",
     "static/js/2.48d77f22.chunk.js.LICENSE": "/portfolio-app/static/js/2.48d77f22.chunk.js.LICENSE",
     "static/media/works.scss": "/portfolio-app/static/media/trello-clone.241f8957.png"
   },
   "entrypoints": [
     "static/js/runtime-main.78f1ddc5.js",
     "static/js/2.48d77f22.chunk.js",
-    "static/css/main.5195a004.chunk.css",
-    "static/js/main.4db272eb.chunk.js"
+    "static/css/main.b70678b7.chunk.css",
+    "static/js/main.d3ec2fed.chunk.js"
   ]
 }
