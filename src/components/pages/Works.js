@@ -111,10 +111,10 @@ const Works = () => {
 
       </div>
       <div className={`back-layer ${aPageIsActive ? 'not' : 'is'}`}>
-        
+
       </div>
       <div className={`layer ${aPageIsActive ? 'not' : 'is'} ${pagesStatus === 'zoom-in' ? 'zoom-in-vertical' : 'zoom-out-vertical'}`} onClick={onClick}>
-        <h1>  
+        <h1>
           WORKS
           <span className='desc'>
             <div className='text'>
@@ -145,7 +145,7 @@ const Works = () => {
           <div className='details-placeholder'></div>
           <div className='work-details'>
             <div className={`work-image ${works.workOne.name}`}>
-            
+
             </div>
             <div className='work-text'>
               {
@@ -190,7 +190,7 @@ const Works = () => {
           <div className='details-placeholder'></div>
           <div className='work-details'>
             <div className={`work-image ${works.workTwo.name}`}>
-            
+
             </div>
             <div className='work-text'>
               {
@@ -235,7 +235,7 @@ const Works = () => {
           <div className='details-placeholder'></div>
           <div className='work-details'>
             <div className={`work-image ${works.workThree.name}`}>
-            
+
             </div>
             <div className='work-text'>
               {
@@ -280,7 +280,7 @@ const Works = () => {
           <div className='details-placeholder'></div>
           <div className='work-details'>
             <div className={`work-image ${works.workFour.name}`}>
-            
+
             </div>
             <div className='work-text'>
               {
@@ -353,7 +353,7 @@ const Works = () => {
           </div>
         </div>
         <div className='go-to-about-container' onClick={goToAbout} onMouseEnter={onMouseEnterAbout} onMouseLeave={onMouseLeaveAbout}>
-          
+
         </div>
       </div>
     </div>
