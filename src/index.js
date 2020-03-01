@@ -11,10 +11,10 @@ import BetaBadge from './components/layout/BetaBadge';
 import State from './context/State.js';
 import Context from './context/Context.js';
 
-import './styles/index.css';
-import './styles/haden.css';
-import './styles/zIndex.css';
-import './styles/keyframes.css';
+import './styles/index.scss';
+import './styles/haden.scss';
+import './styles/zIndex.scss';
+import './styles/keyframes.scss';
 // import './styles/media900px.scss';
 
 const App = () => {
