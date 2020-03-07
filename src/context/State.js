@@ -6,7 +6,7 @@ const State = props => {
   const initialState = {
     myName: 'H', // cans: api, // change all links to github after changing name
     myTechs: ['react', 'typescript', 'javascript', 'html', 'css, sass, framewoks', 'UI', 'api', 'psd to HTML', 'REST api'],
-    myWantedTechs: ['GatsbyJS', 'nodeJS', 'NEXTjs', 'ExpressJS', 'mongodb', 'react-native', 'electron', 'url shorteners', 'polymerJS'], 
+    myWantedTechs: ['GatsbyJS', 'nodeJS', 'NEXTjs', 'ExpressJS', 'mongodb', 'react-native', 'electron', 'url shorteners', 'polymerJS'],
     activePage: 'about', // values: home, about, works, contact, none
     pagesStatus: 'zoom-in', // values: zoom-in | zoom-out
     pagesPos: 'top-right', // t-l | t-r | b-l | b-r
