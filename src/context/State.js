@@ -5,8 +5,13 @@ import Reducer from './Reducer';
 const State = props => {
   const initialState = {
     myName: 'H', // cans: api, // change all links to github after changing name
-    myTechs: ['react', 'typescript', 'javascript', 'html', 'css, sass, framewoks', 'UI', 'api', 'psd to HTML', 'REST api', 'ExpressJS', 'nodeJS', 'NPM', 'Api Integration', 'web components'],
-    myWantedTechs: ['GatsbyJS', 'NEXTjs', 'mongodb', 'react-native', 'electron', 'url shorteners', 'polymerJS'],
+    // techs:
+    myTechs: ['react', 'redux with react', 'typescript', 'javascript', 'html', 'css, sass, framewoks', 'UI', 'api', 'psd to HTML', 'REST api', 'ExpressJS', 'nodeJS', 'NPM', 'Api Integration', 'web components'],
+    myWantedTechs: ['web components', 'GatsbyJS', 'NEXTjs', 'mongodb', 'react-native', 'electron', 'url shorteners', 'polymerJS'],
+    javascript: ['ES5/ES6/ES7', 'Promises, Async/Await, Axios', 'Context API, Hooks', 'GraphQL, REST APIs', 'd3 with React', 'Testing: Jest, Enzyme, Mocha', 'OAuth, Passport JS, JWTs'], //copy from stoutlabs
+    APIs: ['Stripe', 'Sendgrid', 'Mailchimp', 'Youtube', 'Twitch', 'Discord', 'Reddit', 'DarkSky', 'and many more'], //copy from stoutlabs
+    HTMLCSS: ['HTML5 & CSS3', 'Responsive Design', 'SASS & LESS', 'CSS-in-JS', 'Mustache, Handlebars, Pug', 'Bulma, Bootstrap, Materialize'], //copy from stoutlabs
+    BuildWorkflow: ['Github & Bitbucket', 'Webpack', 'yarn/npm', 'Linux and Windows CLI', 'Chrome Dev Tools', 'Netlify (static hosting)', 'DigitalOcean, Heroku (dynamic hosting)', 'Docker, Docker Compose', 'VSCode'], //copy from stoutlabs
     activePage: 'about', // values: home, about, works, contact, none
     pagesStatus: 'zoom-in', // values: zoom-in | zoom-out
     pagesPos: 'top-right', // t-l | t-r | b-l | b-r
