@@ -6,8 +6,8 @@ const State = props => {
   const initialState = {
     myName: 'H', // cans: api, // change all links to github after changing name
     // techs:
-    myTechs: ['react', 'redux with react', 'typescript', 'javascript', 'html', 'css, sass, framewoks', 'UI', 'api', 'psd to HTML', 'REST api', 'ExpressJS', 'nodeJS', 'NPM', 'Api Integration', 'web components'],
-    myWantedTechs: ['web components', 'GatsbyJS', 'NEXTjs', 'mongodb', 'react-native', 'electron', 'url shorteners', 'polymerJS'],
+    myTechs: ['react', 'redux', 'context-api', 'typescript', 'javascript', 'html', 'css(Modern), sass, framewoks', 'UI', 'api', 'psd to HTML', 'REST api', 'ExpressJS', 'nodeJS', 'NPM', 'Api Integration', 'web components', 'deno', 'HTTP', 'mongodb', 'deployments: heroku, netlify', 'styled-components and CSS-in-JS', 'redis-cashing', 'template-engines', 'Passportjs', 'google auth', 'server-side-rendering with pug, ejs, Handlebars', 'bare security with sessions and cookies'],
+    myWantedTechs: ['web components', 'GatsbyJS', 'NEXTjs', 'react-native', 'electron', 'url shorteners', 'polymerJS', 'deployment: degetaloacen', 'jsDoc', 'PYTHON', 'express sessions'],
     javascript: ['ES5/ES6/ES7', 'Promises, Async/Await, Axios', 'Context API, Hooks', 'GraphQL, REST APIs', 'd3 with React', 'Testing: Jest, Enzyme, Mocha', 'OAuth, Passport JS, JWTs'], //copy from stoutlabs
     APIs: ['Stripe', 'Sendgrid', 'Mailchimp', 'Youtube', 'Twitch', 'Discord', 'Reddit', 'DarkSky', 'and many more'], //copy from stoutlabs
     HTMLCSS: ['HTML5 & CSS3', 'Responsive Design', 'SASS & LESS', 'CSS-in-JS', 'Mustache, Handlebars, Pug', 'Bulma, Bootstrap, Materialize'], //copy from stoutlabs
