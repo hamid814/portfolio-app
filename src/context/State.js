@@ -37,21 +37,20 @@ const State = (props) => {
       'solid design principles: single responsibities',
       'documenting with docusaurus',
       'npm & yarn',
-      ['design prenciples'] : {
+      (['design prenciples']: [
         'single responsibiti principle',
         'open/closed principle',
         'liskov substitution principle',
         'interface segregation principle',
         'dependency inversion principle'
-      },
-      ['design patterns']: {
-  'null object pattern',
-  'builder pattern',
- 
-'singleton pattern',
-'facade patrern',
-'command pattern'
-      }
+      ]),
+      (['design patterns']: [
+        'null object pattern',
+        'builder pattern',
+        'singleton pattern',
+        'facade patrern',
+        'command pattern'
+      ]),
     ],
     myWantedTechs: [
       'web components',
